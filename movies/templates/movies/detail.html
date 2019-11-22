@@ -1,41 +1,48 @@
 {% extends 'base.html' %}
 {% block body %}
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <h1 style="color:mediumpurple">{{movie.title}} ({{movie.genre.name}})</h1>
-            누적관객수 : {{movie.audience}}
-            <hr>
-            줄거리 : {{movie.description}}
-            <hr>
-            {% if user.is_authenticated %}
-            <form action="{% url 'movies:like_movie' movie.pk %}" method="POST">
-                {% csrf_token %}
-                {% if user in movie.like_users.all %}
-                <i id="like-button" data-id="{{movie.id}}" class="fas fa-thumbs-up " style="color:red"></i>
-                {% else %}
-                <i id="like-button" data-id="{{movie.id}}" class="far fa-thumbs-up " style="color:red"></i>
-                {% endif %}
-            </form>
-            {% endif %}
-            
-            <p><span id="like-count">{{ movie.like_users.count }}</span>명이 이 글을 좋아합니다. </p>
+<div class="container" style="text-align:center">
+    <div class="row" style="margin-top:1rem">
+        <div class="col" style="text-align:center">
+            <img src={{movie.poster_url}} width='400px'>
         </div>
-        <div class="col">
-            <img src={{movie.poster_url}} width='500px'>
+
+        <div class="card col" style="width: 18rem;">
+            <div class="card-body">
+                <h1 class="card-title">{{movie.title}} ({{movie.genre.name}})</h1>
+                <h6 class="card-subtitle mb-2 text-muted">누적 관객수: {{movie.audience}}</h6><br>
+                <h3 class="card-subtitle mb-2">줄거리</h3>
+                <hr>
+                <p class="card-text">{{movie.description}}</p>
+                <hr>
+                {% if user.is_authenticated %}
+                <form action="{% url 'movies:like_movie' movie.pk %}" method="POST">
+                    {% csrf_token %}
+                    {% if user in movie.like_users.all %}
+                    <i id="like-button" data-id="{{movie.id}}" class="fas fa-thumbs-up " style="color:red"></i>
+                    {% else %}
+                    <i id="like-button" data-id="{{movie.id}}" class="far fa-thumbs-up " style="color:red"></i>
+                    {% endif %}
+                </form>
+                {% endif %}
+                <p><span id="like-count">{{ movie.like_users.count }}</span>명이 이 글을 좋아합니다. </p>
+            </div>
         </div>
     </div>
-
     <hr>
 
 
-    <h2>content을 작성해주세요</h2>
+    <hr>
+
+    <h2>평점을 작성해주세요</h2>
     {% for review in movie.review_set.all %}
     <p>
         {{review.user}} ({{review.score}}점)<br>
-        <form action='reviews/{{review.pk}}/delete' method='POST' onclick="return confirm('삭제하려면 클릭해주세요')">
-            {{review.content}} {% csrf_token %}<button type="submit" class="btn btn-outline-danger"
-                value="삭제">삭제</button></form>
+        <form action='reviews/{{review.pk}}/delete' method='POST'>
+            {{review.content}}
+            {% csrf_token %}
+            <input class="btn btn-outline-danger" type="submit" value="삭제" onclick="return confirm('삭제하려면 클릭해주세요')">
+        </form>
+
     </p>
     <hr>
     {% endfor %}
