@@ -3,7 +3,7 @@ from .models import Movie, Genre, Review
 from .forms import ReviewForm
 from django.views.decorators.http import require_POST
 from django.contrib.auth.decorators import login_required
-from django.http import JsonResponse, HttpResponseForbidden
+from django.http import HttpResponseForbidden,HttpResponse,JsonResponse
 # Create your views here.
 def index(request):
     movies = Movie.objects.all()
@@ -48,10 +48,17 @@ def reviewDelete(request, movie_pk,review_pk):
 def like(request, movie_pk):
     if request.is_ajax():
         movie = get_object_or_404(Movie, pk=movie_pk)
+        is_liked = True
         if request.user in movie.like_users.all():
             movie.like_users.remove(request.user)
+            is_liked = False
         else:
             movie.like_users.add(request.user)
-        return redirect('movies:detail', movie_pk)
+            is_liked = True
+        context = {
+            'is_liked' : is_liked,
+            'like_count' : movie.like_users.count()
+        }
+        return JsonResponse(context)
     else:
         return HttpResponseForbidden

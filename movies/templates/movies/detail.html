@@ -31,6 +31,8 @@
     <hr>
 
 
+    <hr>
+
     <h2>평점을 작성해주세요</h2>
     {% for review in movie.review_set.all %}
     <p>
@@ -40,56 +42,56 @@
             {% csrf_token %}
             <input class="btn btn-outline-danger" type="submit" value="삭제" onclick="return confirm('삭제하려면 클릭해주세요')">
         </form>
+
     </p>
     <hr>
     {% endfor %}
     <form action="{% url 'movies:review' movie.pk %}" method='POST'>
         {% csrf_token %}
         {{form.as_p}}
-        <input class="btn btn-outline-primary" type='submit' value='등록'>
+        <input type='submit' value='등록'>
     </form>
-</div>
 
 
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script>
-    axios.get(
-            "https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
-        )
-        .then(response => {
-            document.body.style.backgroundImage = `url(${response.request.responseURL})`
-            document.body.style.backgroundPosition = 'center'
-            document.body.style.backgroundSize = 'cover'
-            document.body.style.backgroundRepeat = 'no-repeat'
-
-        })
-</script>
-{% endblock %}
-{% block script %}
-<script>
-    const likeButton = document.querySelector('#like-button')
-    likeButton.addEventListener('click', function (event) {
-        console.log(event.target.dataset)
-        axios.defaults.xsrfCookieName = 'csrftoken'
-        axios.defaults.xsrfHeaderName = 'X-CSRFToken'
-        axios.defaults.headers.common['X-REQUESTED-WITH'] = 'XMLHttpRequest'
-        axios.post(`/movies/${event.target.dataset.id}/like/`)
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        axios.get(
+                "https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
+                )
             .then(response => {
-                const likeCount = document.querySelector('#like-count')
-                console.log(response)
-                console.log(event.target)
-                if (response.data.is_liked) {
-                    event.target.classList.remove('far')
-                    event.target.classList.add('fas')
-                } else {
-                    event.target.classList.remove('fas')
-                    event.target.classList.add('far')
-                }
-                likeCount.innerText = response.data.like_count
+                document.body.style.backgroundImage = `url(${response.request.responseURL})`
+                document.body.style.backgroundPosition = 'center'
+                document.body.style.backgroundSize = 'cover'
+                document.body.style.backgroundRepeat = 'no-repeat'
+
             })
-            .catch(error => {
-                console.log(error)
-            })
-    })
-</script>
-{% endblock %}
+    </script>
+    {% endblock %}
+    {% block script %}
+    <script>
+        const likeButton = document.querySelector('#like-button')
+        likeButton.addEventListener('click', function (event) {
+            console.log(event.target.dataset)
+            axios.defaults.xsrfCookieName = 'csrftoken'
+            axios.defaults.xsrfHeaderName = 'X-CSRFToken'
+            axios.defaults.headers.common['X-REQUESTED-WITH'] = 'XMLHttpRequest'
+            axios.post(`/movies/${event.target.dataset.id}/like/`)
+                .then(response => {
+                    const likeCount = document.querySelector('#like-count')
+                    console.log(response)
+                    console.log(event.target)
+                    if (response.data.is_liked) {
+                        event.target.classList.remove('far')
+                        event.target.classList.add('fas')
+                    } else {
+                        event.target.classList.remove('fas')
+                        event.target.classList.add('far')
+                    }
+                    likeCount.innerText = response.data.like_count
+                })
+                .catch(error => {
+                    console.log(error)
+                })
+        })
+    </script>
+    {% endblock %}

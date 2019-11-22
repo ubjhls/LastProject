@@ -121,6 +121,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'LastProject', 'assets')
+]
+
 AUTH_USER_MODEL = 'accounts.User'
 
 LOGIN_URL = '/accounts/login'
