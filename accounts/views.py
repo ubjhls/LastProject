@@ -34,7 +34,7 @@ def signup(request):
 
 def detail(request, user_pk):
     User = get_user_model()
-    user = User.objects.get(pk=user_pk)embed
+    user = User.objects.get(pk=user_pk)
     context = {
         'user_profile' : user,
     }
