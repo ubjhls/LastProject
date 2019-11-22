@@ -15,7 +15,7 @@
 
 <p>내가 작성한 평점 정보 </p>
 {% for review in user_profile.review_set.all %}
-  <p>영화 : {{review.movie.title}} <br> 내용 : {{review.content}} <br> 평점 : {{ review.score }}</p>
+  <p>영화 : {{review.movie.title}} <br> 내용 : {{review.content}} <br> score : {{ review.score }}</p>
 
 {% endfor %}
 <hr>
