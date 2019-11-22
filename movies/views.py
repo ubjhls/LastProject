@@ -45,7 +45,7 @@ def reviewDelete(request, movie_pk,review_pk):
 
 @login_required
 def like(request, movie_pk):
-    movie = Movie.objects.get(pk=movie_pk)
+    movie = get_object_or_404(Movie, pk=movie_pk)
     if request.user in movie.like_users.all():
         movie.like_users.remove(request.user)
     else:
