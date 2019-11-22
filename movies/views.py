@@ -59,6 +59,6 @@ def like(request, movie_pk):
             'is_liked' : is_liked,
             'like_count' : movie.like_users.count()
         }
-        return JsonResponse
+        return JsonResponse(context)
     else:
         return HttpResponseForbidden

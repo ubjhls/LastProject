@@ -3,9 +3,6 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <img src={{movie.poster_url}} width='500px'>
-        </div>
-        <div class="col">
             <h1 style="color:mediumpurple">{{movie.title}} ({{movie.genre.name}})</h1>
             누적관객수 : {{movie.audience}}
             <hr>
@@ -21,8 +18,11 @@
                 {% endif %}
             </form>
             {% endif %}
-
+            
             <p><span id="like-count">{{ movie.like_users.count }}</span>명이 이 글을 좋아합니다. </p>
+        </div>
+        <div class="col">
+            <img src={{movie.poster_url}} width='500px'>
         </div>
     </div>
 
