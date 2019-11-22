@@ -1,47 +1,88 @@
 {% extends 'base.html' %}
 {% block body %}
-    <div>
-        <img src={{movie.poster_url}} width='300px'> <br>
-        제목 : {{movie.title}}<hr>
-        관객수 : {{movie.audience}}<hr>
-        요약 : {{movie.description}}<hr>
-        장르 : {{movie.genre.name}}<hr>
-    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src={{movie.poster_url}} width='500px' > 
+          </div>
+          <div class="col">
+                <h1 style="color:mediumpurple">{{movie.title}} ({{movie.genre.name}})</h1>
+                누적관객수 : {{movie.audience}}<hr>
+                줄거리 : {{movie.description}}<hr>
+                {% if user.is_authenticated %}
+                <form action="{% url 'movies:like_movie' movie.pk %}" method="POST">
+                    {% csrf_token %}
+                    {% if user in movie.like_users.all %}
+                    <i id="like-button" data-id="{{movie.id}}" class="fas fa-thumbs-up " style="color:red"></i>
+                    {% else %}
+                    <i id="like-button" data-id="{{movie.id}}" class="far fa-thumbs-up " style="color:red"></i>
+                    {% endif %}
+                </form>
+                {% endif %}
+                
+                <p>
+                {{ movie.like_users.all.count }} 명이 좋아합니다.
+                </p>
+        </div>
+        </div>
+ 
+<hr>
 
-{% comment %} {% if user.is_authenticated %}
-<form action="{% url 'movies:like_movie' movie.pk %}" method="POST">
-  {% csrf_token %}
-  {% if user in movie.like_users.all %}
-  <input type="submit" value="좋아요 취소">
-  {% else %}
-  <input type="submit" value="좋아요">
-  {% endif %}
-</form>
-{% endif %} {% endcomment %}
 
-{% if user in movie.like_users.all %}
-<i id="like-button" data-id="{{movie.id}}" class="fas fa-heart fa-2x" style="color: red;">좋아요취소</i>
-{% else %}
-<i id="like-button" data-id="{{movie.id}}" class="far fa-heart fa-2x" style="color: red;">좋아요</i>
-{% endif %}
-
-<p>
-{{ movie.like_users.all.count }} 명이 좋아합니다.
-</p>
-
+<h2>한줄평을 작성해주세요</h2>
 {% for review in movie.review_set.all %}
     <p>
-        <hr>작성자: {{review.user}} <br> 점수 : {{review.score}}<br> 내용 :{{review.content}}<br>
+        {{review.user}} ({{review.평점}}점)<br>
+        <form action='reviews/{{review.pk}}/delete' method='POST' onclick="return confirm('삭제하려면 클릭해주세요')"> {{review.한줄평}} {% csrf_token %}<button type="submit" class="btn btn-outline-danger" value="삭제">삭제</button></form>
     </p>
-    <form action='reviews/{{review.pk}}/delete' method='POST'>
-        {% csrf_token %}
-        <input type='submit' value='삭제'>
-        </form>
+        <hr>
 {% endfor %}
-
 <form action="{% url 'movies:review' movie.pk %}" method='POST'>
     {% csrf_token %}
     {{form.as_p}}
     <input type='submit' value='등록'>
 </form>
+
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script>
+      axios.get("https://movie-phinf.pstatic.net/20191121_221/1574298335357mqgLk_JPEG/movie_image.jpg?type=m665_443_2")
+        .then(response => {
+          document.body.style.backgroundImage = `url(${response.request.responseURL})`
+          document.body.style.backgroundPosition = 'center'
+          document.body.style.backgroundSize = 'cover'
+          document.body.style.backgroundRepeat = 'no-repeat'
+
+        })
+</script>
+{% endblock %}
+{% block script %}
+<script>
+    const likeButton = document.querySelector('#like-button')
+    likeButton.addEventListener('click', function(event) {
+        console.log(event.target.dataset)
+        // POST 요청 csrftoekn을 AJAX 요청시 설정하는 법
+        axios.defaults.xsrfCookieName = 'csrftoken'
+        axios.defaults.xsrfHeaderName = 'X-CSRFToken'
+        // django is_ajax() 분기가 되는 기준이 아래의 헤더 설정에 따라서 진행
+        axios.defaults.headers.common['X-REQUESTED-WITH'] = 'XMLHttpRequest'
+        axios.post(`/movies/${event.target.dataset.id}/like/`)
+            .then(response => {
+                const likeCount = document.querySelector('#like-count')
+                console.log(response)
+                console.log(event.target)
+                if(response.data.is_liked) {
+                event.target.classList.remove('far')
+                event.target.classList.add('fas')
+            } else {
+                event.target.classList.remove('fas')
+                event.target.classList.add('far')
+            }
+            likeCount.innerText = response.data.like_count
+            })
+        .catch(error => {
+            console.log(error)
+        })
+    })
+</script>
 {% endblock %}

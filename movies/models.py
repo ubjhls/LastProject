@@ -19,8 +19,8 @@ class Movie(models.Model):
         )
 
 class Review(models.Model):
-    content = models.CharField(max_length=100)
-    score = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(10)])
+    한줄평 = models.CharField(max_length=100)
+    평점 = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(10)])
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 
