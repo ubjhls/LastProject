@@ -27,11 +27,11 @@
 <hr>
 
 
-<h2>한줄평을 작성해주세요</h2>
+<h2>content을 작성해주세요</h2>
 {% for review in movie.review_set.all %}
     <p>
-        {{review.user}} ({{review.평점}}점)<br>
-        <form action='reviews/{{review.pk}}/delete' method='POST' onclick="return confirm('삭제하려면 클릭해주세요')"> {{review.한줄평}} {% csrf_token %}<button type="submit" class="btn btn-outline-danger" value="삭제">삭제</button></form>
+        {{review.user}} ({{review.score}}점)<br>
+        <form action='reviews/{{review.pk}}/delete' method='POST' onclick="return confirm('삭제하려면 클릭해주세요')"> {{review.content}} {% csrf_token %}<button type="submit" class="btn btn-outline-danger" value="삭제">삭제</button></form>
     </p>
         <hr>
 {% endfor %}
