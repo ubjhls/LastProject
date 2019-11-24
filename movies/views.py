@@ -78,4 +78,4 @@ def search(request):
         }
         return render(request,'movies/search.html',context)
     else:
-        return redirect('movies:index')
+        return redirect('movies:index') 
