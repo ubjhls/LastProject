@@ -4,6 +4,9 @@ from .forms import ReviewForm
 from django.views.decorators.http import require_POST
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseForbidden,HttpResponse,JsonResponse
+from django.db.models import Max 
+
+
 # Create your views here.
 def index(request):
     movies = Movie.objects.all()
@@ -62,3 +65,11 @@ def like(request, movie_pk):
         return JsonResponse(context)
     else:
         return HttpResponseForbidden
+
+
+def recommand(request):
+    movie = Review.objects.all()
+    context = {
+        'max_movie' : movie
+    }
+    return render(request,'movies/recommand.html',context)

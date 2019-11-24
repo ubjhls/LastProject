@@ -23,5 +23,7 @@ class Review(models.Model):
     score = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(10)], verbose_name='평점')
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    class Meta:
+        ordering = ['-score']
 
 

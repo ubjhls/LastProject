@@ -4,14 +4,8 @@
 <div class="btn-group" role="group" aria-label="Basic example">
   <button type="button" class="btn btn-secondary">인기 영화</button>
   <button type="button" class="btn btn-secondary">유저 추천 영화</button>
-  <button type="button" class="btn btn-secondary"><a class="btn btn-secondary" href="{% url 'movies:recommand' %}">평점순</a></button>
+  <button type="button" class="btn btn-secondary">평점순</button>
 </div>
 <hr>
-
-    {% for movie in movies %}
-    <a href="{% url 'movies:detail' movie.pk %}">
-    <img src={{movie.poster_url}} width='300px'>
-    </a>
-    {% endfor %}
-</div>
+  <p>{{max_movie}}</p>
 {% endblock %}
