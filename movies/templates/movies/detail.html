@@ -1,97 +1,149 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'detail/detail.css' %}">
+<link href="https://fonts.googleapis.com/css?family=Gugi&display=swap" rel="stylesheet">
+
+{% endblock %}
 {% block body %}
 <div class="container" style="text-align:center">
-    <div class="row" style="margin-top:1rem">
-        <div class="col" style="text-align:center">
-            <img src={{movie.poster_url}} width='400px'>
-        </div>
-
-        <div class="card col" style="width: 18rem;">
-            <div class="card-body">
-                <h1 class="card-title">{{movie.title}} ({{movie.genre.name}})</h1>
-                <h6 class="card-subtitle mb-2 text-muted">누적 관객수: {{movie.audience}}</h6><br>
-                <h3 class="card-subtitle mb-2">줄거리</h3>
-                <hr>
-                <p class="card-text">{{movie.description}}</p>
-                <hr>
-                {% if user.is_authenticated %}
-                <form action="{% url 'movies:like_movie' movie.pk %}" method="POST">
-                    {% csrf_token %}
-                    {% if user in movie.like_users.all %}
-                    <i id="like-button" data-id="{{movie.id}}" class="fas fa-thumbs-up " style="color:red"></i>
-                    {% else %}
-                    <i id="like-button" data-id="{{movie.id}}" class="far fa-thumbs-up " style="color:red"></i>
-                    {% endif %}
-                </form>
-                {% endif %}
-                <p><span id="like-count">{{ movie.like_users.count }}</span>명이 이 글을 좋아합니다. </p>
-            </div>
-        </div>
+  <div class="row" style="margin-top:1rem">
+    <div class="col" style="text-align:center">
+      <img src={{movie.poster_url}} width='400px'>
     </div>
-    <hr>
 
-
-    <hr>
-
-    <h2>평점을 작성해주세요</h2>
-    {% for review in movie.review_set.all %}
-    <p>
-        {{review.user}} ({{review.score}}점)<br>
-        <form action='reviews/{{review.pk}}/delete' method='POST'>
-            {{review.content}}
-            {% csrf_token %}
-            <input class="btn btn-outline-danger" type="submit" value="삭제" onclick="return confirm('삭제하려면 클릭해주세요')">
+    <div class="card col" style="width: 18rem;">
+      <div class="card-body">
+        <h1 class="card-title">{{movie.title}} ({{movie.genre.name}})</h1>
+        <h6 class="card-subtitle mb-2 text-muted">누적 관객수: {{movie.audience}}</h6><br>
+        <h3 class="card-subtitle mb-2">줄거리</h3>
+        <hr>
+        <p class="card-text">{{movie.description}}</p>
+        <hr>
+        {% if user.is_authenticated %}
+        <form action="{% url 'movies:like_movie' movie.pk %}" method="POST">
+          {% csrf_token %}
+          {% if user in movie.like_users.all %}
+          <i id="like-button" data-id="{{movie.id}}" class="fas fa-thumbs-up " style="color:red"></i>
+          {% else %}
+          <i id="like-button" data-id="{{movie.id}}" class="far fa-thumbs-up " style="color:red"></i>
+          {% endif %}
         </form>
+        {% endif %}
+        <p><span id="like-count">{{ movie.like_users.count }}</span>명이 이 글을 좋아합니다. </p>
+      </div>
+    </div>
+  </div>
+  <hr>
 
-    </p>
-    <hr>
-    {% endfor %}
-    <form action="{% url 'movies:review' movie.pk %}" method='POST'>
-        {% csrf_token %}
-        {{form.as_p}}
-        <input class="btn btn-outline-primary" type='submit' value='등록'>
+
+  <hr>
+
+  <h2>평점을 작성해주세요</h2>
+  {% for review in movie.review_set.all %}
+  <p>
+    {{review.user}} ({{review.score}}점)<br>
+    <form action='reviews/{{review.pk}}/delete' method='POST'>
+      {{review.content}}
+      {% csrf_token %}
+      <input class="btn btn-outline-danger" type="submit" value="삭제" onclick="return confirm('삭제하려면 클릭해주세요')">
     </form>
 
+  </p>
+  <hr>
+  {% endfor %}
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script>
-        axios.get(
-                "https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
-                )
-            .then(response => {
-                document.body.style.backgroundImage = `url(${response.request.responseURL})`
-                document.body.style.backgroundPosition = 'center'
-                document.body.style.backgroundSize = 'cover'
-                document.body.style.backgroundRepeat = 'no-repeat'
 
-            })
-    </script>
-    {% endblock %}
-    {% block script %}
-    <script>
-        const likeButton = document.querySelector('#like-button')
-        likeButton.addEventListener('click', function (event) {
-            console.log(event.target.dataset)
-            axios.defaults.xsrfCookieName = 'csrftoken'
-            axios.defaults.xsrfHeaderName = 'X-CSRFToken'
-            axios.defaults.headers.common['X-REQUESTED-WITH'] = 'XMLHttpRequest'
-            axios.post(`/movies/${event.target.dataset.id}/like/`)
-                .then(response => {
-                    const likeCount = document.querySelector('#like-count')
-                    console.log(response)
-                    console.log(event.target)
-                    if (response.data.is_liked) {
-                        event.target.classList.remove('far')
-                        event.target.classList.add('fas')
-                    } else {
-                        event.target.classList.remove('fas')
-                        event.target.classList.add('far')
-                    }
-                    likeCount.innerText = response.data.like_count
-                })
-                .catch(error => {
-                    console.log(error)
-                })
+  <hr>
+
+  <form action="{% url 'movies:review' movie.pk %}" method='POST'>
+    {% csrf_token %}
+    <input value="{{review.content}}" name="content" type="text">
+    <span class="score">
+      <span class="input">
+        <input type="radio" name="score" value="2" id="p1">
+        <label for="p1">1</label>
+        <input type="radio" name="score" value="1" id="p1_5">
+        <label for="p1_5">0.5</label>
+        <input type="radio" name="score" value="4" id="p2">
+        <label for="p2">2</label>
+        <input type="radio" name="score" value="3" id="p2_5">
+        <label for="p2_5">1.5</label>
+        <input type="radio" name="score" value="6" id="p3">
+        <label for="p3">3</label>
+        <input type="radio" name="score" value="5" id="p_3_5">
+        <label for="p3_5">2.5</label>
+        <input type="radio" name="score" value="8" id="p4">
+        <label for="p4">4</label>
+        <input type="radio" name="score" value="7" id="p4_5">
+        <label for="p4_5">3.5</label>
+        <input type="radio" name="score" value="10" id="p5">
+        <label for="p5">5</label>
+        <input type="radio" name="score" value="9" id="p5_5">
+        <label for="p5_5">4.5</label>
+      </span>
+      <output for="score"><b>0</b>점</output>
+    </span>
+    <!-- <div class="starRev">
+        <span class="starR1 on">별1_왼쪽</span>
+        <span class="starR2">별1_오른쪽</span>
+        <span class="starR1">별2_왼쪽</span>
+        <span class="starR2">별2_오른쪽</span>
+        <span class="starR1">별3_왼쪽</span>
+        <span class="starR2">별3_오른쪽</span>
+        <span class="starR1">별4_왼쪽</span>
+        <span class="starR2">별4_오른쪽</span>
+        <span class="starR1">별5_왼쪽</span>
+        <span class="starR2">별5_오른쪽</span>
+      </div> -->
+    <input class="btn btn-outline-primary" type='submit' value='등록'>
+  </form>
+
+  <script src="{% static 'detail/jquery.js' %}"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script>
+    axios.get(
+        "https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
+      )
+      .then(response => {
+        document.body.style.backgroundImage = `url(${response.request.responseURL})`
+        document.body.style.backgroundPosition = 'center'
+        document.body.style.backgroundSize = 'cover'
+        document.body.style.backgroundRepeat = 'no-repeat'
+
+      })
+  </script>
+  {% block script %}
+  <script>
+    const likeButton = document.querySelector('#like-button')
+    likeButton.addEventListener('click', function (event) {
+      console.log(event.target.dataset)
+      axios.defaults.xsrfCookieName = 'csrftoken'
+      axios.defaults.xsrfHeaderName = 'X-CSRFToken'
+      axios.defaults.headers.common['X-REQUESTED-WITH'] = 'XMLHttpRequest'
+      axios.post(`/movies/${event.target.dataset.id}/like/`)
+        .then(response => {
+          const likeCount = document.querySelector('#like-count')
+          console.log(response)
+          console.log(event.target)
+          if (response.data.is_liked) {
+            event.target.classList.remove('far')
+            event.target.classList.add('fas')
+          } else {
+            event.target.classList.remove('fas')
+            event.target.classList.add('far')
+          }
+          likeCount.innerText = response.data.like_count
         })
-    </script>
-    {% endblock %}
+        .catch(error => {
+          console.log(error)
+        })
+    })
+    $('.starRev span').click(function () {
+      $(this).parent().children('span').removeClass('on');
+      $(this).addClass('on').prevAll('span').addClass('on');
+      return false;
+    });
+  </script>
+  {% endblock %}
+  {% endblock %}
