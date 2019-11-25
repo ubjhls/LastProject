@@ -24,7 +24,7 @@
         <form action="{% url 'movies:like_movie' movie.pk %}" method="POST">
           {% csrf_token %}
           {% if user in movie.like_users.all %}
-          <i id="like-button" data-id="{{movie.id}}" class="fas fa-thumbs-up " style="color:red"></i>
+          <i id="like-button" data-id="{{movie.id}}" class="fas fa-thumbs-up " style="color:red; width:40px"></i>
           {% else %}
           <i id="like-button" data-id="{{movie.id}}" class="far fa-thumbs-up " style="color:red"></i>
           {% endif %}
@@ -84,7 +84,6 @@
         <input type="radio" name="score" value="9" id="p5_5">
         <label for="p5_5">4.5</label>
       </span>
-      <output for="score"><b>0</b>점</output>
     </span>
     <!-- <div class="starRev">
         <span class="starR1 on">별1_왼쪽</span>

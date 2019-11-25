@@ -12,8 +12,10 @@ from django.db.models import Avg
 # Create your views here.
 def index(request):
     movies = Movie.objects.all()
+    index_movies = Movie.objects.order_by('-pk')[:10]
     context = {
-        'movies': movies
+        'movies': movies,
+        'index_movies': index_movies
     }
     return render(request,'movies/index.html',context)
 
@@ -22,16 +24,18 @@ def detail(request,movie_pk):
     reviewform = ReviewForm()
     avg_score = 0
     reviews = Review.objects.filter(movie_id=movie_pk)
+    
     for review in reviews:
         avg_score += review.score
     if reviews.count() > 0:
         avg_score /= reviews.count()
+        avg_score = round(avg_score, 2)
     else:
-        avg_score = "평점 정보가 없습니다."
+        avg_score = 0
     context = {
         'movie' : movie,   
         'form' : reviewform,
-        'avg_score': avg_score
+        'avg_score': avg_score,
     }
     return render(request,'movies/detail.html', context)
 
