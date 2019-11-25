@@ -8,6 +8,7 @@
 {% block body %}
 
 <h1>제목으로 검색</h1>
+<div class="row">
 {% for movie in title_movies %}
 <figure class="snip1273">
     <img src="{{movie.poster_url}}" alt="sample84"></a>
@@ -19,13 +20,21 @@
 <hr>
 <p>{{movie.des_movies}}</p>
 {% endfor %}
+</div>
+
 <h1>내용으로 검색</h1>
+<div class="row">
 {% for movie in des_movies %}
-<a href="{% url 'movies:detail' movie.id %}"><img src="{{movie.poster_url}}" alt="sample84" width="150px"></a><br>
-{{ movie.title }}
-<hr>
+<figure class="snip1273">
+    <img src="{{movie.poster_url}}" alt="sample84"></a>
+    <figcaption>
+        <h3>{{movie.title}}</h3>
+    </figcaption>
+    <a href="{% url 'movies:detail' movie.id %}"></a>
+</figure>
 <p>{{movie.des_movies}}</p>
 {% endfor %}
+</div>
 <script>
 /* Demo purposes only */
 $(".hover").mouseleave(
