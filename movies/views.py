@@ -7,6 +7,7 @@ from django.http import HttpResponseForbidden,HttpResponse,JsonResponse
 import requests
 from django.core import serializers
 import pprint
+from django.db.models import Avg
 
 # Create your views here.
 def index(request):
@@ -78,7 +79,7 @@ def search(request):
     query = request.GET.get('search_title')
     if query:
         title_movies = Movie.objects.filter(title__icontains=query)
-        description_movies = Movie.objects.filter(description__contains=query)
+        description_movies = Movie.objects.filter(description__icontains=query)
         des_movies = description_movies.difference(title_movies)
         context = {
             "title_movies" : title_movies,
@@ -86,4 +87,4 @@ def search(request):
         }
         return render(request,'movies/search.html',context)
     else:
-        return redirect('movies:index') 
+        return redirect('movies:index')
