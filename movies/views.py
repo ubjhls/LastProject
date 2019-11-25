@@ -4,8 +4,9 @@ from .forms import ReviewForm
 from django.views.decorators.http import require_POST
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseForbidden,HttpResponse,JsonResponse
-from django.db.models import Max 
-
+import requests
+from django.core import serializers
+import pprint
 
 # Create your views here.
 def index(request):
@@ -73,3 +74,16 @@ def recommand(request):
         'max_movie' : movie
     }
     return render(request,'movies/recommand.html',context)
+def search(request):
+    query = request.GET.get('search_title')
+    if query:
+        title_movies = Movie.objects.filter(title__icontains=query)
+        description_movies = Movie.objects.filter(description__contains=query)
+        des_movies = description_movies.difference(title_movies)
+        context = {
+            "title_movies" : title_movies,
+            "des_movies" : des_movies
+        }
+        return render(request,'movies/search.html',context)
+    else:
+        return redirect('movies:index') 
