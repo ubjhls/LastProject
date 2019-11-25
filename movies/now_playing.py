@@ -24,11 +24,11 @@ for movie in movie_list:
             'title': response['title'],
             'poster_url': f"https://image.tmdb.org/t/p/w500{response['poster_path']}",
             'description': response['overview'],
-            'genre_id': response['genres']
+            'genre_id': response['genres'][0]['id']
         }
     }
     movie_info.append(new_movie)
 
 pprint.pprint(movie_info)
-with open('movies/fixtures/movie_list.json', 'w', encoding='utf-8') as f:
+with open('movies/fixtures/movie.json', 'w', encoding='utf-8') as f:
     json.dump(movie_info, f, ensure_ascii=False, indent="\t")

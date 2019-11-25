@@ -8,7 +8,7 @@ class Genre(models.Model):
 
 class Movie(models.Model):
     title = models.CharField(max_length=40)
-    audience = models.IntegerField()
+    # audience = models.IntegerField()
     poster_url = models.CharField(max_length=100)
     description =  models.TextField()
     genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
