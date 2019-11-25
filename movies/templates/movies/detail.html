@@ -24,7 +24,7 @@
         <form action="{% url 'movies:like_movie' movie.pk %}" method="POST">
           {% csrf_token %}
           {% if user in movie.like_users.all %}
-          <i id="like-button" data-id="{{movie.id}}" class="fas fa-thumbs-up " style="color:red"></i>
+          <i id="like-button" data-id="{{movie.id}}" class="fas fa-thumbs-up " style="color:red; width:40px"></i>
           {% else %}
           <i id="like-button" data-id="{{movie.id}}" class="far fa-thumbs-up " style="color:red"></i>
           {% endif %}

@@ -5,7 +5,7 @@ from django.contrib.auth.forms import UserCreationForm,AuthenticationForm
 from .forms import CustomUserCreationForm, LoginForm
 from django.contrib.auth import login as django_login, logout as django_logout, authenticate
 from django.contrib.auth import logout as auth_logout
-
+from django.contrib.auth import login as auth_login
 from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
 

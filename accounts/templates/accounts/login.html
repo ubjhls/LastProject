@@ -32,8 +32,9 @@
       <button class="btn btn-primary btn-block" style='height:50px'>로그인</button>
     </form>
     <div class="wrap_btn" style="margin-top:20px">
-      <button class="btn_g btn_confirm submit" type="button" tabindex="3">카카오로그인</button>
+      <button class="btn_g btn_confirm submit" type="button" tabindex="3"  onclick="location.href=`{% provider_login_url 'kakao' %}` ">카카오로그인</button>
     </div>
+    
   </div>
   <div class="col col-lg-2">
   </div>
