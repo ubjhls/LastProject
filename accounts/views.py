@@ -2,9 +2,10 @@ from django.shortcuts import render
 from django.shortcuts import render,redirect, get_object_or_404
 from .models import User
 from django.contrib.auth.forms import UserCreationForm,AuthenticationForm
-from .forms import CustomUserCreationForm
-from django.contrib.auth import login as auth_login
+from .forms import CustomUserCreationForm, LoginForm
+from django.contrib.auth import login as django_login, logout as django_logout, authenticate
 from django.contrib.auth import logout as auth_logout
+
 from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
 
@@ -43,17 +44,27 @@ def detail(request, user_pk):
 
 def login(request):
     if request.method == 'POST':
-        form = AuthenticationForm(request, request.POST)
-        if form.is_valid():
-            user = form.get_user()
-            auth_login(request,user)
-            return redirect('movies:index')
+        login_form = LoginForm(request.POST)
+        if login_form.is_valid():
+            username = login_form.cleaned_data['username']
+            password = login_form.cleaned_data['password']
+            user = authenticate(
+                username=username,
+                password=password
+            )
+
+            if user:
+                django_login(request, user)
+                return redirect('movies:index')
+            login_form.add_error(None, '아이디 또는 비밀번호가 올바르지 않습니다')
     else:
-        form = AuthenticationForm()
+        login_form = LoginForm()
     context = {
-        'form': form
+        'login_form': login_form,
     }
-    return render(request,'accounts/login.html', context)
+    return render(request, 'accounts/login.html', context)
+
+
 
 def logout(request):
     auth_logout(request)

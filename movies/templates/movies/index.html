@@ -20,9 +20,9 @@
   <div id="spin-container">
     <!-- Add your images (or video) here -->
     {% for movie in movies %}
-      <a href="{% url 'movies:detail' movie.pk %}"><img src="{{movie.poster_url}}" alt="sample84" />
+      <a href="{% url 'movies:detail' movie.pk %}"><img src="{{movie.poster_url}}">
     {% endfor %}
-
+        <a href=#></a>
   </div>
   <div id="ground"></div>
 </div>
