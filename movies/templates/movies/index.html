@@ -20,7 +20,7 @@
   <div id="spin-container">
     <!-- Add your images (or video) here -->
     {% for movie in movies %}
-    {% if movie.pk <= 10 %}
+    {% if movie.pk <= 300 %}
       <a href="{% url 'movies:detail' movie.pk %}"><img src="{{movie.poster_url}}" alt="sample84" />
     {% endif %}
     {% endfor %}
