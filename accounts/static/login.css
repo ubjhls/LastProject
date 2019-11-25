@@ -1,0 +1,21 @@
+body, th, td, input, select, textarea, button {
+    line-height: 1.5;
+    font-family: NotoSans-Regular,AppleSDGothicNeo-Regular,"맑은 고딕",Malgun Gothic,"돋움",dotum,sans-serif;
+    letter-spacing: -0.03em;
+    word-wrap: break-word;
+}
+
+.wrap_btn .btn_confirm {
+  color: #252525;
+  background-color: #ffe500;
+}
+
+.wrap_btn .btn_g {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  font-size: 15px;
+}

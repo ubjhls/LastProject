@@ -39,6 +39,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # all-auth
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.kakao',
+    # all-auth end
+    'django_extensions',
+    'bootstrap4',
+
 ]
 
 MIDDLEWARE = [
@@ -123,9 +133,16 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'LastProject', 'assets'),
-    os.path.join(BASE_DIR, 'movies')
+    os.path.join(BASE_DIR, 'movies'),
+    os.path.join(BASE_DIR, 'accounts')
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
 
 LOGIN_URL = '/accounts/login'
+
+AUTHENTICATION_BACKENDS = (
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
+SITE_ID = 1 # 'django.contrib.sites -> SITE_ID 부여
+LOGIN_REDIRECT_URL = '/movies/'
