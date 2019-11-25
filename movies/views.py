@@ -12,7 +12,7 @@ from django.db.models import Avg
 # Create your views here.
 def index(request):
     movies = Movie.objects.all()
-    index_movies = Movie.objects.order_by('-pk')[:10]
+    index_movies = Movie.objects.filter(movie_type="now_playing").order_by('-popularity')[:10]
     context = {
         'movies': movies,
         'index_movies': index_movies
