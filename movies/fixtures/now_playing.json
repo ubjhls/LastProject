@@ -1,0 +1,3002 @@
+[
+	{
+		"pk": 330457,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "겨울왕국 2",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/8S2AFd8DF539pxdn7TCIDqXlwRA.jpg",
+			"description": "어느 날 부턴가 의문의 목소리가 엘사를 부르고, 평화로운 아렌델 왕국을 위협한다. 트롤은 모든 것은 과거에서 시작되었음을 알려주며 엘사의 힘의 비밀과 진실을 찾아 떠나야한다고 조언한다. 위험에 빠진 아렌델 왕국을 구해야만 하는 엘사와 안나는 숨겨진 과거의 진실을 찾아 크리스토프, 올라프 그리고 스벤과 함께 위험천만한 놀라운 모험을 떠나게 된다. 자신의 힘을 두려워했던 엘사는 이제 이 모험을 헤쳐나가기에 자신의 힘이 충분하다고 믿어야만 하는데…",
+			"genre_id": 12,
+			"video_link": "https://www.youtube.com/watch?v=3WUw9thZR4k",
+			"popularity": 435.669,
+			"vote_average": 6.9,
+			"back_image": "/xJWPZIYOEFIjZpBL7SVBGnzRYXp.jpg"
+		}
+	},
+	{
+		"pk": 475557,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "조커",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/wrCwH6WOvXQvVuqcKNUrLDCDxdw.jpg",
+			"description": "홀어머니와 사는 아서 플렉(호아킨 피닉스)은 코미디언을 꿈꾸지만 그의 삶은 좌절과 절망으로 가득 차 있다. 광대 아르바이트는 그에게 모욕을 가져다주기 일쑤고, 긴장하면 웃음을 통제할 수 없는 신경병 증세는 그를 더욱 고립시킨다. 정부 예산 긴축으로 인해 정신과 약물을 지원하던 공공의료 서비스마저 없어져 버린 어느 날, 아서는 지하철에서 시비를 걸어온 증권사 직원들에게 얻어맞던 와중에 동료가 건네준 권총으로 그들을 쏴 버리고 만다. 군중들은 지배계급에 대한 저항의 아이콘이 된 그를 추종하기 시작하며 광대 마스크로 얼굴을 가리고 거리로 쏟아져 나오기 시작하는데...",
+			"genre_id": 80,
+			"video_link": "https://www.youtube.com/watch?v=5jKxSmqWyP8",
+			"popularity": 269.734,
+			"vote_average": 8.4,
+			"back_image": "/n6bUvigpRFqSwmPp1m2YADdbRBc.jpg"
+		}
+	},
+	{
+		"pk": 290859,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "터미네이터: 다크 페이트",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/nIoDNiWWOtCFdJRi89aFI98cdj0.jpg",
+			"description": "심판의 날 그 후, 뒤바뀐 미래. 새로운 인류의 희망 ‘대니’를 지키기 위해 슈퍼 솔져 ‘그레이스’가 미래에서 찾아오고, ‘대니’를 제거하기 위한 터미네이터 ‘Rev-9’의 추격이 시작된다.  최첨단 기술력으로 무장한 최강의 적 터미네이터 ‘Rev-9’의 무차별적인 공격에 쫓기기 시작하던 ‘그레이스’와 ‘대니’ 앞에 터미네이터 헌터 ‘사라 코너’가 나타나 도움을 준다. 인류의 수호자이자 기계로 강화된 슈퍼 솔져 ‘그레이스’와 ‘사라 코너’는 ‘대니’를 지키기 위해 새로운 조력자를 찾아 나서고, 터미네이터 ‘Rev-9’은 그들의 뒤를 끈질기게 추격하는데...",
+			"genre_id": 28,
+			"video_link": "https://www.youtube.com/watch?v=eE4GPPnG1Mw",
+			"popularity": 180.963,
+			"vote_average": 6.3,
+			"back_image": "/riTANvQ8GKmQbgtC1ps3OfkU43A.jpg"
+		}
+	},
+	{
+		"pk": 474350,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "그것: 두 번째 이야기",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/kkkS7NYPY4QZcZY6vfkAx0vjJRa.jpg",
+			"description": "27년마다 아이들이 사라지는 마을 데리, 또 다시 ‘그것’이 나타났다. 27년 전, 가장 무서워하는 것의 모습으로 나타나 아이들을 잡아먹는 그것 페니와이즈에 맞섰던 ‘루저 클럽’ 친구들은 어른이 되어도 더 커져만 가는 그것의 공포를 끝내기 위해 피할 수 없는 마지막 대결에 나선다.",
+			"genre_id": 27,
+			"video_link": "https://www.youtube.com/watch?v=CBxQdsfreSU",
+			"popularity": 166.693,
+			"vote_average": 6.8,
+			"back_image": "/8moTOzunF7p40oR5XhlDvJckOSW.jpg"
+		}
+	},
+	{
+		"pk": 568012,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "원피스 : 스탬피드",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/suPfemWGPk8xOePePITOhg1C5EP.jpg",
+			"description": "해적의 해적에 의한 해적을 위한 세계 최고의 축제, 해적 박람회! 축제꾼이라 불리는 박람회의 주최자 '브에나 페스타'에게 초대장을 받은 밀짚모자 일당. 박람회에 들어서니 화려한 파빌리온이 즐비해있고, 최악의 세대를 비롯한 많은 해적들이 몰려들어 흥을 돋우고 있었다. 박람회의 빅 이벤트는 해적왕 로저가 남긴 보물 찾기! 보물을 손에 넣고 이름을 날리고 싶은 해적들의 보물 쟁탈전이 시작된다!",
+			"genre_id": 16,
+			"video_link": "https://www.youtube.com/watch?v=5NQxsLR8bwc",
+			"popularity": 151.644,
+			"vote_average": 7.4,
+			"back_image": "/iGnCzXEx0cFlUbpyAMeHwHWhPhx.jpg"
+		}
+	},
+	{
+		"pk": 453405,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "제미니 맨",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/avT0fOGqsu5ctQVhWv3FvWwzxgV.jpg",
+			"description": "최강의 요원 헨리(윌 스미스)는 자신과 완벽하게 닮은 의문의 요원(윌 스미스)에게 맹렬한 추격을 당한다. 한편 헨리와 이제 막 동료가 된 대니(메리 엘리자베스 윈스티드), 헨리의 오랜 동료 배런(베네딕트 웡)은 의문의 요원에게 이상한 낌새를 느끼고 정체를 파헤치기 시작하고, 그가 헨리의 DNA를 추출해 탄생한 ‘제미니 프로젝트’ 요원임을 알게 된다. 헨리의 전성기와 너무나 완벽하게 닮은 한 사람을 만나 충격에 빠지는 헨리와 동료들. 그들은 ‘제미니 프로젝트’를 파괴하기 위한 작전을 시작하는데…",
+			"genre_id": 28,
+			"video_link": "https://www.youtube.com/watch?v=ACPkdwESgfI",
+			"popularity": 149.472,
+			"vote_average": 5.7,
+			"back_image": "/c3F4P2oauA7IQmy4hM0OmRt2W7d.jpg"
+		}
+	},
+	{
+		"pk": 423204,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "엔젤 해즈 폴른",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/fxMT7ex1n89UJIPWEO8wtLVbFfw.jpg",
+			"description": "비밀 경호국 최고 요원 ‘배닝’(제라드 버틀러)의 엄호 중 '트럼불' 대통령(모건 프리먼)을 향한 초대형 규모의 드론 테러가 발생한다. 가까스로 대통령을 구하고 유일하게 살아남은 '배닝'은 완벽히 조작된 음모에 의해 대통령 암살사건의 테러범으로 지목되고, 국가 영웅은 한순간에 일급 수배자가 되어 FBI에게 쫓기게 되는데...",
+			"genre_id": 28,
+			"video_link": "https://www.youtube.com/watch?v=ZcQ1lini5Rw",
+			"popularity": 133.409,
+			"vote_average": 5.8,
+			"back_image": "/k2WyDw2NTUIWnuEs5gT7wgrCQg6.jpg"
+		}
+	},
+	{
+		"pk": 458897,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "미녀 삼총사",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/r5WnfZPYAVhBA9FuZGn6THWaGHD.jpg",
+			"description": "",
+			"genre_id": 28,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 122.323,
+			"vote_average": 6.2,
+			"back_image": "/a0xTB1vBxMGt6LGG4N7k1wO9lfL.jpg"
+		}
+	},
+	{
+		"pk": 359724,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "포드 V 페라리",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/ok4jQwrA54NGuw0qyGgVGCVe9H.jpg",
+			"description": "1960년대, 매출 감소에 빠진 ‘포드’는 판매 활로를 찾기 위해 스포츠카 레이스를 장악한 절대적 1위 ‘페라리’와의 인수 합병을 추진한다. 막대한 자금력에도 불구, 계약에 실패하고 엔초 페라리로부터 모욕까지 당한 헨리 포드 2세는 르망 24시간 레이스에서 페라리를 박살 낼 차를 만들 것을 지시한다. 세계 3대 자동차 레이싱 대회이자 ‘지옥의 레이스’로 불리는 르망 24시간 레이스. 출전 경험조차 없는 ‘포드’는 대회 6연패를 차지한 ‘페라리’에 대항하기 위해 르망 레이스 우승자 출신 자동차 디자이너 ‘캐롤 셸비’(맷 데이먼)를 고용하고, 그는 누구와도 타협하지 않지만 열정과 실력만큼은 최고인 레이서 ‘켄 마일스’(크리스찬 베일)를 자신의 파트너로 영입한다. 포드의 경영진은 제 멋대로인 ‘켄 마일스’를 눈엣가시처럼 여기며 자신들의 입맛에 맞춘 레이스를 펼치기를 강요하지만 두 사람은 어떤 간섭에도 굴하지 않고 불가능을 뛰어넘기 위한 질주를 시작하는데…",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/watch?v=k6uo3eHbGUI",
+			"popularity": 98.487,
+			"vote_average": 8.0,
+			"back_image": "/n3UanIvmnBlH531pykuzNs4LbH6.jpg"
+		}
+	},
+	{
+		"pk": 508965,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "클라우스",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/1mtsyXMbMdaC5Oc1Jqy8pD0xZLA.jpg",
+			"description": "공기도 인심도 꽁꽁 얼어붙은 마을. 활기 넘치는 젊은 우체부와 세상을 등지고 장난감을 만드는 목수. 작은 장난감 선물로 냉기가 사라질 수 있을까. 전혀 어울리지 않는 둘의 우정이 차디찬 세상에 온기를 불어넣는다. 《슈퍼배드》 작가의 산타 탄생 이야기.",
+			"genre_id": 16,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 83.866,
+			"vote_average": 8.5,
+			"back_image": "/mlxKite1x1PgmIhJgAxNS9eHmH8.jpg"
+		}
+	},
+	{
+		"pk": 559969,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "브레이킹 배드 무비: 엘 카미노",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/ePXuKdXZuJx8hHMNr2yM4jY2L7Z.jpg",
+			"description": "도망자로 돌아온 제시 핑크맨. 범죄로부터, 과거로부터, 그는 달아나야만 한다. 《브레이킹 배드》의 제작자 빈스 길리건이 각본과 연출을 맡은 영화. 에런 폴이 출연한다.",
+			"genre_id": 80,
+			"video_link": "https://www.youtube.com/watch?v=zVEMxQpC7Ok",
+			"popularity": 82.484,
+			"vote_average": 7.0,
+			"back_image": "/ijiE9WoGSwSzM16zTxvUneJ8RXc.jpg"
+		}
+	},
+	{
+		"pk": 420809,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "말레피센트 2",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/btpvGjqLBHgRnobKGlzbBD4jzmf.jpg",
+			"description": "강력한 어둠의 요정이자 무어스 숲의 수호자 ‘말레피센트’가 딸처럼 돌봐온 ‘오로라’와 필립 왕자의 결혼 약속으로 인간 왕국의 ‘잉그리스 왕비’와 대립하게 되고 이에 요정과 인간의 연합이 깨지면서 벌어지는 거대한 전쟁을 그린 판타지 블록버스터",
+			"genre_id": 14,
+			"video_link": "https://www.youtube.com/watch?v=uhVrmXrhqZY",
+			"popularity": 68.351,
+			"vote_average": 7.2,
+			"back_image": "/skvI4rYFrKXS73BJxWGH54Omlvv.jpg"
+		}
+	},
+	{
+		"pk": 522938,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "람보: 라스트 워",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/5f1hwyCxTjOUnrT23n6skqQeUD9.jpg",
+			"description": "36년간 수많은 전쟁터의 중심에서 치열하게 싸운 '존 람보'. 지옥 같은 전쟁 트라우마에서 벗어나 평화로운 시간을 보내는 것도 잠시, 딸처럼 여겼던 옆집 소녀가 멕시코 카르텔에게 납치된다. ‘람보’는 자신의 전투 본능과 살인 무기를 총동원해 자비 없이 적들을 처단하기 시작하는데...",
+			"genre_id": 28,
+			"video_link": "https://www.youtube.com/watch?v=aVDBL8k-nJk",
+			"popularity": 61.314,
+			"vote_average": 5.9,
+			"back_image": "/spYx9XQFODuqEVoPpvaJI1ksAVt.jpg"
+		}
+	},
+	{
+		"pk": 567609,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "레디 오어 낫",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/vOl6shtL0wknjaIs6JdKCpcHvg8.jpg",
+			"description": "결혼 첫 날 밤, 시댁의 (이상한) 전통에 따라 살인 숨바꼭질을 하게 된 새 신부의 이야기",
+			"genre_id": 27,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 84.722,
+			"vote_average": 6.8,
+			"back_image": "/j8uPZSPjKYzHlN2B4NhPQVWWZ5x.jpg"
+		}
+	},
+	{
+		"pk": 496243,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "기생충",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/tcmj4YQ6p79OD8ECpRAbV8Yjk0c.jpg",
+			"description": "전원 백수로 살 길 막막하지만 사이는 좋은 기택(송강호) 가족. 장남 기우(최우식)에게 명문대생 친구가 연결시켜 준 고액 과외 자리는 모처럼 싹튼 고정수입의 희망이다. 온 가족의 도움과 기대 속에 박 사장(이선균) 집으로 향하는 기우. 글로벌 IT기업의 CEO인 박 사장의 저택에 도착하자 젊고 아름다운 사모님 연교(조여정)와 가정부 충숙(장혜진)이 기우를 맞이한다. 큰 문제 없이 박 사장의 딸 다혜(정지소)의 과외를 시작한 기우. 그러나 이렇게 시작된 두 가족의 만남 뒤로, 걷잡을 수 없는 사건이 기다리고 있는데...",
+			"genre_id": 53,
+			"video_link": "https://www.youtube.com/watch?v=F1xhDf1hX5w",
+			"popularity": 60.824,
+			"vote_average": 8.5,
+			"back_image": "/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg"
+		}
+	},
+	{
+		"pk": 499701,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "도라와 잃어버린 황금의 도시",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/xvYCZ740XvngXK0FNeSNVTJJJ5v.jpg",
+			"description": "10대 탐험가 도라가 친구들을 이끌고 모험에 나선다. 도라는 부모님을 구하고, 잃어버린 황금의 도시에 얽힌 미스테리를 풀어야 한다.",
+			"genre_id": 12,
+			"video_link": "https://www.youtube.com/watch?v=PNaxOZ0Bmso",
+			"popularity": 57.585,
+			"vote_average": 6.4,
+			"back_image": "/61sbyO47yIpsMFyLhY1MWcqjg1Q.jpg"
+		}
+	},
+	{
+		"pk": 501907,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "어 뷰티풀 데이 인 더 네이버후드",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/tC3oqkvF6E1RzaTBMb7IivcLx96.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 48.993,
+			"vote_average": 7.0,
+			"back_image": "/wfPR0NQsM4RkLPpWLCbuyNgKC3k.jpg"
+		}
+	},
+	{
+		"pk": 501170,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "닥터 슬립",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/zcXjQEHfwuHrZKzpbrCPGnpPNtk.jpg",
+			"description": "어린시절 아버지가 남긴 트라우마에서 벗어나지 못한 대니는 자신이 가진 샤이닝 능력으로 죽음을 앞둔 이들을 돕는 닥터 슬립으로 불리며 살고 있다. 우연히 누구보다 강력한 샤이닝 능력을 지닌 12살 소녀 아브라 스톤을 만나게 되면서, 샤이닝 능력자들을 먹고 영원한 생명을 이어나가는 트루 낫이라는 비밀조직과 맞서게 되는데…",
+			"genre_id": 27,
+			"video_link": "https://www.youtube.com/watch?v=trqSKPutkPQ",
+			"popularity": 55.21,
+			"vote_average": 7.1,
+			"back_image": "/1nm0sk8UUx9jHCTHuMKe2jkt4Pn.jpg"
+		}
+	},
+	{
+		"pk": 522162,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "미드웨이",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/8jmrgSjbVr8JP4WQzrGw2d2t4kk.jpg",
+			"description": "1941년 진주만 공습 이후, 전 세계를 향한 일본의 야욕이 거세지고, 역사상 최대 규모의 미국 본토 공격을 계획한다. 미군은 진주만 다음 일본의 공격 목표가 어디인지 암호를 해독하기 위해 애쓰고, 동시에 긴박하게 전열을 정비해 나간다. 가까스로 두 번째 타겟이 ‘미드웨이’라는 것을 알아낸 미국은 반격을 준비하지만, 절대적으로 불리한 상황이다. 전 세계의 역사를 바꾼 위대한 전투의 이야기가 지금부터 시작된다!",
+			"genre_id": 10752,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 50.19,
+			"vote_average": 6.5,
+			"back_image": "/1ZSjrBUHP2jm1QlQEyLGufL289q.jpg"
+		}
+	},
+	{
+		"pk": 398978,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "아이리시맨",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/Ch4DTlESeylOs7VaTI5YWI2XN9.jpg",
+			"description": "20세기 미국 정치 이면에 존재했던 악명높은 인물들과 연루된 한 남자의 시선으로 장기 미제 사건의 대명사 ‘지미 호파 실종 사건’을 그려낸다. 지미 호파는 1950-60년대 미국 정계를 좌지우지했던 거대노동조합의 우두머리로 1975년 실종됐지만, 아직까지 그 사건의 실체가 밝혀지지 않았다. 지미 호파 실종 사건은 미국 역사상 가장 유명한 장기 미제 사건 중 하나이다. 영화는 여러 악명높은 범죄조직 및 인사들과 연루돼 지미 호파 실종의 용의자로 지목되었던 프랭크 시런의 시선을 통해, 미국 근대사의 한 페이지를 장식한 지미 호파의 장대한 이야기를 보여준다.",
+			"genre_id": 80,
+			"video_link": "https://www.youtube.com/watch?v=k3qYIvNJ2r8",
+			"popularity": 55.08,
+			"vote_average": 8.5,
+			"back_image": "/aZ1ZqJ4uO1RK5gU5jRsO4qG7rJo.jpg"
+		}
+	},
+	{
+		"pk": 513409,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "지진새",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/oyKnosHXQ7kkhlGwqsWOvn4RgKR.jpg",
+			"description": "1980년대 도쿄, 짙은 그늘을 품은 이국의 여인. 어느 날, 그녀의 일본인 연인을 유혹하던 친구가 실종된다. 어긋난 사랑이, 치명적인 삼각관계가, 끝내 죽음을 부른 걸까.",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 58.14,
+			"vote_average": 5.6,
+			"back_image": "/n0Yk3pEix6EvMfcFxpTQKMUtl6V.jpg"
+		}
+	},
+	{
+		"pk": 535292,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "21 브릿지",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/7DCo9UmXMLrltUwIz19F8f1p04W.jpg",
+			"description": "뉴욕 맨해튼 중심에서 벌어진 경찰 연쇄 살해 사건, 범인을 잡기 위해 베테랑 경찰 ‘데이비스’는 극단의 조치를 취한다. 주어진 시간은 단 3시간! 모든 수단과 방법을 동원해 놈들을 잡아야 한다.",
+			"genre_id": 80,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 47.909,
+			"vote_average": 6.9,
+			"back_image": "/blUCzzkFNWrur18J0BvIYBdbquv.jpg"
+		}
+	},
+	{
+		"pk": 640882,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "3022",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/7EKGHMsm3nv87wvlqD7HBZYgAeP.jpg",
+			"description": "",
+			"genre_id": 878,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 84.174,
+			"vote_average": 5.0,
+			"back_image": "/ailBwpIwzUcNpuKSHtSwyqXAYCe.jpg"
+		}
+	},
+	{
+		"pk": 480105,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "47 미터 2",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/yLfkkyEl3kfqj3jBln1m1zXnv9V.jpg",
+			"description": "물에 잠긴 고대 마야의 수중도시 '시발바'를 향해 짜릿한 동굴 다이빙에 나선 '미아'와 친구들은 예기치 못한 사고로 미로 같은 동굴 속에 갇혀 헤매던 중 오랜 시간 굶주린 블라인드 샤크와 맞닥뜨리게 된다. 산소도, 탈출구도 없는 칠흑 같은 어둠 속에 갇힌 이들은 눈 보다 예민한 제3의 감각으로 좁혀오는 상어떼를 피해 목숨을 건 극한의 숨바꼭질을 시작하는데...",
+			"genre_id": 53,
+			"video_link": "https://www.youtube.com/watch?v=4qcOCo-m7o4",
+			"popularity": 58.115,
+			"vote_average": 4.7,
+			"back_image": "/3uG3aOhEzFCjcQulsJQiAzLSrw8.jpg"
+		}
+	},
+	{
+		"pk": 611914,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "The Courier",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/ApZ6eymKwLJJnwxb9JskYRdjq7j.jpg",
+			"description": "",
+			"genre_id": 28,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 62.403,
+			"vote_average": 4.0,
+			"back_image": "/sdjlVjkRwezP9G1a8TKwrnolRxI.jpg"
+		}
+	},
+	{
+		"pk": 405177,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "어디 갔어 버나뎃",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/BziuuZULnGmTRLthEty1QdKSEo.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 32.334,
+			"vote_average": 6.9,
+			"back_image": "/qrCJE9XpsnA2JPDr3RNlBGIHOfw.jpg"
+		}
+	},
+	{
+		"pk": 529862,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "브리트니 런스 어 마라톤",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/9HwdRkw0w7wD8IykDgDAA1C05oe.jpg",
+			"description": "뉴욕시 마라톤 대회 출전을 목표로 훈련을 시작하기로 결심 한 젊은 여성의 이야기",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 43.749,
+			"vote_average": 7.2,
+			"back_image": "/81yH7NxfUWqbhWWBh4Q1rLWwSpl.jpg"
+		}
+	},
+	{
+		"pk": 472674,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "골드핀치",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/8NwONmcJmPr0w9A176JorJ3tbJx.jpg",
+			"description": "소년 '테오(안셀 엘고트)'는 메트로폴리탄 미술관 폭탄 테러에서 엄마를 잃는다. 폭발에서 살아남은 테오는 카렐 파브리티우스의 작품인 '황금방울새'를 손에 넣게 되고, 어퍼 이스트 사이드의 부유한 가족에 맡겨지는데...",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 50.376,
+			"vote_average": 6.9,
+			"back_image": "/uF4gCZHiui3UJ2BzUb8Nr6De6Lt.jpg"
+		}
+	},
+	{
+		"pk": 504949,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "더 킹: 헨리 5세",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/lmDWUkKhCvhBwLTX0I6ZEiirk7x.jpg",
+			"description": "잉글랜드 왕의 후계자가 될 생각은 조금도 없는 방탕한 왕자, 할(티모시 샬라메). 그는 왕궁을 등진 채 민중들과 어울려 지내고 있다. 하지만 아버지가 돌아가신 후, 장남인 그는 헨리 5세로 즉위하고, 그동안 그토록 피하고 싶었던 삶을 살 수밖에 없다. 왕궁 내 정치와 혼란, 아버지가 남긴 전쟁을 이끌어가야 하는 젊은 왕. 뿐만 아니라, 그는 가장 친한 친구이자 멘토, 이제는 늙은 알코올중독자가 되어버린 기사 존 폴스타프(조엘 에저턴)를 포함해, 과거의 삶과 관련된 감정들로 괴로워한다.",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/watch?v=iX_9QIw49tM",
+			"popularity": 36.942,
+			"vote_average": 7.2,
+			"back_image": "/r0AWsZ9dBvC2No3kND9nxv3iRbb.jpg"
+		}
+	},
+	{
+		"pk": 338967,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "좀비랜드: 더블 탭",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/1ok4v9dbalAS1AQaplFxbFmC9kb.jpg",
+			"description": "좀비로 세상이 망한지 10년, 자신들만의 재능을 발휘하고 생존 규칙을 지키며 여전히 꿋꿋하게 살아가고 있는 희한한 가족 탤러해시, 콜럼버스, 위치타, 리틀록. 하지만 ‘좀비랜드’에 더욱 진화한 좀비가 나타나고 이들은 새로운 인간 생존자들과 함께 사투를 시작하는데…",
+			"genre_id": 27,
+			"video_link": "https://www.youtube.com/watch?v=uPMOTPB9vTY",
+			"popularity": 45.418,
+			"vote_average": 7.3,
+			"back_image": "/jCCdt0e8Xe9ttvevD4S3TSMNdH.jpg"
+		}
+	},
+	{
+		"pk": 549053,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "라스트 크리스마스",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/jDSM3PUhqMcxtYSJ7EuW2OKPeX.jpg",
+			"description": "친구도 없고, 연애도 못하고, 엄마에게 얹혀 살고 있는 인생 뭐 하나 마음대로 되는게 없는 ‘케이트’(에밀리아 클라크). 가수를 꿈꾸지만 매번 오디션에서 떨어지고, 마지못해 별볼일 없는 크리스마스 장식용품 가게에서 일하고 있다. 매일 반복되는 일상이 지나고 크리스마스가 다가오던 어느 날, 노숙자 센터에서 자원 봉사를 하는 ‘탐’(헨리 골딩)을 우연히 만나게 된다. 핸드폰도 없고 자신에게 데이트 신청도 안하지만 언제 어디서든 나타나는, 다른 남자들과 다른 탐의 매력에 점점 끌리게 되는데…",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/watch?v=aNtqlkVJRzw",
+			"popularity": 37.893,
+			"vote_average": 6.7,
+			"back_image": "/eZ9wYTk9Gy2zYEv8rhRG3IoPuXG.jpg"
+		}
+	},
+	{
+		"pk": 295151,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "렛 잇 스노우",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/rEVu3E1OhMPJeCAn9a6QLyVhZDj.jpg",
+			"description": "크리스마스이브, 세찬 눈보라가 작은 마을을 덮친다. 각자의 사연을 지닌 마을의 고등학교 졸업반 학생들. 예기치 못한 폭설은 이들의 우정, 사랑, 미래까지 뒤흔든다.",
+			"genre_id": 10749,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 33.22,
+			"vote_average": 6.2,
+			"back_image": "/4oSRQ03nJjl8sZAPgIXgi51XZva.jpg"
+		}
+	},
+	{
+		"pk": 540901,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "허슬러",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/2H0gjSVdKdk20mGoU8QMItcsygQ.jpg",
+			"description": "가진 자들만이 돈을 불리며 판을 치는 세상, 권력과 돈이면 모든 것을 살 수 있다는 그들에게 필요한 건 화끈한 한.방!  외모, 두뇌플레이 모두 갖춘 그녀들이 은밀히 움직이기 시작하는데... 세상을 향한 그녀들의 통쾌한 한방! 지금부터가 진짜 시작이다!",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/watch?v=PfdEvsHwizc",
+			"popularity": 40.682,
+			"vote_average": 6.2,
+			"back_image": "/jTab4cf4X1dJJVS4F8UOGuesvPd.jpg"
+		}
+	},
+	{
+		"pk": 619603,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "The First Supper",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/mmDJnLhs6sr08aCYxE4bPBEUO8a.jpg",
+			"description": "",
+			"genre_id": 10751,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 36.681,
+			"vote_average": 0.0,
+			"back_image": "/irDqjXyG61rUGRqLMFfdduiaCim.jpg"
+		}
+	},
+	{
+		"pk": 552178,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Dark Waters",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/bwjiv0hDt06E6ImpOVyZpM2ilBy.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 18.042,
+			"vote_average": 7.0,
+			"back_image": "/jKWVHOdEUDt0HW8eeFBWQ0CR3Ns.jpg"
+		}
+	},
+	{
+		"pk": 489932,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "All Rise",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/ufA6XzWrMO9qyk02H27TMPtDAbi.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 16.082,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 454640,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "앵그리 버드 2: 독수리 왕국의 침공",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/8RyxjzIaxQFTjJ58rhOc98h4Tu6.jpg",
+			"description": "호시탐탐 알을 탐내는 식신돼마왕 ‘레너드’를 물리치고 아싸에서 인싸가 된 버드 아일랜드의 악동 히어로 ‘레드’ 평생 앙숙인 이들에게 ‘공공의 적’이 나타났다!  얼음 공격을 퍼붓는 독수리 왕국의 예민 보스 ‘제타’에 맞서기 위해 한 팀으로 뭉친 그들! 과연 이들의 연합 작전은 성공할 수 있을까? 어제는 적! 오늘은 친구? 아슬아슬한 팀플레이가 시작된다!",
+			"genre_id": 16,
+			"video_link": "https://www.youtube.com/watch?v=u2GKRbXgbrY",
+			"popularity": 38.215,
+			"vote_average": 6.4,
+			"back_image": "/k7sE3loFwuU2mqf7FbZBeE3rjBa.jpg"
+		}
+	},
+	{
+		"pk": 506554,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "주디와 펀치의 위험한 관계",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/mtbh7KGT0V8k5IBo9mkr6c1f04r.jpg",
+			"description": "꼭두각시 인형극을 하는 주디와 펀치는 올바른 정의와 질서라고는 찾아볼 수 없는 마을에 살고 있다. 마녀사냥과 교수형에 열광하는 마을 사람들 틈에서 주디와 펀치는 마을 전체를 대상으로 피의 대살육극을 준비하고 있다.",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 13.17,
+			"vote_average": 0.0,
+			"back_image": "/yiPHCa2bcs3FmTwM0SSoVzon9JJ.jpg"
+		}
+	},
+	{
+		"pk": 621191,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Blue Story",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/f2NrzazEvmRoDzoArXm287js2tH.jpg",
+			"description": "",
+			"genre_id": 80,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 25.167,
+			"vote_average": 10.0,
+			"back_image": "/6UQGuiQi84PEdTHw2lvNPvnzW9T.jpg"
+		}
+	},
+	{
+		"pk": 481084,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "아담스 패밀리",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/fykFaD4flUkSHZsWACnjg9Uw6eR.jpg",
+			"description": "고메즈와 모티시아는 결혼식 도중에 결혼을 반대하는 사람들에게 쫓겨 달아나다가 우연히 버려진 성을 발견한다. 으스스한 그 곳을 집으로 삼고 딸 웬즈데이와 아들 퍽슬리를 키우며 살아간다. 어느 날, 아담스 가족은 평범한 동네를 방문하게 되고 사람들은 그들의 기괴한 모습과 행동에 기겁하며 달아난다. 웬즈데이가 그 동네의 학교를 다니게 되면서 파커와 친구가 되어 서로 변해 가기 시작한다. 파커의 엄마는 이상하게 달라진 파커의 모습에 아담스 가족을 괴물로 몰아가며 괴롭히기 시작한다.",
+			"genre_id": 16,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 40.237,
+			"vote_average": 6.1,
+			"back_image": "/ur4NTeFGZmQ6Hz5uEkAMgPI3WRg.jpg"
+		}
+	},
+	{
+		"pk": 417384,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "스케어리 스토리즈 투 텔 인 더 다크",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/q5298SICFzqMcKtQoBktk8p6FH.jpg",
+			"description": "이 영화는 1968년 밀 밸리의 작은 공동체를 배경으로 하고 있다. 벨로우스 가족의 저택에서 사라라는 이름의 어린 소녀가 끔찍한 비밀을 간직하고 있으며 그녀의 삶을 일련의 무서운 이야기로 바꾸어 놓았다. 한 무리의 십대들이 그녀의 책을 우연히 보게 되는데...",
+			"genre_id": 27,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 33.617,
+			"vote_average": 6.3,
+			"back_image": "/spCU6e6opWCmA3Q0SdKhsMqo5OI.jpg"
+		}
+	},
+	{
+		"pk": 605509,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "The Amber Light",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/4K0XpajvEwXNlpIeE74nqAVIkLb.jpg",
+			"description": "",
+			"genre_id": 99,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 11.432,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 508664,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "댄저 클로즈 : 롱탄 대전투",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/gq4zlRJHWsKwudEzkHfpJB8TY9K.jpg",
+			"description": "베트남 전쟁이 한창이던 1966년 8월. 호주군은 미군과 남베트남을 도와 공산주의 북베트남을 무찌르려 파병을 결정한다. 남베트남 누이닷으로 파병된 제1 기동 부대는 한밤중에 적의 포격을 받고, 반격을 가하기 위해 포격 원점인 고무 농장 롱탄으로 출격한다. 해리 스미스 소령이 지휘하는 보병 4중대는 롱탄에서 적을 마주치고 전투를 벌이지만 1개 소대 정도라고 예상했던 적의 병력은 생각보다 많다. 부상자는 늘어나고, 탄약은 점점 줄어드는 상황에서 스미스 소령은 결국 힘든 결정을 내리게 되는데...",
+			"genre_id": 10752,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 29.973,
+			"vote_average": 6.5,
+			"back_image": "/zA6uqJdLMfqg0srHccAK8aLTHJE.jpg"
+		}
+	},
+	{
+		"pk": 566220,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "슈팅 마피아",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/bLMf3e28mQ9W2OG8thw2IFGouut.jpg",
+			"description": "시칠리아 출신인 레티시아 바타글리아는 처참히 살해된 희생자에게 카메라를 들이댄 순간 마피아를 상대로 하는 일생의 전투를 시작했다. 코사 노스트라의 야만적인 통치를 고발하고 그들의 범죄를 낱낱이 밝히는 동시에 당당함과 열정으로 삶을 지속한다.",
+			"genre_id": 99,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 14.39,
+			"vote_average": 10.0,
+			"back_image": "/5I4bNsEHtkHwPq0gazO5seKffaq.jpg"
+		}
+	},
+	{
+		"pk": 694,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "샤이닝",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/vzc4lvpjaZrrfxsnqmhURm37gmB.jpg",
+			"description": "소설가인 잭 토랜스(잭 니콜슨)는 콜로라도 산맥에 있는 오버룩 호텔의 관리인으로 취직한다. 다음 시즌 준비를 하는 이곳은 겨울 동안 폐쇄되기 때문에 토랜스의 가족들만 호텔에 머물게 된다. 갑자기 몰아친 폭설로 잭과 아내 웬디(셀리 듀발)와 아들과 함께 호텔에 고립되고, 투시와 텔레파시 능력이 있는 잭의 아들 대니는 호텔에 유령이 있으며 유령들이 천천히 아버지를 미치게 하고 있음을 알게 된다. 잭은 과거에 스스로 자신의 아내와 두 딸을 죽인 이곳의 예전 관리인 그레이디의 유령을 만난다. 과거에 있었던 살인사건의 악령에 휘말린 잭은 호텔을 공포의 도가니로 몰아가는데...",
+			"genre_id": 27,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 33.289,
+			"vote_average": 8.2,
+			"back_image": "/h4DcDCOkQBENWBJZjNlPv3adQfM.jpg"
+		}
+	},
+	{
+		"pk": 78108,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Lucky7",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/8ENukDDuXZMG0nxyHokD0oVUMPt.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 15.582,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 625489,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Recep İvedik 6",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/1pnGF3bX0giCc9FFXH2CUIyE1hq.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 35.241,
+			"vote_average": 2.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 527641,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "파이브 피트",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/oXDWCIrCCA8kfz3kLIzfN61GafF.jpg",
+			"description": "같은 병을 가진 사람끼리 6피트 이상 접근해서도, 접촉도 해선 안되는 CF(낭포성 섬유증)를 가진 ‘스텔라’와 ‘윌’. 첫눈에 반한 두 사람은 서로를 위해 안전거리를 유지하려고 하지만 그럴수록 더욱 빠져든다. 손을 잡을 수도 키스를 할 수도 없는 그들은 병 때문에 지켜야 했던 6피트에서 1피트 더 가까워지는 걸 선택하고 처음으로 용기를 내 병원 밖 데이트를 결심한다. 그러나 갑자기 숨을 쉬지 못하는 ‘스텔라’. ‘윌’은 그녀를 살리기 위해 안전거리를 어기게 되는데…",
+			"genre_id": 10749,
+			"video_link": "https://www.youtube.com/watch?v=vSq5P7rEbZA",
+			"popularity": 28.498,
+			"vote_average": 8.1,
+			"back_image": "/8U7yoxEQsyJQc3RBCjNJu2d5uct.jpg"
+		}
+	},
+	{
+		"pk": 630027,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Fragtime",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/9ZTEJroUpBnBKAVNBYN8CJ1sVBU.jpg",
+			"description": "",
+			"genre_id": 16,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 11.437,
+			"vote_average": 0.0,
+			"back_image": "/gxjppTTB8601guJtdFTpDwTCPMg.jpg"
+		}
+	},
+	{
+		"pk": 634571,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "숲 속의 영혼",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/6PFUI3jS3GR58jO7T7QjqNgpZfi.jpg",
+			"description": "",
+			"genre_id": 99,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 13.647,
+			"vote_average": 8.0,
+			"back_image": "/qxZ756KuRR53hqz1tR1ei2EVv99.jpg"
+		}
+	},
+	{
+		"pk": 599975,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "카운트다운",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/vhrPkS2XcPCmK0vr5RJ0R0YHLaG.jpg",
+			"description": "일상이 따분하고 지루한 간호사 '퀸'은 생존시간을 알려주는 어플을 무심코 다운로드 받는다. 앞으로 살 수 있는 시간이 3일 밖에 남지 않았다는 것을 알게 된 '퀸'은 어떻게든 이 상황을 빠져나가려 하는데… 5, 4, 3, 2, 1 당신의 남은 생존시간을 확인하라!",
+			"genre_id": 27,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 24.617,
+			"vote_average": 7.1,
+			"back_image": "/zETkzgle7c6wAeW11snnVUBp67S.jpg"
+		}
+	},
+	{
+		"pk": 567598,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Greed",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/qK1O8QcLh43B57Wp4erKdbPVnoU.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 10.51,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 578189,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "블랙 앤 블루",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/fjmMu9fpqMMF17mCyLhNfkagKB0.jpg",
+			"description": "",
+			"genre_id": 28,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 17.084,
+			"vote_average": 5.3,
+			"back_image": "/zBAoNL50oFRCAJvEEQEKD8M48pV.jpg"
+		}
+	},
+	{
+		"pk": 619162,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Kessan! Chushingura",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/t6soHlCWXOqzzM6zzF4ilWCEubV.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 10.36,
+			"vote_average": 0.0,
+			"back_image": "/yJhnl8kNnEnm6XE4vGhazGwrvje.jpg"
+		}
+	},
+	{
+		"pk": 632346,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Hand Off",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/p8OPEihYEQje3IBMHPwoj8TSrUf.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 9.097,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 645176,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "NXT TakeOver: WarGames",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/lQyXczgEC9fTGjOU5OBB29ez1ZW.jpg",
+			"description": "",
+			"genre_id": 28,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 30.366,
+			"vote_average": 10.0,
+			"back_image": "/cqk4LSmVSHVx9YkyDAMOClSl8Eq.jpg"
+		}
+	},
+	{
+		"pk": 459992,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "롱 샷",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/rGiFaSGVq7rfl0O19u9pJwP5cb0.jpg",
+			"description": "전직 기자 지금은 백수인 ‘프레드 플라스키’(세스 로건)는 20년 만에 첫사랑 베이비시터 ‘샬롯 필드’(샤를리즈 테론)와 재회한다. 그런데 그녀가!? 미 최연소 국무 장관이자 세계에서 가장 영향력 있는 여성 중 한 명인 ‘샬롯’이 바로 베이비시터 그녀라는 것은 믿기지 않지만 실화이다. 인생에 공통점이라고는 1도 없는 두 사람. 대선 후보로 출마를 준비 중인 ‘샬롯’은 모두의 예상을 깨고 자신의 선거 캠페인 연설문 작가로 ‘프레드’를 고용한다. 어디로 튈지 모르는 ‘프레드’ 때문에 선거 캠페인은 연일 비상인 가운데, 뜻밖에 그의 스파크는 ‘샬롯’과의 로맨스로 튀어 버리는데... 사고 치는데 천부적인 재능이 있는 남자, 머리부터 발끝까지 완벽한 여자. 이 조합 실화?",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/watch?v=ksJ2nOYnUrc",
+			"popularity": 28.739,
+			"vote_average": 6.7,
+			"back_image": "/88r25ghJzVYKq0vaOApqEOZsQlD.jpg"
+		}
+	},
+	{
+		"pk": 584242,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Wet Season",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/1ooeuR6Uh1dfwJ67pr5m20yLjuI.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 8.792,
+			"vote_average": 0.0,
+			"back_image": "/4xQ4EeEHWB1b91cKincr1Yuhmeu.jpg"
+		}
+	},
+	{
+		"pk": 637865,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Call Mom!",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/uW8ZDz7c9TKeRlYNT0wL9KZrOHb.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 9.254,
+			"vote_average": 0.0,
+			"back_image": "/s7RNUyIjOMtPypBGchI8CjLtnOc.jpg"
+		}
+	},
+	{
+		"pk": 643807,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Ramprasad Ki Tehrvi",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/orydOLnuMauHQqwRd7XHEG5exG2.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 9.232,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 647102,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "你是凶手",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/529wj8TZzeux3K40evmiM8AvIDQ.jpg",
+			"description": "",
+			"genre_id": 80,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 8.442,
+			"vote_average": 0.0,
+			"back_image": "/kcTAY7GpXDWvxgNwQRy92FCvS86.jpg"
+		}
+	},
+	{
+		"pk": 393624,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "오피셜 시크릿",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/gDO8fW0JSMNtDKBR7gDj9DhZ4J4.jpg",
+			"description": "도청으로 전 세계 정보를 수집하는 영국 정보부 요원 캐서린 건. 국민을 속이려는 국가의 일급기밀을 알게 되고 고민 끝에 용기 있는 선택을 한다. 정부를 지지하는 신문사의 기자 마틴 브라이트. 비밀리에 받은 엄청난 제보에 대한 집요한 취재를 하고 마침내 국가가 숨기려는 추악한 진실을 세상에 알린다. 인권 변호단 ‘리버티’의 변호사 벤 에머슨. 불법 첩보작전을 폭로해 기소 위기에 처한 캐서린 건을 도와 국가를 상대로 목숨 건 변호를 시작한다.  정의를 위해, 진실을 위해 국가를 배신한 사람들 유죄인가? 무죄인가?",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/watch?v=37Vak3TgMUg",
+			"popularity": 21.35,
+			"vote_average": 7.3,
+			"back_image": "/JPLqPszdIZS3uknr7oG6qJyyKV.jpg"
+		}
+	},
+	{
+		"pk": 616561,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Hope",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/oJh8fSfpKuktPlmrMkB5FvszjHK.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 9.13,
+			"vote_average": 0.0,
+			"back_image": "/xTdwEtPwq9o4WR8XCcYmATMCsgU.jpg"
+		}
+	},
+	{
+		"pk": 604790,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "비욘드 라인",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/zzydeKYsxXjtkqL4e5wFguHZOKq.jpg",
+			"description": "2차 세계대전 종전일에 연합군은 마지막 작전을 개시한다. 독일 전투기의 공격으로 수송기가 추락하고 영국군은 독일군 한가운데 떨어져 포위된다. 미군의 도움으로 생존률 제로의 탈출을 시도하고 마침내 게릴라전이 시작되는데… 최후의 생존 전투을 목격한다!",
+			"genre_id": 10752,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 12.184,
+			"vote_average": 9.0,
+			"back_image": "/5TnVmPASzPojwUR0fgF1oe7zgTE.jpg"
+		}
+	},
+	{
+		"pk": 554241,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Playing with Fire",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/61Ng0t8iMnbWFmARcyBrkaErg4G.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 21.019,
+			"vote_average": 8.0,
+			"back_image": "/4XJfcOH0A0qeqAjyu4MIQVUrUmt.jpg"
+		}
+	},
+	{
+		"pk": 574095,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "The Jonsson Gang",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500None",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 8.61,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 522924,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "더 아트 오브 레이싱 인 더 레인",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/mi5VN4ww0JZgRFJIaPxxTGKjUg7.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 23.729,
+			"vote_average": 7.9,
+			"back_image": "/6esNUoXh4xQvucB7o7e3TCfjI65.jpg"
+		}
+	},
+	{
+		"pk": 648146,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "You Softly Float and Pass by Me",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/o3QkNK4A4qN99BKz7BbGKh6SHhy.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 8.088,
+			"vote_average": 0.0,
+			"back_image": "/bNX5KnyMiHUqdbEe6IMApSukj3U.jpg"
+		}
+	},
+	{
+		"pk": 384756,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "래비드",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/1iKMpfASZEYvraBbVSlCkrg6qco.jpg",
+			"description": "로즈는 패션 디자이너 꿈을 키우지만 교통 사고로 얼굴을 다치게 된다. 병원에서 실험중인 줄기 세포 치료를 받지만...",
+			"genre_id": 878,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 15.712,
+			"vote_average": 5.7,
+			"back_image": "/54PqwHggTMnPLQByZfvShAixC5h.jpg"
+		}
+	},
+	{
+		"pk": 633698,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Les Barbares de La Malbaie",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/bcU7nYK3p0wrBXuMbrGpRWpyJ4p.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 7.854,
+			"vote_average": 0.0,
+			"back_image": "/4DWiQlMwVFZ37AyHEMo0tZg4LNn.jpg"
+		}
+	},
+	{
+		"pk": 513045,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "스투버",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/ahZVnmrbNCoJ5twIa2abcadyuVF.jpg",
+			"description": "순진한 우버 택시 기사가 마약 사건을 수사 중인 경찰을 승객으로 맞으면서 벌어지는 대 소동! 스투는 그 기지를 살려 그의 생명과 우버 평가 별점을 지키기 위해 엄청난 시련을 극복해 내야만 한다!",
+			"genre_id": 28,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 28.095,
+			"vote_average": 6.5,
+			"back_image": "/xgfn98c2UzvFWP6MXDzytearmQ3.jpg"
+		}
+	},
+	{
+		"pk": 463257,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "더 피넛 버터 팔콘",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/qyQcRGvdW3VtxHR4fSDgPOePEip.jpg",
+			"description": "다운증후군을 앓는 잭이란 젊은이가 프로레슬러가 되고 싶은 꿈을 이루기 위해 요양원을 탈출하면서 우연히 잭의 코치가 되는 타일러란 부랑자와 요양원 직원인 엘리노어와 함께 길을 떠나며 벌어지는 이야기",
+			"genre_id": 12,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 22.399,
+			"vote_average": 7.3,
+			"back_image": "/4NJ9Wbib4YfvnZyyvV8WSLOAQUh.jpg"
+		}
+	},
+	{
+		"pk": 647805,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Sole Mio",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/kE3pzTbr1rHhAr7Qv1cYI5ARumo.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 12.522,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 482981,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "와일드 로즈",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/aForupUjexWH0cFjDAjao8eD4IL.jpg",
+			"description": "14살부터 동네 바에서 노래를 부르던 로즈의 꿈은 오직 글래스고를 벗어나 미국 내슈빌의 스타가 되는 것. 하지만 현실은 전자발찌를 찬 전과자에 말썽만 피우는 철없는 딸 그리고 10대 때 낳은 두 아이가 있는 싱글맘이라는 사실. 하지만 로즈의 1호팬을 자처한 고용주 수잔나와 엄마의 도움으로 런던 BBC를 거쳐 드디어 미국 내슈빌 땅을 밟게 되는데…",
+			"genre_id": 10402,
+			"video_link": "https://www.youtube.com/watch?v=uHUipKHuwWM",
+			"popularity": 15.366,
+			"vote_average": 6.9,
+			"back_image": "/k18DGK5laMQJ8i79YnR509IzuKN.jpg"
+		}
+	},
+	{
+		"pk": 647930,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Oneself Story",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500None",
+			"description": "",
+			"genre_id": 16,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 13.234,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 519010,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "페인 앤 글로리",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/u8mxXoPzAH3zotNVHWuwHNsrGtk.jpg",
+			"description": "점차 육체적으로 나약해지는 ‘살바도르 말로’ 과거 속 자신과 마주한다. 강렬했던 첫 사랑과 찬란한 욕망  몸서리치게 괴로웠던 이별 그리고 아픔을 창작으로 승화시킨 작품들 그의 인생과 창작의 세계를 돌아본다.",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 18.102,
+			"vote_average": 7.6,
+			"back_image": "/yCwcSCzcVKdI5Y9tA2T1s5Fr7jY.jpg"
+		}
+	},
+	{
+		"pk": 540158,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "High Strung Free Dance",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/2PKXkTik1sOICveKTNh6BspD5Xj.jpg",
+			"description": "",
+			"genre_id": 10749,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 33.993,
+			"vote_average": 7.2,
+			"back_image": "/qJXqEzjJOa93q50mrSSEr1ELsD6.jpg"
+		}
+	},
+	{
+		"pk": 535544,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "다운튼 애비",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/pWt1iRuhNpeVDNP2QiUT2C5OiBt.jpg",
+			"description": "귀족집안에서 벌어지는 이야기를 담은 영국 시대 드라마",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 17.089,
+			"vote_average": 7.1,
+			"back_image": "/mFcfdnAYaQQhXhKcoITiDYtuO5b.jpg"
+		}
+	},
+	{
+		"pk": 418879,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "커런트 워",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/b4UcwvmpPy9YUEP6A3bNfh84XI8.jpg",
+			"description": "1,093개의 특허, 노력의 아이콘, 타고난 천재 발명가! 당신이 알던 에디슨은 더 이상 없다. 천재적 사업가이자 괴짜 승부사! 누구나 알지만 아무도 몰랐던 그의 진짜 전쟁이 시작된다! 쇼맨십의 천재 ‘에디슨’과 상상력의 천재 ‘테슬라’ 그리고 협상의 천재 ‘인설’과 비즈니스의 천재 ‘웨스팅하우스’까지. 4명의 천재, 3번의 격돌, 2개의 전류, 1명만이 역사가 된다!",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 19.64,
+			"vote_average": 6.7,
+			"back_image": "/uvIs2CYJ39ABFQKZ9UVbXE5Vmww.jpg"
+		}
+	},
+	{
+		"pk": 492188,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "결혼 이야기",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/solGqhXDHo4tS6edTf5IkTblbc1.jpg",
+			"description": "아카데미상 후보에 지명된 감독 노아 바움백이 이야기하는 결혼에 관한 모든 것. 파경을 맞았지만, 관계를 유지해야 하는 한 가족을 예리하고 따뜻한 시선으로 바라본다.",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/watch?v=LPfUgF70trc",
+			"popularity": 20.42,
+			"vote_average": 8.4,
+			"back_image": "/nwoDC0IJA47wr3znJgT1kkk64Gy.jpg"
+		}
+	},
+	{
+		"pk": 535308,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Hala",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/lcu6t8yXKB58KFMg7M0A8ejrYFW.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 13.437,
+			"vote_average": 0.0,
+			"back_image": "/jm0me58dc5ymitf0ELJScKRCetX.jpg"
+		}
+	},
+	{
+		"pk": 565310,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "더 페어웰",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/rYrFd9GfJWTtcwkqo3wL9srDHUe.jpg",
+			"description": "할머니가 살날이 얼마 남지 않으신 것을 알게 된 중국인 가족. 할머니에게는 그 사실을 비밀로 한 뒤, 마지막으로 할머니를 보러오게 하기 위한 결혼식을 급조한다.",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 19.165,
+			"vote_average": 7.8,
+			"back_image": "/8TY7fNaAYIOaQjcvqSoK81XNlaL.jpg"
+		}
+	},
+	{
+		"pk": 585561,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Adithya Varma",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/eIMrAFd7Ei0dzEnzGJZgiM4Depv.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 9.035,
+			"vote_average": 7.5,
+			"back_image": "/nAyoGrEt23IMrahrr4pJ4XYOGtv.jpg"
+		}
+	},
+	{
+		"pk": 441282,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "나이트 헌터",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/vVYU0x9FRpiJNX7c54ciFnRBVYG.jpg",
+			"description": "",
+			"genre_id": 53,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 21.767,
+			"vote_average": 6.0,
+			"back_image": "/8knaRrDd1FM1pbSLaViEQSxodi5.jpg"
+		}
+	},
+	{
+		"pk": 489064,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "쓰리 프롬 헬",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/wWWjBJbORsB9xt17eXmYEYhinux.jpg",
+			"description": "",
+			"genre_id": 27,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 18.762,
+			"vote_average": 6.0,
+			"back_image": "/18XnA53LlUcfMsOyuN4JeeXBKI9.jpg"
+		}
+	},
+	{
+		"pk": 492002,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "라디오플래시",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/r6xdhqTc1oZDzcvzoPRQgnde9BI.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 16.879,
+			"vote_average": 5.0,
+			"back_image": "/rrqb78ct78FNVupL39YJYEInMOr.jpg"
+		}
+	},
+	{
+		"pk": 515001,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "조조 래빗",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/7GsM4mtM0worCtIVeiQt28HieeN.jpg",
+			"description": "외톨이 독일 소년 조조 '래빗' 베즐러는 미혼모 로지가 어린 유대인 소녀(를 그들의 다락방에 숨기고 있다는 사실을 발견한다. 바보 같은 상상의 친구 아돌프 히틀러의 도움으로 조조는 그의 맹목적인 민족주의에 맞서야 한다.",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 23.801,
+			"vote_average": 8.3,
+			"back_image": "/agoBZfL1q5G79SD0npArSlJn8BH.jpg"
+		}
+	},
+	{
+		"pk": 511322,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "굿 라이어",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/bU7TbYVALiFAQXnhU7xg1WN6464.jpg",
+			"description": "부유한 미망인 '베티(헬렌 미렌)'는 온라인 데이트 사이트에서 '로이(이안 맥켈런)'를 만나고, 두 사람은 서로를 의지하며 좋은 관계를 만들어나간다. 하지만 사실 로이는 베티의 돈을 노리고 의도적으로 접근했던 것. 이를 모르는 베티는 로이가 제안한대로 공동 계좌를 만들어 본인의 재산과 로이의 재산을 합하는 데 동의하고, 두 사람은 베를린으로 여행을 떠난다. 그 곳에서 베티는 로이의 본모습을 알게 되고 복수를 감행하는데…",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/watch?v=HbhUxz4siEs",
+			"popularity": 18.527,
+			"vote_average": 6.6,
+			"back_image": "/qhWuoyUQ01ZzsbNfjbddAoK6uEc.jpg"
+		}
+	},
+	{
+		"pk": 399121,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "나는 고발한다",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/qhVxN1xV5JYos3H1hZ0Mi3mAK92.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 19.179,
+			"vote_average": 7.6,
+			"back_image": "/3AZ7VeCiBssKYraKzTsXKTSQh4R.jpg"
+		}
+	},
+	{
+		"pk": 504562,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "마더리스 브루클린",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/2wm20cbkH1L8nA54Gtwfgz2hTqo.jpg",
+			"description": "조나단 레뎀 소설을 원작으로 한 작품으로 원작은 투렛 증후군 탐정의 충격적인 언어로 사회 밑바닥 인물들의 두뇌 싸움을 그린 소설이다.",
+			"genre_id": 80,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 18.649,
+			"vote_average": 7.2,
+			"back_image": "/visyTVDc7SmudN85WPCQIhMpyP3.jpg"
+		}
+	},
+	{
+		"pk": 523172,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "레이트 나잇",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/xxwb5KBqS0SHsUcyLgWMk3vuVxY.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 14.717,
+			"vote_average": 6.7,
+			"back_image": "/smsd8whMlYuIDvfGc63AZ5eTJHo.jpg"
+		}
+	},
+	{
+		"pk": 575314,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Blood Bound",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/8pN5eXLQCW4qsUj0UNnPp2H6qNd.jpg",
+			"description": "",
+			"genre_id": 27,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 9.27,
+			"vote_average": 9.0,
+			"back_image": "/hohU2iFmHpZqloJqFT941qmrA1k.jpg"
+		}
+	},
+	{
+		"pk": 535581,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "데드 돈 다이",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/yTfaGkEQF2JdvHqv8THs61gCDgd.jpg",
+			"description": "커다란 달이 유난히 낮게 뜬 어느 날, 죽은 자들이 깨어난다. 커피, 와인, 와이파이를 찾아 동네를 누비며 사람들을 공격하기 시작하는 좀비들. 이제 마을의 평화는 경찰 클리프(빌 머레이)와 로니(아담 드라이버), 민디(클로에 세비니) 그리고 장의사 젤다(틸다 스윈튼)에게 달려있다.",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 20.286,
+			"vote_average": 5.4,
+			"back_image": "/cXyfAViYly0Lk2CVpEKgYbt9wKQ.jpg"
+		}
+	},
+	{
+		"pk": 504582,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "The Whistlers",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/b4kfwMdpjqARUw8NXy5OWZj28JC.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 8.469,
+			"vote_average": 0.0,
+			"back_image": "/vyUMIUo0kIfaJBuYI4nfSi5UCja.jpg"
+		}
+	},
+	{
+		"pk": 449459,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "키퍼스",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/owYLROHpJWbYWEHjaEvDsnoz4Ux.jpg",
+			"description": "스코틀랜드의 해안으로부터 떨어진 섬에서 3명의  등대지기가 흔적도 없이 사라진다.",
+			"genre_id": 53,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 16.537,
+			"vote_average": 5.4,
+			"back_image": "/jK4m8gjLT5D2PNwoC0jJ0dGmWMu.jpg"
+		}
+	},
+	{
+		"pk": 579188,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "가장 보통의 연애",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/dgzWcjIr47ezx9wwji7yf2RCOTp.jpg",
+			"description": "헤어진 여친에 미련을 못 버린 ‘재훈’(김래원). 여느 때처럼 숙취로 시작한 아침, 모르는 번호의 누군가와 밤새 2시간이나 통화한 기록을 발견하게 되고 그 상대가 바로! 통성명한지 24시간도 채 되지 않은 직장 동료 ‘선영’임을 알게 된다. 남친과 뒤끝 있는 이별 중인 ‘선영’(공효진). 새로운 회사로 출근한 첫날, 할말 못할 말 쏟아내며 남친과 헤어지던 현장에 하필이면! 같은 직장의 ‘재훈’이 있던 것을 알게 된다. 만난지 하루만에 일보다 서로의 연애사를 더 잘 알게 된 두 사람. 하지만 미묘한 긴장과 어색함도 잠시 ‘한심하다’, ‘어이없다’ 부딪히면서도 마음이 쓰이는 건 왜 그럴까?",
+			"genre_id": 10749,
+			"video_link": "https://www.youtube.com/watch?v=0zLiVIAUTCA",
+			"popularity": 18.154,
+			"vote_average": 7.0,
+			"back_image": "/6LbyjsGNZXT697ZL6CvTqJPeIDB.jpg"
+		}
+	},
+	{
+		"pk": 574982,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "The Blackout",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/aqJ7ncSv3S2hy79jr0XTp4kFFEe.jpg",
+			"description": "",
+			"genre_id": 53,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 10.945,
+			"vote_average": 6.0,
+			"back_image": "/7XI7BDoZPvQTx30i26ZifdR7DKd.jpg"
+		}
+	},
+	{
+		"pk": 531428,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "타오르는 여인의 초상",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/ocXe4vZzzpdSrNxJMHW06sPHlTx.jpg",
+			"description": "마리앙은 엘로이즈의 결혼식 초상화를 그녀가 눈치채지 못하도록 그릴 것을 요청받았다. 마리앙은 엘로이즈는 비밀리에 관찰하며 그녀의 모습을 그려나간다. 그러나 시간이 지날수록 채워져 가는 건 캔버스 위의 초상화만이 아니었다. 엘로이즈를 향한 마리앙의 마음도 조금씩 차오르기 시작하는데…",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 13.782,
+			"vote_average": 8.5,
+			"back_image": "/nzu3oODAmohjttfKMhMskp5DazD.jpg"
+		}
+	},
+	{
+		"pk": 648408,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Abigail",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/3rNWxdsUYDsDxHrEc3OmXZVdKwJ.jpg",
+			"description": "",
+			"genre_id": 27,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 8.615,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 632455,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Supernova",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/ugeR0so9I1uaHIkd1qqp9vcY9Wr.jpg",
+			"description": "",
+			"genre_id": 53,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 8.043,
+			"vote_average": 0.0,
+			"back_image": "/uPRTVqVS8RF3otdLJMmhKmg09Yf.jpg"
+		}
+	},
+	{
+		"pk": 505600,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "북스마트",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/2aSxRDmisJP90H3S0aocyuQIe4z.jpg",
+			"description": "두 명의 10대 슈퍼스타들이 고등학교 졸업 전날에 그들이 일을 덜 하고 더 많이 놀았어야 했다는 것을 깨닫는다. 결코 또래에게 뒤지지 않으리라 마음먹은 소녀들은 4년간의 재미를 하룻밤에 주입하는 임무를 시작한다.",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 21.681,
+			"vote_average": 7.2,
+			"back_image": "/wcAqndL2MkIjPrCrYeuE794weNE.jpg"
+		}
+	},
+	{
+		"pk": 623953,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Little Kingdom",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/tV0pBBw6A7YNUIfXMZXHwIfzXKG.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 7.668,
+			"vote_average": 0.0,
+			"back_image": "/zCsI3QIUQwvqk9y3geAbWoVrsYj.jpg"
+		}
+	},
+	{
+		"pk": 503919,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "더 라이트하우스",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/3nk9UoepYmv1G9oP18q6JJCeYwN.jpg",
+			"description": "",
+			"genre_id": 27,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 20.457,
+			"vote_average": 8.2,
+			"back_image": "/qlYhhBUseMUawwbvHCdPLXvBELv.jpg"
+		}
+	},
+	{
+		"pk": 639995,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Wira",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/l89W077xUEsDakVEWkwkwW8IEX5.jpg",
+			"description": "",
+			"genre_id": 28,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 6.584,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 630018,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Out in the Open",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/1o5ohCSg4wDp7yE0zMWckMBdi9S.jpg",
+			"description": "",
+			"genre_id": 53,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 9.616,
+			"vote_average": 6.0,
+			"back_image": "/sNfedix0Vt65kjcnwU3zlnk1glI.jpg"
+		}
+	},
+	{
+		"pk": 509730,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "프린스 코기",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/hIfUEjrozFEPZY70dVUkSbZvLMv.jpg",
+			"description": "복슬복슬 빵실궁디, 포동포동 숏다리, 말랑말랑 발바닥!  무한 매력으로 영국 여왕님 하트 빼앗은 세젤귀 코기 왕자 ‘렉스’가  모두가 잠든 사이에 흔적도 없이 사라졌다?!  수다댕부터 똑똑댕, 덩치댕, 군인댕, 반전댕까지  감쪽같이 사라진 코기 왕자 찾기 위해 출동한 런던 최강의 댕벤져스!  궁으로 돌아가기 위한 좌충우돌 대모험이 펼쳐진다!  단서는 하트궁디! 코기 왕자를 찾아라!",
+			"genre_id": 16,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 13.536,
+			"vote_average": 5.8,
+			"back_image": "/h1IhhdKIq56cFO8RuZZoU21a4Zu.jpg"
+		}
+	},
+	{
+		"pk": 551994,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "The Shed",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/aXL8tfSjMpfBZzzVWBNjPHnakKB.jpg",
+			"description": "",
+			"genre_id": 27,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 9.691,
+			"vote_average": 5.6,
+			"back_image": "/y2WqsZYVI0yVdC0hgDmYvzfJzqr.jpg"
+		}
+	},
+	{
+		"pk": 637811,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Schmucklos",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500None",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 6.395,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 638229,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "The Annulment",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/90AB6A0H93HsKhurFaihiNXhNZv.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 17.532,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 586863,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "레미제라블",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/r8jX7ZIb2ibsl1LqgezvGu8eqq3.jpg",
+			"description": "“프랑스나 도처에 있는, 모든 비참한 사람들(Les Misérables)에게 이 영화를 바친다.” 자전적인 첫 장편으로 칸영화제 경쟁부문에 진출, 결국 심사위원 대상까지 거머쥔 레쥬 리 감독의 감동적인 수상소감이다. 재미있으면서 아프다. 격렬하면서 따뜻하다.",
+			"genre_id": 80,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 14.46,
+			"vote_average": 8.3,
+			"back_image": "/2t3FlVs73KrxxTbzhMc3EHUM34k.jpg"
+		}
+	},
+	{
+		"pk": 592739,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Cetto C'è",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/5n5uCJQzFUMdBu3WkHhGBg2dhts.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 10.451,
+			"vote_average": 6.5,
+			"back_image": "/bzo9brPKm8lJgL2vqYmbvs1AFyd.jpg"
+		}
+	},
+	{
+		"pk": 575304,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Let's Get Divorced",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/7KGd4Gz7VyYSzxRupbctzgQDNzg.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 7.549,
+			"vote_average": 0.0,
+			"back_image": "/iFBIg3D61D4jOqnqsfvBkoqDx4A.jpg"
+		}
+	},
+	{
+		"pk": 416153,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Arctic Dogs",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/5YHjyjd2N0ZXcnGuB8G1nIa6h9t.jpg",
+			"description": "",
+			"genre_id": 16,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 13.17,
+			"vote_average": 5.2,
+			"back_image": "/uTfdOozort4sp9kukWxEmdmRsqJ.jpg"
+		}
+	},
+	{
+		"pk": 429471,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "캡티브 스테이트",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/wUoCTPnYeOqlWEti4uuRYjmN712.jpg",
+			"description": "외계 세력이 지구를 침공한 지 10년 후, 모든 시스템을 점령한 그들은 인간에게 버그를 삽입하여 통제한다. 외계 세력에 협력하며 반란군을 색출하던 특수 경찰 ‘윌리엄 멀리건’은 저항 세력의 리더 ‘라파엘’의 동생 ‘가브리엘’을 감시하던 중 외계 정부를 전복시키려는 대규모 반란의 낌새를 알아채 게 되는데…",
+			"genre_id": 878,
+			"video_link": "https://www.youtube.com/watch?v=orTNjIciREM",
+			"popularity": 15.861,
+			"vote_average": 5.3,
+			"back_image": "/6IZ84KFhNpy6htsJmwFVuK30pyp.jpg"
+		}
+	},
+	{
+		"pk": 506528,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "해리엇",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/4M6hxvrWol8R6NjNAFWtMx1Pr6v.jpg",
+			"description": "",
+			"genre_id": 36,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 18.748,
+			"vote_average": 8.1,
+			"back_image": "/f3Nm3sKGRrM2cVzOVPx6IevSmkS.jpg"
+		}
+	},
+	{
+		"pk": 630382,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Aspromonte: Land of The Forgotten",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/jur83oGyxbRPa5ikRuvOY4lff4I.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 6.124,
+			"vote_average": 6.9,
+			"back_image": "/xOSYXapd6AvBMLwYUKOt4n0W4Uh.jpg"
+		}
+	},
+	{
+		"pk": 632899,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Senior",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/twlx7HreOOe4XUD9BzFkaHSFrnF.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 6.268,
+			"vote_average": 6.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 482936,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "소리 없는",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/gpg0U8cedWfwaAMjacXKOacFlrE.jpg",
+			"description": "아빠의 뇌졸중으로 인해 에우헤니아는 부에노스아이레스 인근에 가족들이 머무는 곳으로 수년 만에 돌아가 엄마와 언니를 다시 만나게 된다. 이로써 세 여인은 이제는 한물가버린 군부독재를 배경으로 지난날에 남아있던 감정적인 트라우마와 어두운 비밀들을 직면해야 한다.",
+			"genre_id": 53,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 17.228,
+			"vote_average": 6.4,
+			"back_image": "/ahNMDVoGY4JUzpMs34jQvhMo7t2.jpg"
+		}
+	},
+	{
+		"pk": 634894,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Rumah Kentang: The Beginning",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/9Qx6tPUMzUDLkPqNOIVumXSBF1e.jpg",
+			"description": "",
+			"genre_id": 27,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 6.27,
+			"vote_average": 7.5,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 637895,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Vlastníci",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/3CKuilKpVWfs4ZpK4KcaE87NdUo.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 6.341,
+			"vote_average": 0.0,
+			"back_image": "/joSudcWvmNwwg1dTDQDkaCfYtzT.jpg"
+		}
+	},
+	{
+		"pk": 607346,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Sono solo fantasmi",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/tVaWMeF5DnTrggHoG4xjQqXPD37.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 18.018,
+			"vote_average": 6.4,
+			"back_image": "/hEvfizvi60lElIJp6GqYYokIDCL.jpg"
+		}
+	},
+	{
+		"pk": 554509,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "얼굴없는 보스",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/2rW0sgfExI63A3CEXMZ1hXlmyxC.jpg",
+			"description": "건달이 되면 멋진 남자로서 폼 나는 삶을 살 수 있을 거란 일념으로, 배신한 선배를 물러나게 하고 마침내 보스의 자리까지 오른 ‘상곤’. 하지만 그 일로 선배를 제낀 후배라는 오명을 쓰게 된다. 형제보다 사랑하는 동생들과 의리를 맹세하고 목숨보다 사랑하는 그녀와 행복까지 꿈꾸지만 매일매일 피바람이 불어대는 지옥과 같은 이 곳에는 건달들의 낭만 따위는 사치처럼 보이는데… 건달들이 개입된 음모와 얽히고설킨 배신 속, 가족과 동생들까지 점점 더 모든 것을 잃을 위기에 처하는 ‘상곤’. 그가 마지막까지 지키고자 했던 것은 무엇이었을까?",
+			"genre_id": 28,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 7.272,
+			"vote_average": 0.0,
+			"back_image": "/jwWRY5lxFxDqhQA3KDaLQgsak8v.jpg"
+		}
+	},
+	{
+		"pk": 470878,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "아이 캔 온리 이매진",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/fu5PxmT65jpXyJCuRbzgi3bNwRO.jpg",
+			"description": "세상을 울렸지만, 세상은 알지 못했던 위대한 명곡의 탄생 뒤에 숨겨진 가슴 벅찬 실화! 지금까지도 전 세계에 가장 많이 플레이되며 세상을 울린 명곡 '아이 캔 온리 이매진'을 탄생시킨  전설적인 밴드 머시미(Mercy Me) 리드 보컬 바트 밀라드 (Bart Millard)의 인생과 노래의 탄생 뒤에 숨겨진 감동 실화를 다룬 영화",
+			"genre_id": 10751,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 13.211,
+			"vote_average": 7.5,
+			"back_image": "/9XjNaS2S0RJfjbUPDAzILPprU3r.jpg"
+		}
+	},
+	{
+		"pk": 403119,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "47 미터",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/ksuTOXBCMhAV184JrlAC5UFLuU4.jpg",
+			"description": "멕시코의 태평양 연안에서 특별한 휴가를 맞은 ‘리사’와 ‘케이트’. 잊을 수 없는 추억을 만들기 위해 익스트림 스포츠인 상어 체험(샤크 케이지)에 도전한다. 하지만 즐거움도 잠시, 자매가 올라 탄 케이지는 알 수 없는 사고로 순식간에 심해 47미터까지 추락하고 만다. 무시무시한 식인 상어 무리에 둘러싸인 '샤크 케이지' 속에서 산소 탱크로 버틸 수 있는 시간은 단 20분!",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 13.404,
+			"vote_average": 5.6,
+			"back_image": "/6j8B3BqTuNrpAJoa0JIc7nZzOUn.jpg"
+		}
+	},
+	{
+		"pk": 538715,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Suicide Tourist",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/fCXCGnm4O82oEoG4EsOXLPop6ai.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 6.016,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 468,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "아이다호",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/gyPnSltBXEoXl1Luic6QiEZdmMG.jpg",
+			"description": "긴장만 하면 잠들어 버리는 기면발작증에 걸린 마약중독자 마이크(리버 피닉스)는 고향 아이다호를 떠나 포클랜드의 사창가에서 남창으로 살아간다. 마이크의 유일한 친구인 포클랜드 시장의 아들 스코트(키아누 리브스)는 남부러울 것 없지만 아버지에 대한 반발심으로 방황한다. 그러던 어느날 마이크는 연어떼가 태어난 곳을 찾아 돌아오듯이 어머니와 고향 아이다호로 돌아가길 바라며 스코트와 어머니를 찾으러 아이다호로 떠난다. 하지만 어머니는 이미 아이다호를 떠난 상황이었었고 스코트는 카멜라(키아라 카셀리)와 사랑에 빠져 있었다. 어머니를 찾지도 못하고 스코트 마저 잃은 마이크는 절망에 빠진 채 포클랜드로 되돌아 오는데...",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 12.576,
+			"vote_average": 7.1,
+			"back_image": "/stSaFz5CtMXwIj3r4MDjqxqWRot.jpg"
+		}
+	},
+	{
+		"pk": 487083,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "파라다이스 힐즈",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/6DX7aKXh6ZT7W7dBZCn1c4tOBFp.jpg",
+			"description": "",
+			"genre_id": 14,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 17.277,
+			"vote_average": 6.0,
+			"back_image": "/kE6CAAJBtECOnDXyx4suUU79TCP.jpg"
+		}
+	},
+	{
+		"pk": 612577,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "헤로니모",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/6XiFdD3v8i8kcMS0LgzWwjeaqmH.jpg",
+			"description": "지구 반대편 카리브해 섬나라 쿠바. 이곳에는 98년 전, 쿠바로 이주한 한인 후손들이 살고 있다. 한국의 대표민요인 ‘아리랑’과 유행가 ‘만남’을 부르고, 한국어를 배우며 그들이 한인 사회를 지켜올 수 있었던 데는 쿠바의 숨은 영웅 ‘헤로니모 임(임은조)’의 노력이 있었다. 뉴욕에서 변호사로 일하며 평소 코리안 디아스포라의 숙명과 정체성에 대해 고민하던 재미교포 조셉 전 감독. 그는 2015년 겨울, 쿠바 여행 중 우연히 여행 안내자로 헤로니모의 딸 페트리시아를 만나면서 처음 헤로니모를 알게 됐다. 약 3년간 4개국 17개의 도시를 돌며 쿠바 한인, 선교사, 역사학자 등 70여 명을 만나 헤로니모의 이야기를 기록했다.",
+			"genre_id": 99,
+			"video_link": "https://www.youtube.com/watch?v=yGn9lwOF4p4",
+			"popularity": 6.47,
+			"vote_average": 0.0,
+			"back_image": "/68aMvypahnAa1vMadSqtXV3ZeMH.jpg"
+		}
+	},
+	{
+		"pk": 575452,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "배신자",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/eyolFvBmji4ZhRa1OQJ3Ss2kEtn.jpg",
+			"description": "1980년 초, 마약 공급권을 두고 이탈리아 마피아의 신구 패밀리 사이의 갈등이 고조되자 토마소 부세타는 조직생활을 청산하고 가족과 함께 브라질로 떠난다. 그러나 얼마 지나지 않아 그는 마피아의 신진세력인 콜레오네파가 자신의 동료들과 일가친척의 절반을 살해하고, 팔레르모에 두고 온 두 아들마저 실종됐다는 소식을 듣고 절망한다. 얼마 후, 토마소는 브라질 경찰에 마약 거래 혐의로 체포되고 이탈리아로 송환이 결정되자 이탈리아 사법기관에 마피아의 모든 것을 폭로하려는 위험한 결정을 하기에 이르는데...",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 11.746,
+			"vote_average": 7.9,
+			"back_image": "/y8lEIjYZCi2VFP4ixtHSn2klpth.jpg"
+		}
+	},
+	{
+		"pk": 633230,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Pat a Mat: Kutilské trampoty",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/za95QMGyOcHdM9teW5HPSJBQiUQ.jpg",
+			"description": "",
+			"genre_id": 16,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 6.041,
+			"vote_average": 0.0,
+			"back_image": "/pLvpZndEQNrWnyqnkw5DOoN31RN.jpg"
+		}
+	},
+	{
+		"pk": 576079,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "안식처",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/v4JSriQrXQKgqMRoWZxzh8Ew4J9.jpg",
+			"description": "브라질 외곽의 전원 마을에 사는 마르셀루는 자신의 모든 열정을 로데오에 쏟아 붓는 성정이 느긋한 카우보이다. 그에게 찾아온 한 비극적인 사건은 깊은 상처로 남는다. 그는 조금씩 트라우마를 극복해가며 다시금 희망을 되찾게 된다.",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 6.972,
+			"vote_average": 0.0,
+			"back_image": "/3jv5X1I9SzkY32ajdU1303ua2uv.jpg"
+		}
+	},
+	{
+		"pk": 596755,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "아빠는 예쁘다",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/oNLN7evWh17L0yWeBmsDfWmms4C.jpg",
+			"description": "집에선 투명인간, 회사에선 동네북 신세 만년과장 ‘덕재’는 영업실적을 위해 모두가 기피하는 ‘하와이 클럽’을 찾게 되고, 그곳에서 여자보다 더 예쁜 매니저 ‘승준’을 만난다. 별난 조건부 계약을 내건 ‘승준’ 때문에 ‘덕재’는 ‘하와이 클럽’으로 매일 출근하게 되고, 가족들은 모르는 수상한 비밀이 생기기 시작하는데…",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 5.931,
+			"vote_average": 0.0,
+			"back_image": "/sgdZwZOthNUoe0CDiEzwD5LPYXK.jpg"
+		}
+	},
+	{
+		"pk": 512263,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "허니 보이",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/3BZ2rBn31kWER45ZMj7OTe9keMm.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 11.596,
+			"vote_average": 9.0,
+			"back_image": "/sOLlj8gmpojgm1zUCMds5wq9yAO.jpg"
+		}
+	},
+	{
+		"pk": 570131,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "러브 앳",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/6wCCpvdgjVU0Rpo1ar8VyshYc09.jpg",
+			"description": "아내 ‘올리비아’와 다투고 만취 상태로 잠에서 깨어난 ‘라파엘’은 평소와 다름을 느낀다. 같은 듯 다른 세상. 베스트셀러 스타 작가로서의 삶은 간데없고 중학교 선생님이라고! 베프 ‘펠릭스’는 탁구광이 되어 있고 결정적으로!! 아내 ‘올리비아’는 자신을 아예 모른 채 유명 피아니스트로 살고 있다. 평행세계로 오게 된 원인이 운명적 사랑이었던 ‘올리비아’와의 관계가 소원해졌기 때문이라고 생각한 ‘라파엘’은 다시 그녀의 사랑을 얻으면 현실세계로 돌아갈 수 있다고 믿고 다가가지만 그녀 곁엔 모든 게 완벽한 ‘마크’가 버티고 있다. 이 세계에서 유일하게 자신을 믿어주는 친구 ‘펠릭스’의 도움으로 그녀의 마음을 공략할 기회를 얻게 되는데…  과연, 그들은 다시 사랑할 수 있을까?",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 12.377,
+			"vote_average": 7.3,
+			"back_image": "/3DXvZyAKtw0wIRRzNjoHTATAuRe.jpg"
+		}
+	},
+	{
+		"pk": 647898,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Sirio",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500None",
+			"description": "",
+			"genre_id": 37,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 6.156,
+			"vote_average": 7.5,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 647637,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Panda",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/xm8XaBxJ52iKxXvqZw2umgZrDn3.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 5.672,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 431075,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "폴라로이드",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/nAY6tGm27KtXOOSk6CDIWVw768o.jpg",
+			"description": "친구들과의 코스튬 파티에서 오래된 폴라로이드 카메라로 인증사진을 찍어주게 된 고등학생 ‘버드’.  그날 이후, 친구들이 순서대로 끔찍한 죽음을 맞이하게 되고 자신이 죽음을 결정하는 카메라의 주인임을 알게 되는데…",
+			"genre_id": 27,
+			"video_link": "https://www.youtube.com/watch?v=328z9Hr1Flo",
+			"popularity": 13.379,
+			"vote_average": 5.7,
+			"back_image": "/nzMdjuUZ6LR3XheCG5VGwm5vYEY.jpg"
+		}
+	},
+	{
+		"pk": 563155,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Blood",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/6N9cJ7MJgDv2Tvh5tLckPdTMGng.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 6.428,
+			"vote_average": 0.0,
+			"back_image": "/8shmkXsgtR4yfHF07gdx6IH9m1C.jpg"
+		}
+	},
+	{
+		"pk": 565235,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "엘리펀트킹 덤보",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/Aa4woJPqiCiPGm9THgS923vwGhc.jpg",
+			"description": "모두에게 놀림받는 겁쟁이 코끼리 덤보. 하지만 덤보는 언젠가 자신의 아빠처럼 반드시 무리의 왕이 되겠다 다짐한다. 어느 날 사칸 왕국은 코끼리를 이용해 가장 큰 왕국을 짓기 위해 덤보와 친구들을 모두 납치한다. 우연히 덤보의 숨겨진 힘을 보게 된 왕은 덤보를 코끼리 왕으로 추켜세워 차칸 왕국을 침략할 계획을 세우는데… 무리의 왕으로 거듭난 덤보는 기뻐하지만, 악당 사냥꾼의 사악한 계획을 알게 된다! 과연 덤보는 진정한 엘리펀트킹으로 거듭나 친구들과 차칸 왕국을 구할 수 있을까~?",
+			"genre_id": 16,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 6.86,
+			"vote_average": 0.0,
+			"back_image": "/69cfctL5LeqLHwOwDPPwy3TGwk.jpg"
+		}
+	},
+	{
+		"pk": 646083,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Liza's Tale",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/kkS9YBEkZPWcBKvmDr7PDxrQHpJ.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 5.67,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 609460,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Last Whispers",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/pRuGgqbvei43Iox0RZXqB32rSeQ.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 5.924,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 528091,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "복수의 여신",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/az3rk3vp1DmhM3KmpPNfDWW6mhN.jpg",
+			"description": "한 여성이 납치 되어 가면 쓴 남자들에게 쫓기고 있다. 이 여성뿐 아니라, 7명의 다른 참가자들과 함께 자신도 모르는 사이 게임에 참여 하게 된다. 자신도 모르는 가장 어두운 두려움에 직면하게 되는데...",
+			"genre_id": 27,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 23.825,
+			"vote_average": 6.0,
+			"back_image": "/1uPcrU7SShbJaj6pz5wA6CmVnze.jpg"
+		}
+	},
+	{
+		"pk": 454458,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "어글리 돌",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/wJX6SLX40kMBMf2yk1iXTtqaVTs.jpg",
+			"description": "춤과 노래가 멈추지 않는 행복 마을 ‘어글리 빌’에 사는 사랑둥이 인싸돌 ‘모씨’는 마을 바깥에 어떤 세상이 있을지 늘 궁금해한다. 모씨는 친구 ‘어글리 독’, ‘웨이지’, ‘럭키 뱃’, ‘바보’와 함께 파이프 건너편으로 모험을 떠나기로 결심하고 외모도 성격도 너무 완벽한 ‘퍼펙션 스쿨’의 ‘루’와 ‘맨디‘를 만나 새롭고 짜릿한 세상을 경험한다! 퍼펙션 스쿨에서 최고의 애착 인형이 되기 위한 스파르타 수업에 몰두하던 이들은 인형들의 숨겨진 진실을 마주하고 마는데…",
+			"genre_id": 16,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 14.735,
+			"vote_average": 6.3,
+			"back_image": "/93gOZuHazBWulk7b47MCXWVTiqh.jpg"
+		}
+	},
+	{
+		"pk": 643437,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "아단",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/8hwXhsGYPn8Yp02KZlYXoUdPlfP.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 5.638,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 431580,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "어바머너블",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/llhj3xtNes2Ri4d9HqtleKo1CfL.jpg",
+			"description": "",
+			"genre_id": 16,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 18.204,
+			"vote_average": 7.1,
+			"back_image": "/tLCDKsXo6D84IVFanoElosSEKdp.jpg"
+		}
+	},
+	{
+		"pk": 376865,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "하이 라이프",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/kGFXBf6IBt7YKc0HDO03Lz1Z7i8.jpg",
+			"description": "고립된 이 우주선에서는 모든 것이 인공적이며 인간의 욕망 또한 통제된다. 과거의 상처로 인해 아이에게 집착하는 의사는, 탑승객이자 지구에서 버려진 죄수들을 대상으로 인공 수정을 시도하고, 아이가 태어난다. 유일한 생존자로 남은 몬테는 어린 딸을 돌보며 버티어 낸다. 블랙홀의 회전 에너지를 확인하여 인류에 크게 기여하려던 임무는 완수하지 못했다. 소녀로 성장한 딸과 몬테는 더 이상 구조의 희망을 기다릴 수 없다. 두 사람은 블랙홀로의 여정을 시작한다.",
+			"genre_id": 878,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 13.139,
+			"vote_average": 5.6,
+			"back_image": "/bo5VJbds3oeMoj19GFnzBoUgjJS.jpg"
+		}
+	},
+	{
+		"pk": 1955,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "엘리펀트 맨",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/lDXJUmLQsViSKLbil2luD91l2kE.jpg",
+			"description": "차마 보기 힘들 만큼의 선천적인 기형을 가지고 태어나 사람들에게 '엘리펀트 맨'이라 불리던 19세기의 실존인물 존 메릭을 소재로 하고 있다. 시장에서 사람들에게 비인간적인 학대를 받으며 살아가는 '엘리펀트 맨', 존을 발견한 의사 프레디는 그를 병원으로 데려와 보살펴준다. 존은 흉측한 외모와는 달리 지적이고 선한 마음을 지닌 인물. 그에 대한 기사와 연구논문이 세상에 알려지자 사람들은 그를 보기 위해 찾아오기 시작한다.",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 12.591,
+			"vote_average": 8.1,
+			"back_image": "/rR479zn26lJp4vNxXKjfBVCHLAW.jpg"
+		}
+	},
+	{
+		"pk": 639771,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Cosmos",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/mQsu2hr3798YAFxTJycPTJMal1M.jpg",
+			"description": "",
+			"genre_id": 878,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 12.233,
+			"vote_average": 4.2,
+			"back_image": "/anlGttJ4JYluG98pPptBNvjJRXn.jpg"
+		}
+	},
+	{
+		"pk": 644850,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Damaso",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/7vcsDjuCbo7BCniARS2R23sc3qH.jpg",
+			"description": "",
+			"genre_id": 36,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 5.771,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 467956,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "수상한 교수",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/ptoj6XEIa2SudbCcOnhlVVlE41F.jpg",
+			"description": "상위 1%의 삶을 누리던 대학교수 ‘리차드’, 시한부 선고를 받게 되면서 남은 인생의 단 1초 마저 재미있게 살자고 다짐한다. 규칙도 버리고 간섭도 버리고 진짜 삶이 뭔지 알려주는 수상한 수업을 시작하는데… 인생은 엉망진창일수록 즐거워진다!",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/watch?v=__lSG3_aV5U",
+			"popularity": 12.053,
+			"vote_average": 6.8,
+			"back_image": "/dnFwUWT36xseF7LwT2PLkX7mbi0.jpg"
+		}
+	},
+	{
+		"pk": 484437,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "홀 인 더 그라운드",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/ebgxoznpOdQXGneQfbVu9W9D7Wh.jpg",
+			"description": "하나 뿐인 아들 ‘크리스’와 새로운 삶을 살기 위해 한 시골 마을로 이사온 ‘사라’. 아들을 따라 집 근처의 숲으로 들어갔다가 의문의 커다란 싱크홀을 발견하고, 알 수 없는 공포감에 사로잡힌다. 그날 이후, 밤마다 기이한 행동을 하는 아들을 목격한 ‘사라’는 크리스의 존재에 의심을 품게 되고, 모든 사건이 싱크홀과 연관되었음을 직감하는데….잠들어 있던 악마가 깨어났다!",
+			"genre_id": 27,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 11.346,
+			"vote_average": 5.5,
+			"back_image": "/wTnFy6B5QCeRgjgCGBGlZaDESJ1.jpg"
+		}
+	},
+	{
+		"pk": 520360,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "크리미널: 해튼가든",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/vWoV9y5eAw2gcM3hckuMZJkOXBQ.jpg",
+			"description": "영국 다이아몬드 시장의 중심지, 해튼가든. 청년 ‘바실’은 은퇴한 도둑 ‘브라이언’을 찾아가 해튼가든의 금고를 털 계획을 제안하고 ‘브라이언’은 동료들을 모아 인생 마지막 한탕을 준비한다.  누구도 예측하지 못한 사건. 계획은 성공하고 영국 전역은 패닉에 빠진다. 경찰은 총력전을 펼치고 수사가 계속되면서 믿기 힘든 범죄의 실체가 드러나는데…",
+			"genre_id": 80,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 15.101,
+			"vote_average": 5.2,
+			"back_image": "/2yY0V3kvcDt6d68t2HKklnqMnJp.jpg"
+		}
+	},
+	{
+		"pk": 517116,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "헌트",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/ml46d2iuCuDAyPsJI6AM9TSvLH5.jpg",
+			"description": "",
+			"genre_id": 27,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 12.196,
+			"vote_average": 6.4,
+			"back_image": "/1o5hXAmWUUO6fuAyV8n0wtDHKnT.jpg"
+		}
+	},
+	{
+		"pk": 475303,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "어 레이니 데이 인 뉴욕",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/uPGq1mkEXznUpapDmOSxbsybjfp.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 10.266,
+			"vote_average": 6.8,
+			"back_image": "/zHuAx63Rlfz82bCexEHsX17ldcm.jpg"
+		}
+	},
+	{
+		"pk": 235,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "스탠 바이 미",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/gLYbrbNQrw08CYPyCQxAKTmtRvM.jpg",
+			"description": "오레곤주의 작은 마을 캐슬록. 섬세한 성격으로 문학에 소질이 있는 고디, 알콜 중독인 아버지 밑에서 갑갑한 생활을 하지만 타고난 리더쉽으로 동네 꼬마들을 지휘하는 크리스, 2차대전의 영웅이었던 아버지를 존경하는 열정의 소년 테디, 착한 꼬마 뚱보 번은 이 마을에서 사는 단짝 친구들이다. 어느 날 번은 패거리들에게 며칠 전 행방불명된 소년의 시체가 저멀리 숲속에 있다는 소식을 전해준다. 만약 시체를 찾아낸다면 마을의 영웅이 되는 것. 네 명의 소년은 호기심과 모험심을 억누르지 못하고 숲을 향해 여행을 떠난다.",
+			"genre_id": 80,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 16.716,
+			"vote_average": 7.9,
+			"back_image": "/ljIF1JjdUUJtVW55x77vWSJxizQ.jpg"
+		}
+	},
+	{
+		"pk": 568160,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "날씨의 아이",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/5lcJpPcvSJwKMHYHiSKPQCqO9DF.jpg",
+			"description": "고등학교 1학년 여름. 외딴 섬에서 가출해, 도쿄에 온 호타카. 그러나 생활은 곧 곤란해졌고, 고독한 나날의 끝에 겨우 찾아낸 일은, 수상한 오컬트 잡지의 작가 일이었다. 그의 앞날을 시사하는 듯, 연일 쏟아지는 비. 그런 가운데, 잡담으로 북적거리는 도시 한 편에서, 호타카는 한 소녀를 만난다. 어떤 사연을 안고, 남동생과 둘이서 밝고 씩씩하게 사는 소녀, 하루나. 그녀에게는, 이상한 능력이 있었다.  \"저기, 지금부터 맑아질 거야.\" 조금씩 비가 그치고, 아름답게 빛나는 거리. 그것은 기도하는 것만으로, 하늘을 맑게 하는 힘이었다.",
+			"genre_id": 16,
+			"video_link": "https://www.youtube.com/watch?v=BvlNBtWnhLY",
+			"popularity": 11.952,
+			"vote_average": 7.6,
+			"back_image": "/ize3ZieqSy0TCWljmVoEiy8fSFS.jpg"
+		}
+	},
+	{
+		"pk": 10376,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "피아니스트의 전설",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/4c98EVuPhZzJgogtQ7hFVjF6Kyu.jpg",
+			"description": "트럼펫주자 ‘맥스’는 맨하탄의 허름한 악기점에 자신의 오래된 트럼펫을 팔려고 온다. 그런데, 그곳에서 오래 전 헤어졌던 친구 ‘나인틴 헌드레드’의 피아노 연주가 담긴 낡은 음반을 발견한다. 그리고 그는 악기점 주인에게 친구에 관한 전설적인 이야기를 들려주며 회상에 잠긴다.  20세기가 시작되는 첫날, 그러니까 1900년 1월 1일에 태어난 ‘나인틴 헌드레드’는, 유럽에서 미국으로 이민자들을 실어나르는 ‘버지니아 호’의 1등석 선실의 레몬 상자 안에서, 이 배의 석탄실에서 일하는 흑인노동자 ‘데니 부드맨’에 의해 발견된다. ‘데니’는 아기의 이름을 자신의 이름과 1900년을 딴 ‘데니 부드맨 T.D.레몬 1900’이라고 짓는다. ‘데니’는 ‘나인틴 헌드레드’의 아빠가 되고, 그는 배 안의 간부에게 들킬까봐 아이를 몰래 숨겨놓고 키운다. 행복도 잠시, ‘나인틴 헌드레드’가 6살 되던 해, ‘데니’는 석탄실의 끔찍한 사고로 저 세상에 가게 된다.  선상 창문을 통해 보이는 바다만을 보고 자라, 바다 밖 세계를 전혀 모르는 ‘나인틴 헌드레드’는 천재적인 피아노 실력으로, 배 안의 모든 승객과 선원들을 기쁘게 하며 살고 있다. 그가 27살 되던 해, 동갑내기 트럼펫주자 ‘맥스’를 알게되어 그때부터 두 사람은 배안에서 둘도 없는 소중한 우정을 쌓아가게 된다. 그러던 어느 날, 재즈의 창시자 ‘젤리 롤 모튼’이 ‘나인틴 헌드레드’의 피아노 실력 소문을 알게 돼, ‘나인틴~’에게 정식으로 피아노 대결을 벌이자고 제안하는데....",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 12.71,
+			"vote_average": 8.3,
+			"back_image": "/g95aipBRguk1lFwpAU7FJ4Z9cws.jpg"
+		}
+	},
+	{
+		"pk": 441384,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "더 비치 범",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/dLfFd3zKFFou6LFEGXVdapdRvW3.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 12.816,
+			"vote_average": 5.2,
+			"back_image": "/sJspZTaLdaoiQcy5S5ZWcQkLLGM.jpg"
+		}
+	},
+	{
+		"pk": 519674,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "The Bygone",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/aojffTKjmQYFKIitUKHG5MD6yE5.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 15.204,
+			"vote_average": 6.0,
+			"back_image": "/QRGnSu6DhOwEYbXa3tdKOHpzSp.jpg"
+		}
+	},
+	{
+		"pk": 648445,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "4 metros",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/ReY0Uigjj9STZqRYL9axF3u1xG.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 5.999,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 637660,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Mi Vida",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/4pPH8kCwAuYhwXgMrj2ZSd1okjw.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 7.328,
+			"vote_average": 0.0,
+			"back_image": "/2mnQrNEOonQUYe2m20DBzgnUJ61.jpg"
+		}
+	},
+	{
+		"pk": 498248,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "화이트 라이언 찰리",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/hujWCndWOC2weZjTHv0yj6dmTRD.jpg",
+			"description": "런던에 살고 있던 미아네 가족은 사자 농장을 운영하기 위해 남아프리카로 이사한다. 새로운 환경에 들떠 있는 가족들과 달리, 미아는 오랜 친구들과 떨어져 생활해야 한다는 사실이 영 마음에 들지 않는다. 그러던 어느 날, 농장에 흰 사자 찰리가 태어나고 미아와 찰리는 곧 세상에서 가장 친한 친구가 된다. 한편 미아의 아빠 존은 점차 맹수의 모습으로 변해가는 찰리를 여전히 친구로 대하는 미아가 걱정된다. 그리고 농장 또한 지금의 운영 방식으로는 적자를 벗어날 수 없다는 사실을 받아들이면서 곧 중대한 결정을 내리게 되는데… 아빠 존의 결정으로 위험에 처하게 된 찰리와 이를 눈치 챈 미아. 미아는 고민 끝에 찰리를 위한 아주 특별한 여행을 준비한다. 과연 미아는 찰리를 위험으로부터 구해낼 수 있을까?",
+			"genre_id": 12,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 15.838,
+			"vote_average": 7.3,
+			"back_image": "/aiyXOx5rU7UqYbToD3yDqoFY1gD.jpg"
+		}
+	},
+	{
+		"pk": 541572,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "엘리펀트 퀸",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/cX3fl80NMXILgmsy0blU9ir6sy1.jpg",
+			"description": "케냐에서 서식 중인 코끼리 가족의 여정을 담은 다큐멘터리 영화",
+			"genre_id": 99,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 13.513,
+			"vote_average": 8.9,
+			"back_image": "/hOGyG78jlEgTKE7csCLmyZvJojY.jpg"
+		}
+	},
+	{
+		"pk": 505436,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "컬러풀 웨딩즈 2",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/uT9FhaKYzR8XQg0etoPiqQxaMj8.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 13.724,
+			"vote_average": 5.8,
+			"back_image": "/co1ItuquxZjxLqbjjCLwK9ADkS.jpg"
+		}
+	},
+	{
+		"pk": 524659,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Crown Vic",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/aUFuuUMd4nMbt3pdzulnFRxbY6e.jpg",
+			"description": "",
+			"genre_id": 28,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 10.601,
+			"vote_average": 7.5,
+			"back_image": "/nTY0CnAaHkP4VG6GCncFv4kerr6.jpg"
+		}
+	},
+	{
+		"pk": 381341,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "퍼펙트 스트레인저",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/1R4EiMP9S9MPhRSpsOv2JtEDRtv.jpg",
+			"description": "서로 오래 알고지낸 30대 커플 세 쌍과 그들의 싱글 친구가 저녁식사 파티를 위해 만났다. 그들은 그 저녁동안 서로 사적인 전화나 메세지로 그 시간을 방해하지 않기로 약속한다. 대신 그들은 아무 것도 숨길 것이 없다는 허세로 합의하여 그들의 핸드폰을 식탁위에 올려 놓고 파티동안 받게 되는 문자나 이메일, 전화는 모두에게 공개하기로 한다. 또한 전화를 건 사람에게 스피커폰으로 이야기하고 있다는 것을 알리는 것은 반칙으로 정한다. 곧 비밀 프로젝트, 교외지역의 관계자, 그리고 온라인 만남 등이 드러나는데…",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 13.406,
+			"vote_average": 7.9,
+			"back_image": "/1yJopDnHURAlQqnmwsh6eqkZkdf.jpg"
+		}
+	},
+	{
+		"pk": 565348,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "어답트 어 하이웨이",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/y2nzyAsOufAhqEEhsr0ArTCQBPz.jpg",
+			"description": "한 범죄 전과자가 쓰레기통에 버려진 아기를 발견한다",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 7.759,
+			"vote_average": 8.6,
+			"back_image": "/xn4ZOYZl6W27yfrN3IMJf8KwVkF.jpg"
+		}
+	},
+	{
+		"pk": 636698,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "중력을 거스르는 남자",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/ukDD174mBv4IxXXho8R8CS3ocLK.jpg",
+			"description": "날 때부터 하늘을 떠다닌 아이. 세상과 담을 쌓은 채 자란 그는 배낭을 멘 덕에 땅에 발을 붙인다. 방송에서 하늘로 떠오르며 스타가 되지만, 여전히 배낭을 못 벗는 남자. 배낭 대신 인연이란 끈으로 지상에 발을 붙일 날은 언제 올까.",
+			"genre_id": 14,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 13.33,
+			"vote_average": 7.8,
+			"back_image": "/zk56t0E9Urj17t5p0L6P2etconL.jpg"
+		}
+	},
+	{
+		"pk": 441183,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "라이트 오브 마이 라이프",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/3gLH2WSY9IykYaiqDHkCCGbY7nw.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 13.901,
+			"vote_average": 6.7,
+			"back_image": "/eRdD7fhchQ1tdNDvIEcAkIz76bB.jpg"
+		}
+	},
+	{
+		"pk": 505706,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "골든글러브",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/3EJTMtsHSwLcF9BrKEx1cWjsstW.jpg",
+			"description": "70년대 독일의 함부르크, 못생기고 늘 꾸부정한 중년남 프리츠 혼카는 동네 바에서 유혹한 외로운 여자를 혼자 사는 다락방으로 데리고 와 죽이고 토막내지만 아무도 그를 의심하지 않는다. 실제 연쇄살인사건을 그린 베스트셀러 원작을 장인 정신에 가까울 정도로 끔찍하고 정밀하게 묘사한 문제작.",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 6.928,
+			"vote_average": 7.2,
+			"back_image": "/haOytM3k2BPtocHq9YQ6OUecpzh.jpg"
+		}
+	},
+	{
+		"pk": 584044,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "바이킹 워",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/9catsPrWanGQdVyb8gcrvzjEYXL.jpg",
+			"description": "인간보단 짐승에 가까운 베세커 전사들. 고통과 공포 따위 느끼지 못하는 이 분노의 존재들은 바이킹을 점령하기 위해 셰틀랜드제도의 영토로 찾아오는데.. 바이킹 영토에서 벌어지는 수년에 걸친 분노의 혈투! 오직, 전투에서 이기는 자만이 살아남을 수 있다!",
+			"genre_id": 36,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 10.765,
+			"vote_average": 4.2,
+			"back_image": "/qfMvkKqBAZEdHLUT5Zmslu5rV5H.jpg"
+		}
+	},
+	{
+		"pk": 519465,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "퀸 오브 하츠",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/rjLi95uydrVInjWD0bJIqsgvb3A.jpg",
+			"description": "청소년 전문 변호사로 쌍둥이 딸들과 의사 남편과 함께 행복한 삶을 살고 있었던 안느. 남편과 전부인 사이에서 낳은 아들 구스타브가 사고를 치고 집에 들어오면서 다섯 식구는 함께 살아가게 된다. 남들이 보기에 완벽한 삶을 살고 있었지만 안느는 중년의 위기를 겪고 있었고 구스타브는 계속 사고를 쳐 안느를 힘들게 한다. 그러던 중 구스타브가 여자 친구를 집으로 데려와 관계를 맺게 되고 안느는 알 수 없는 감정을 느끼게 된다. 안느의 외로움을 눈치 챈 구스타브가 안느에게 다가오고 그렇게 안느와 구스타브는 가까워진다. 약속이나 한 듯 안느와 구스타브는 하룻밤을 보내게 되고 그렇게 위험한 관계가 시작되는데...",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 15.752,
+			"vote_average": 7.4,
+			"back_image": "/3xqkD4QaB9qYrOgcc5YdfMvof7Z.jpg"
+		}
+	},
+	{
+		"pk": 503125,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "리틀 몬스터즈",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/oQvUq7UmumBTcAnvgFLFvegY47d.jpg",
+			"description": "",
+			"genre_id": 27,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 12.464,
+			"vote_average": 7.0,
+			"back_image": "/20c61yHYB92Y6M0grs9pBM62N1i.jpg"
+		}
+	},
+	{
+		"pk": 627715,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Marjaavaan",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/s8x7wDJ8pbSswM9w539Y7U04TMK.jpg",
+			"description": "",
+			"genre_id": 10749,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 9.245,
+			"vote_average": 8.3,
+			"back_image": "/7Ie571sTzYNHH68cLIFNKTLR4X.jpg"
+		}
+	},
+	{
+		"pk": 627879,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "로그 워페어",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/t217uREZssKxHWChAnalzSrh1Fu.jpg",
+			"description": "무차별 테러의 성전을 선포한 ‘블랙 마스크’가 세계를 위협한다. 미국, 영국, 프랑스, 러시아, 중국은 최고의 엘리트를 선발하여 비밀리에 다국적 최정예 특수부대 ‘로그 팀’을 만든다. ‘로그 팀’은 테러단의 방사능 폭탄을 정밀 타격하고  마침내 비밀기지를 습격하여 테러단과 전면전을 벌이는데...",
+			"genre_id": 28,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 12.464,
+			"vote_average": 5.2,
+			"back_image": "/sQENipE4TjyTnY8xBZvPKzi23jo.jpg"
+		}
+	},
+	{
+		"pk": 537739,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "캔 유 킵 어 시크릿?",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/oMN197KrIwGSS2rUtINLNtQZ5tP.jpg",
+			"description": "최악의 하루(?)를 보낸 이십 대 직딩 ‘엠마’는 출장 갔다가 돌아오는 비행기에서 옆자리에 앉은 남자에게 자신의 모든 비밀을 털어놓는다. 다시 일상으로 컴백한 ‘엠마’, 하지만 다시는 안 만날 사람이라 생각했던 ‘그’가 그녀의 앞에 나타나는데…",
+			"genre_id": 10749,
+			"video_link": "https://www.youtube.com/watch?v=5ADyveWgGCI",
+			"popularity": 14.046,
+			"vote_average": 6.2,
+			"back_image": "/9AvYdiDWutgsy67klIMVXImmv2G.jpg"
+		}
+	},
+	{
+		"pk": 648458,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Nagabonar Reborn",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/yuQMcMoCifwKEobtPOrz5cLPKO2.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 6.585,
+			"vote_average": 5.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 648629,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Buurman & Buurman, Experimenteren er op los!",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/plC6UWh0OBIwNiHgYAuWGKdCyqE.jpg",
+			"description": "",
+			"genre_id": 16,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 6.099,
+			"vote_average": 0.0,
+			"back_image": "/qaiu3t08keItrtVtwxp399bAR2x.jpg"
+		}
+	},
+	{
+		"pk": 620881,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Das perfekte Geheimnis",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/h00QoW7vP7Al9Ht1LOVIVH2dBFs.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 10.701,
+			"vote_average": 6.8,
+			"back_image": "/5K8SCUoLLIE23L9R5L6J86nc9I2.jpg"
+		}
+	},
+	{
+		"pk": 589976,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Joyeuse retraite !",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/tH6FaX8A9phy6dXGNAWd8nn0NaF.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 7.475,
+			"vote_average": 6.4,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 437670,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "괴테스쿨의 사고뭉치들 3",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/ywCWnSOndFqq9nhE563hm15YQe0.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 13.284,
+			"vote_average": 6.1,
+			"back_image": "/bJQQTAMnFlpcL1mBJlx4R41b1Y.jpg"
+		}
+	},
+	{
+		"pk": 552865,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "10 미니츠 곤",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/bwOBCxQt0RfOlUaM4fqNe9BJiPD.jpg",
+			"description": "동물적인 직감과 1초의 오차도 용납하지 않는 설계자 ‘렉스’ 철저한 계획 하에 움직이는 기술자 ‘프랭크’와 멤버들은 은행을 털지만 비상벨이 울리고 경찰과 시가전을 벌이고 프랭크는 의문의 공격으로 기억을 잃는데… 룰이 깨지고 모든 멤버들이 타겟이 된다. 지워진 10분, 사건이 재구성된다! 사라진 돈의 전쟁이 시작된다!",
+			"genre_id": 80,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 13.684,
+			"vote_average": 5.0,
+			"back_image": "/3xxFtGWXybWoixONIgkMTpvbZCb.jpg"
+		}
+	},
+	{
+		"pk": 11368,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "블러드 심플",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/c2BvVjKRRDKn82h7UDjYvs2tzoZ.jpg",
+			"description": "텍사스의 한 마을, 술집을 운영하는 마티에게 사립탐정 비저가 찾아와 그의 아내 애비와 종업원 레이가 불륜을 저지르고 있다고 알려준다. 마티는 레이를 해고하고 애비를 추궁하지만 오히려 역반하장의 그들의 모습에 분노하게 되고 비저에게 청부살인을 의뢰한다. 그러나 딴 곳에 마음을 품은 비저는 해서는 안 될 선택을 하게 되고 모두를 파극으로 밀어넣게 되는데...",
+			"genre_id": 80,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 8.823,
+			"vote_average": 7.4,
+			"back_image": "/o83uHWyhXgYm6YrMHUE1pqvZJDR.jpg"
+		}
+	},
+	{
+		"pk": 543084,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "더 비기스트 리틀 팜",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/2CmXG3A9JmqvIYSSml2aDxIK9yT.jpg",
+			"description": "",
+			"genre_id": 99,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 9.026,
+			"vote_average": 7.8,
+			"back_image": "/7KBnKmESTfuCNmTlsy5e1KraFdX.jpg"
+		}
+	},
+	{
+		"pk": 26371,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "모리스",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/9ODAV4xTOvKi5WK7snHEbcjVSqh.jpg",
+			"description": "20세기 초 영국, 케임브리지 대학교. 우연히 만나게 된 모리스와 클라이브는 낡은 관념의 무료한 대학 생활 속에서 서로에게 해방감을 줄 수 있는 존재로 발전해가고, 누구보다 가까웠던 두 사람의 우정은 서서히 사랑의 감정으로 변해간다. 하지만 사랑 하나면 모든 걸 버릴 수 있는 모리스와 그 모든 걸 잃는 게 두려운 클라이브의 사랑은 조금씩 흔들리기 시작한다.",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 10.689,
+			"vote_average": 7.6,
+			"back_image": "/sZo96MCFy4yFaJFKIfj4hbyvTci.jpg"
+		}
+	},
+	{
+		"pk": 489245,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "더 킬 팀",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/wLRZbtrbV51oQuvqNeK6vhb6btV.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 13.988,
+			"vote_average": 6.8,
+			"back_image": "/wWmLkSZbG6TPGGlA7jFWR794TMl.jpg"
+		}
+	},
+	{
+		"pk": 428836,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "오필리아",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/reWcCGfFDX046FEPliS3XUw3N7K.jpg",
+			"description": "",
+			"genre_id": 10749,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 8.297,
+			"vote_average": 6.7,
+			"back_image": "/uLo9PKstmhuz3LHGQoUIOPPsypT.jpg"
+		}
+	},
+	{
+		"pk": 291867,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Zeroville",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/79ZbOA6mwzuDNICi6l0rVLouNDG.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 7.74,
+			"vote_average": 4.9,
+			"back_image": "/5b5C3S4T1VY3Iz6Jwz0O3tHCisa.jpg"
+		}
+	},
+	{
+		"pk": 640120,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Nouvelle Cordée",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/4sDzoIsjWKRATZukRZUE5gnCkiF.jpg",
+			"description": "",
+			"genre_id": 99,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 4.721,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 375785,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "디어 마이 프렌드",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/eR3Pp4B3j4Zukj7qVeS4hReT5Rz.jpg",
+			"description": "긍정 전파력 100% 멘탈갑 ‘스카이(메이지 윌리암스)’와  개선 가능성 0% 극소심 ‘캘빈(에이사 버터필드)’의  꽁냥꽁냥 ‘TO DIE LIST’ 완성기!",
+			"genre_id": 12,
+			"video_link": "https://www.youtube.com/watch?v=uKiKLdREmsE",
+			"popularity": 5.992,
+			"vote_average": 7.3,
+			"back_image": "/r9X6Yzbr1ypmFoeh7SgH86GqKO.jpg"
+		}
+	},
+	{
+		"pk": 640118,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "La Passion de Marie Madeleine",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/wuhk5jEerfr91wykRFsXrx6WVsD.jpg",
+			"description": "",
+			"genre_id": 99,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 4.781,
+			"vote_average": 0.0,
+			"back_image": "https://image.flaticon.com/icons/svg/20/20773.svg"
+		}
+	},
+	{
+		"pk": 522369,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "미안해요, 리키",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/qlIHBheVo6VPLZzDaHyZIXmXCxE.jpg",
+			"description": "소박하지만 행복한 가정을 꾸리며 살던 리키는 택배 회사에 취직한다. 안정적인 생활을 꿈꾸며 시작한 일은 무리한 스케줄로 점점 리키를 지치게 하고 행복했던 가족은 생각하지도 못했던 난관에 부딪히는데...",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/watch?v=acHV_KwFpNg",
+			"popularity": 11.155,
+			"vote_average": 7.9,
+			"back_image": "/yjCW0qLgmyBUuv3KwRkuwy6yfmv.jpg"
+		}
+	},
+	{
+		"pk": 566454,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "앙리 픽 미스터리",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/anN8IURd68mqxYAFdA9O3mV4wCp.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 9.648,
+			"vote_average": 6.6,
+			"back_image": "/6ytu4enqLbAYhPMSWpfyAp7U5pq.jpg"
+		}
+	},
+	{
+		"pk": 522921,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "어쩌다 룸메이트",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/i3NnIDrWECK4AisZ9UQcN7u1ScW.jpg",
+			"description": "하룻밤 사이에 꼬여버린 시공간으로 2018년을 사는 여자 ‘소초’의 집과 1999년을 사는 남자 ‘육명’의 집이 하나로 합쳐진다.  ‘소초’가 문을 열면  스마트폰, AI로봇, 자율주행차… 2018년 ㅇ_ㅇ! ‘육명’이 문을 열면  팩게임, 공중전화카드, 디스켓… 1999년 ( -_-;)  한 지붕 아래 두 개의 세상을 공유하는 본격 시공간 초월 로맨틱 코미디!",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/watch?v=M8_LO_91fLA",
+			"popularity": 8.37,
+			"vote_average": 7.4,
+			"back_image": "/tN6iBBb5HvqqvTiURQeeMimij95.jpg"
+		}
+	},
+	{
+		"pk": 527385,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "애프터 웨딩",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/yFLIAWYSB87toA8znkCrEXwKLO3.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 7.82,
+			"vote_average": 6.4,
+			"back_image": "/lmGjhhVlmulHCBZs8OANapElHj5.jpg"
+		}
+	},
+	{
+		"pk": 585026,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Two Blue Stripes",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/mSkrNJ6xjA8rcrR0hGEJzDl8C5V.jpg",
+			"description": "",
+			"genre_id": 18,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 10.175,
+			"vote_average": 7.8,
+			"back_image": "/2vaBytRyAHriL8se0VEcJS21sgi.jpg"
+		}
+	},
+	{
+		"pk": 576712,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Everybody's Everything",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/d9Wwh98qgTzNnhNGaBS5J8tQv4B.jpg",
+			"description": "",
+			"genre_id": 99,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 9.367,
+			"vote_average": 9.3,
+			"back_image": "/vjROML9rfefYS2fJQnpNdEYlXYk.jpg"
+		}
+	},
+	{
+		"pk": 532938,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "샤이니 슈림프",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/5bLZL1D5bLgwzvTaTATqapvFWfT.jpg",
+			"description": "은퇴한 올림픽 챔피언 마티아스는 호모포비아적 발언으로 논란의 중심에 서게 되었다. 이로 인해 그는 졸지에 아마추어 아마추어 게이 수구 선수들로 구성된 ‘빛나는 새우들’이란 팀의 코치를 맡게 되었다. 그들에게 주어진 목표는 단 하나, 크로아티아에서 열리는 세계 LGBT 선수권 대회의 출전하는 것이다.",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 7.91,
+			"vote_average": 7.0,
+			"back_image": "/hRcSGSW0CZvvUqmDabGLYJygkgO.jpg"
+		}
+	},
+	{
+		"pk": 595975,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "La Belle Époque",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/zofCXkSIruI8PsTWKiONIa2RI57.jpg",
+			"description": "",
+			"genre_id": 35,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 12.471,
+			"vote_average": 7.8,
+			"back_image": "/mh77Jn8RjumGmPywVaplP6gctL5.jpg"
+		}
+	},
+	{
+		"pk": 639676,
+		"model": "movies.Movie",
+		"fields": {
+			"title": "Pat et Mat en hiver",
+			"movie_type": "now_playing",
+			"poster_url": "https://image.tmdb.org/t/p/w500/sS5vh224Sg2WihpTbfL6ktO6fBD.jpg",
+			"description": "",
+			"genre_id": 16,
+			"video_link": "https://www.youtube.com/",
+			"popularity": 4.523,
+			"vote_average": 0.0,
+			"back_image": "/rbCq2t0pl9zBeHz22xwkVyWwCeg.jpg"
+		}
+	}
+]
