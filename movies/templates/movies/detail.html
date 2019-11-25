@@ -15,7 +15,7 @@
     <div class="card col" style="width: 18rem;">
       <div class="card-body">
         <h1 class="card-title">{{movie.title}} ({{movie.genre.name}})</h1>
-        <h6 class="card-subtitle mb-2 text-muted">누적 관객수: {{movie.audience}}</h6><br>
+        <h6 class="card-subtitle mb-2 text-muted">평균 평점: {{avg_score}}</h6><br>
         <h3 class="card-subtitle mb-2">줄거리</h3>
         <hr>
         <p class="card-text">{{movie.description}}</p>
@@ -30,6 +30,8 @@
           {% endif %}
         </form>
         {% endif %}
+
+
         <p><span id="like-count">{{ movie.like_users.count }}</span>명이 이 글을 좋아합니다. </p>
       </div>
     </div>

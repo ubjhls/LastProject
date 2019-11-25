@@ -5,7 +5,7 @@ import pprint
 movie_list = []
 movie_info = []
 
-for page in range(1, 5):
+for page in range(1, 10):
     url = f'https://api.themoviedb.org/3/movie/top_rated?api_key=1dfd52c8a24a0f38f40efe41c86be13b&language=ko-KR&page={page}'
     response = requests.get(url).json()
     for movie in response["results"]:
