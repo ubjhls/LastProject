@@ -15,7 +15,9 @@
     <div class="card col" style="width: 18rem;">
       <div class="card-body">
         <h1 class="card-title">{{movie.title}} ({{movie.genre.name}})</h1>
-        <h6 class="card-subtitle mb-2 text-muted">평균 평점: {{avg_score}}</h6><br>
+        <h3 class="card-subtitle mb-2 text-muted">평론가 평점: {{movie.vote_average}}</h3>
+        <h3 class="card-subtitle mb-2 text-muted">인기도: {{movie.popularity}}</h3>
+        <h4 class="card-subtitle mb-2 text-muted">평균 평점: {{avg_score}}</h4><br>
         <h3 class="card-subtitle mb-2">줄거리</h3>
         <hr>
         <p class="card-text">{{movie.description}}</p>
