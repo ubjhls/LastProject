@@ -1,0 +1,114 @@
+[
+	{
+		"pk": 10759,
+		"model": "movies.genre",
+		"fields": {
+			"name": "Action & Adventure"
+		}
+	},
+	{
+		"pk": 16,
+		"model": "movies.genre",
+		"fields": {
+			"name": "애니메이션"
+		}
+	},
+	{
+		"pk": 35,
+		"model": "movies.genre",
+		"fields": {
+			"name": "코미디"
+		}
+	},
+	{
+		"pk": 80,
+		"model": "movies.genre",
+		"fields": {
+			"name": "범죄"
+		}
+	},
+	{
+		"pk": 99,
+		"model": "movies.genre",
+		"fields": {
+			"name": "다큐멘터리"
+		}
+	},
+	{
+		"pk": 18,
+		"model": "movies.genre",
+		"fields": {
+			"name": "드라마"
+		}
+	},
+	{
+		"pk": 10751,
+		"model": "movies.genre",
+		"fields": {
+			"name": "가족"
+		}
+	},
+	{
+		"pk": 10762,
+		"model": "movies.genre",
+		"fields": {
+			"name": "Kids"
+		}
+	},
+	{
+		"pk": 9648,
+		"model": "movies.genre",
+		"fields": {
+			"name": "미스터리"
+		}
+	},
+	{
+		"pk": 10763,
+		"model": "movies.genre",
+		"fields": {
+			"name": "News"
+		}
+	},
+	{
+		"pk": 10764,
+		"model": "movies.genre",
+		"fields": {
+			"name": "Reality"
+		}
+	},
+	{
+		"pk": 10765,
+		"model": "movies.genre",
+		"fields": {
+			"name": "Sci-Fi & Fantasy"
+		}
+	},
+	{
+		"pk": 10766,
+		"model": "movies.genre",
+		"fields": {
+			"name": "Soap"
+		}
+	},
+	{
+		"pk": 10767,
+		"model": "movies.genre",
+		"fields": {
+			"name": "Talk"
+		}
+	},
+	{
+		"pk": 10768,
+		"model": "movies.genre",
+		"fields": {
+			"name": "War & Politics"
+		}
+	},
+	{
+		"pk": 37,
+		"model": "movies.genre",
+		"fields": {
+			"name": "서부"
+		}
+	}
+]
