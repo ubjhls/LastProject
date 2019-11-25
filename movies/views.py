@@ -1,3 +1,4 @@
+from IPython import embed
 from django.shortcuts import render,redirect,get_object_or_404
 from .models import Movie, Genre, Review
 from .forms import ReviewForm
@@ -20,9 +21,18 @@ def index(request):
 def detail(request,movie_pk):
     movie = get_object_or_404(Movie,pk=movie_pk)
     reviewform = ReviewForm()
+    avg_score = 0
+    reviews = Review.objects.filter(movie_id=movie_pk)
+    for review in reviews:
+        avg_score += review.score
+    if reviews.count() > 0:
+        avg_score /= reviews.count()
+    else:
+        avg_score = "평점 정보가 없습니다."
     context = {
         'movie' : movie,   
-        'form' : reviewform
+        'form' : reviewform,
+        'avg_score': avg_score
     }
     return render(request,'movies/detail.html', context)
 
