@@ -56,7 +56,8 @@ def detail(request,movie_pk):
     url = f'https://api.themoviedb.org/3/movie/{movie_pk}/recommendations?api_key=1dfd52c8a24a0f38f40efe41c86be13b&language=ko-KR&page=1'
     response = requests.get(url).json()
     pprint.pprint(response["results"])
-
+    
+    
     # print(reviews.avgscore)
     # print(reviews.filter(movie_id=movie_pk).aggregate(Avg('score')))
     for review in reviews:
