@@ -110,7 +110,6 @@ def like(request, movie_pk):
         is_liked = True
         if request.user in movie.like_users.all():
             movie.like_users.remove(request.user)
-            movie.sum_likes = movie.aggregate(Sum('like_users'))
             is_liked = False
         else:
             movie.like_users.add(request.user)
