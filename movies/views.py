@@ -53,11 +53,11 @@ def detail(request,movie_pk):
     reviewform = ReviewForm()
     avg_score = 0
     reviews = Review.objects.filter(movie_id=movie_pk)
+
     url = f'https://api.themoviedb.org/3/movie/{movie_pk}/recommendations?api_key=1dfd52c8a24a0f38f40efe41c86be13b&language=ko-KR&page=1'
     response = requests.get(url).json()
     pprint.pprint(response["results"])
-    
-    
+    new_movies = response["results"]
     # print(reviews.avgscore)
     # print(reviews.filter(movie_id=movie_pk).aggregate(Avg('score')))
     for review in reviews:
@@ -68,7 +68,8 @@ def detail(request,movie_pk):
     else:
         avg_score = 0
     context = {
-        'movie' : movie,   
+        'movie' : movie,
+        'new_movies': new_movies,
         'form' : reviewform,
         'avg_score': avg_score,
     }

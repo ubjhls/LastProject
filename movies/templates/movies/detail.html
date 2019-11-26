@@ -137,6 +137,20 @@
   <hr>
 </div> -->
 
+<div class="row">
+{% for movie in new_movies %}
+<figure class="snip1273">
+    <img src="{{movie.poster_url}}" alt="sample84"></a>
+    <figcaption>
+        <h3>상세보기</h3>
+    </figcaption>
+    <a href="{% url 'movies:detail' movie.id %}"></a>
+    <p style="text-align: center;">{{movie.title}}</p>
+</figure>
+{% endfor %}
+</div>
+
+
   <hr>
 
   <h2 style="text-align: center;">평점을 작성해주세요</h2>
@@ -144,7 +158,7 @@
   <p>
     {{review.user}} ({{review.score}}점)<br>
     <form action='reviews/{{review.pk}}/delete' method='POST'>
-      {{review.content}}
+      {{review.title}}
       {% csrf_token %}
       <input class="btn btn-outline-danger" type="submit" value="삭제" onclick="return confirm('삭제하려면 클릭해주세요')">
     </form>
@@ -152,6 +166,7 @@
   </p>
   <hr>
   {% endfor %}
+  
 
 
   <hr>
