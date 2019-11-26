@@ -6,96 +6,103 @@
 {% endblock %}
 {% block body %}
 <div class="movie-card">
-  
-  <div class="container">
-      
-      <div>
-          <!-- Sample Start --> 
-          
-          <!-- Button trigger modal -->
-        <a data-toggle="modal" href="#ale"><img src='{{movie.poster_url}}' alt="cover" class="cover" style="width:180px; height: 230px;"></a>
 
-        <!-- Modal -->
-        <div class="modal fade" id="ale" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">{{movie.title}}</h4>
-              </div>
-              <div class="modal-body embed-responsive embed-responsive-16by9">
-                  <iframe width="1280" height="720" src="https://www.youtube.com/watch?v=bbh1NIpDo-c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
+  <div class="container">
+
+    <div>
+      <!-- Sample Start -->
+
+      <!-- Button trigger modal -->
+      <a data-toggle="modal" href="#ale"><img src='{{movie.poster_url}}' alt="cover" class="cover"
+          style="width:180px; height: 230px;"></a>
+
+      <!-- Modal -->
+      <div class="modal fade" id="ale" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                  aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">{{movie.title}}</h4>
+            </div>
+            <div class="modal-body embed-responsive embed-responsive-16by9">
+              <iframe width="1280" height="720" src="https://www.youtube.com/embed/UTaPqA9UXaE" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
-        
+      </div>
+
       <!-- end video modal -->
-        
-    <div class="hero" style="background: url('https://image.tmdb.org/t/p/w500{{movie.back_image}}'); opacity : 0.9; background-size:cover;">
-            
-      <div class="details">
-      
-        <div class="title1">{{ movie.title }} </div>
 
-        <div class="title2">{{ movie.genre.name}}</div>    
-        
-        
+      <div class="hero"
+        style="background: url('https://image.tmdb.org/t/p/w500{{movie.back_image}}'); opacity : 0.9; background-size:cover;">
 
-            {% if user.is_authenticated %}
-            <form action="{% url 'movies:like_movie' movie.pk %}" method="POST" style="width:200px">
-              {% csrf_token %}
-              {% if user in movie.like_users.all %}
-              <div id="like-button" data-id="{{movie.id}}" class="fas fa-thumbs-up " style="color:red; width: 200px"></div>
-              {% else %}
-              <div id="like-button" data-id="{{movie.id}}" class="far fa-thumbs-up " style="color:red; width: 200px;"></div>
-              {% endif %}
-            </form>
+        <div class="details">
+
+          <div class="title1">{{ movie.title }} </div>
+
+          <div class="title2">{{ movie.genre.name}}</div>
+
+
+
+          {% if user.is_authenticated %}
+          <form action="{% url 'movies:like_movie' movie.pk %}" method="POST" style="width:200px">
+            {% csrf_token %}
+            {% if user in movie.like_users.all %}
+            <div id="like-button" data-id="{{movie.id}}" class="fas fa-thumbs-up " style="color:red; width: 200px">
+            </div>
+            {% else %}
+            <div id="like-button" data-id="{{movie.id}}" class="far fa-thumbs-up " style="color:red; width: 200px;">
+            </div>
             {% endif %}
-            <h4><span id="like-count">{{ movie.like_users.count }} </span> likes</h4>
-        
-      </div> <!-- end details -->
-      
-    </div> <!-- end hero -->
-    
-    <div class="description">
-      
-      <div class="column1">
-        <span class="tag">{{movie.genre.name}}</span>
-      </div>  <!-- end column1 -->
-        
-      <div class="column2">
-        
-        <p style="width: 700px;">{{ movie.description}}</p>
-        
-        <div class="avatars">
-          <a href="#" data-tooltip="Person 1" data-placement="top">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/hobbit_avatar1.png" alt="avatar1" />
-          </a>
-          
-          <a href="#" data-tooltip="Person 2" data-placement="top">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/hobbit_avatar2.png" alt="avatar2" />
-          </a>
-          
-          
-          <a href="#" data-tooltip="Person 3" data-placement="top">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/hobbit_avatar3.png" alt="avatar3" />
-          </a>
-          
-        </div> <!-- end avatars -->
-        
-        
-        
-      </div> <!-- end column2 -->
-    </div> <!-- end description -->
-    
-   
-  </div> <!-- end container -->
-</div> <!-- end movie-card -->
-<!-- <div class="container" id="section" style="text-align:center; background-image: url({{movie.poster_url}}); background-repeat:no-repeat; background-size:cover; ">
+          </form>
+          {% endif %}
+          <h4><span id="like-count">{{ movie.like_users.count }} </span> likes</h4>
+
+        </div> <!-- end details -->
+
+      </div> <!-- end hero -->
+
+      <div class="description">
+
+        <div class="column1">
+          <span class="tag">{{movie.genre.name}}</span>
+        </div> <!-- end column1 -->
+
+        <div class="column2">
+
+          <p style="width: 700px;">{{ movie.description}}</p>
+
+          <div class="avatars">
+            <a href="#" data-tooltip="Person 1" data-placement="top">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/hobbit_avatar1.png" alt="avatar1" />
+            </a>
+
+            <a href="#" data-tooltip="Person 2" data-placement="top">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/hobbit_avatar2.png" alt="avatar2" />
+            </a>
+
+
+            <a href="#" data-tooltip="Person 3" data-placement="top">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/hobbit_avatar3.png" alt="avatar3" />
+            </a>
+
+          </div> <!-- end avatars -->
+
+
+
+        </div> <!-- end column2 -->
+      </div> <!-- end description -->
+
+
+    </div> <!-- end container -->
+  </div> <!-- end movie-card -->
+  <!-- <div class="container" id="section" style="text-align:center; background-image: url({{movie.poster_url}}); background-repeat:no-repeat; background-size:cover; ">
   <div class="row" style="margin-top:1rem">
     <div class="col" style="text-align:center">
     </div>
