@@ -1,3 +1,7 @@
+body { 
+  text-align: center;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
 .snip1273 {
   font-family: 'Raleway', Arial, sans-serif;
@@ -55,9 +59,10 @@
   text-transform: uppercase;
 }
 .snip1273 p {
-  font-size: 0.8em;
+  text-align: center !important; 
+  font-size: 1em;
   font-weight: 500;
-  margin: 0 0 15px;
+  margin: 0 0 0px;
 }
 .snip1273 a {
   position: absolute;
@@ -121,4 +126,8 @@
 .snip1273:hover figcaption:after,
 .snip1273.hover figcaption:after {
   opacity: 0.1;
+}
+
+p {
+  text-align: center;
 }

@@ -29,7 +29,7 @@ def detail(request,movie_pk):
         avg_score += review.score
     if reviews.count() > 0:
         avg_score /= reviews.count()
-        avg_score = round(avg_score, 2)
+        avg_score = round(avg_score, 1)
     else:
         avg_score = 0
     context = {
@@ -88,6 +88,7 @@ def recommand(request):
         'max_movie' : movie
     }
     return render(request,'movies/recommand.html',context)
+
 def search(request):
     query = request.GET.get('search_title')
     if query:
@@ -101,3 +102,4 @@ def search(request):
         return render(request,'movies/search.html',context)
     else:
         return redirect('movies:index')
+

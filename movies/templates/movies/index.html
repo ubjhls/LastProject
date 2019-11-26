@@ -8,19 +8,20 @@
 
 <div class="container" style="text-align:center">
   <div class="btn-group" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-secondary">인기 영화</button>
+    <button type="button" class="btn btn-secondary" onclick="location.href=`{% url 'accounts:index' %}`">인기 영화</button>
+    <button type="button" class="btn btn-secondary">평론가 추천 영화</button>
     <button type="button" class="btn btn-secondary">유저 추천 영화</button>
-    <button type="button" class="btn btn-secondary">평점순</button>
   </div>
   <hr>
-<h1>박스오피스 TOP 10 </h1>
+<h1>현재 상영중 영화 </h1>
 </div>
 
 <div id="drag-container" style="z-index: 2;">
   <div id="spin-container">
     <!-- Add your images (or video) here -->
     {% for movie in index_movies %}
-      <a href="{% url 'movies:detail' movie.pk %}"><img src="{{movie.poster_url}}" alt="sample84" />
+    
+      <a href="{% url 'movies:detail' movie.pk %}"><img src="{{movie.poster_url}}" alt="sample84" /></a>
     {% endfor %}
     <a href="#"></a>
   </div>
