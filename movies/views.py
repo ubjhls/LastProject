@@ -27,21 +27,21 @@ def index(request, page_type):
         context = {
             'movies': popul_movies,
         }
-    elif page_type == 3:
-        if request.user.is_authenticated:
-            for movie in request.user.like_movies.all():
-                url = f'https://api.themoviedb.org/3/movie/{movie.id}/recommendations?api_key=1dfd52c8a24a0f38f40efe41c86be13b&language=ko-KR&page=1'
-                response = requests.get(url).json()
-                pprint.pprint(response["results"])
-                movies = response["results"]
-                pprint.pprint(movies)
-            context = {
-                'movies': movies
-            }
-        else:
-            context = {
-                'movies': index_movies
-            }
+    # elif page_type == 3:
+    #     if request.user.is_authenticated:
+    #         for movie in request.user.like_movies.all():
+    #             url = f'https://api.themoviedb.org/3/movie/{movie.id}/recommendations?api_key=1dfd52c8a24a0f38f40efe41c86be13b&language=ko-KR&page=1'
+    #             response = requests.get(url).json()
+    #             pprint.pprint(response["results"])
+    #             movies = response["results"]
+    #             pprint.pprint(movies)
+    #         context = {
+    #             'movies': movies
+    #         }
+    #     else:
+    #         context = {
+    #             'movies': index_movies
+    #         }
     else:
         context = {
             'movies': index_movies
@@ -53,13 +53,17 @@ def detail(request,movie_pk):
     reviewform = ReviewForm()
     avg_score = 0
     reviews = Review.objects.filter(movie_id=movie_pk)
+    url = f'https://api.themoviedb.org/3/movie/{movie_pk}/recommendations?api_key=1dfd52c8a24a0f38f40efe41c86be13b&language=ko-KR&page=1'
+    response = requests.get(url).json()
+    pprint.pprint(response["results"])
+
     # print(reviews.avgscore)
     # print(reviews.filter(movie_id=movie_pk).aggregate(Avg('score')))
     for review in reviews:
         avg_score += review.score
     if reviews.count() > 0:
         avg_score /= reviews.count()
-        avg_score = round(avg_score, 2)
+        avg_score = round(avg_score, 1)
     else:
         avg_score = 0
     context = {

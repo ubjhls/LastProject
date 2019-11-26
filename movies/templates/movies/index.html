@@ -11,12 +11,9 @@
     <button id="nowplaying" onclick="location.href=`{% url 'movies:index' 0%}`" type="button" class="btn btn-secondary">현재 상영작</button>
     <button id="popular" onclick="location.href=`{% url 'movies:index' 1%}`" type="button" class="btn btn-secondary">인기 영화</button>
     <button id="top_rated" onclick="location.href=`{% url 'movies:index' 2%}`" type="button" class="btn btn-secondary">평론가 평점순</button>
-    {% if user.is_authenticated %}
-    <button id="user_rated" onclick="location.href=`{% url 'movies:index' 3%}`" type="button" class="btn btn-secondary">유저 추천 영화</button>
-    {% endif %}
   </div>
   <hr>
-<h1>박스오피스 TOP 10 </h1>
+<h1>현재 상영중 영화 </h1>
 </div>
 
 <div id="drag-container" style="z-index: 2;">
