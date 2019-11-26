@@ -103,3 +103,4 @@ def search(request):
     else:
         return redirect('movies:index')
 
+
