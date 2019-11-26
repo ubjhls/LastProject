@@ -21,6 +21,8 @@ class Movie(models.Model):
         related_name='like_movies',
         blank=True
         )
+    # avgscore = models.FloatField(blank=True, default=0)
+    # sum_likes = models.IntegerField(blank=True)
 
 class Review(models.Model):
     content = models.CharField(max_length=100, verbose_name='한줄평')

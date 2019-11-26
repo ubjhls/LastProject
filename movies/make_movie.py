@@ -25,6 +25,7 @@ for movie in movie_list:
         video_link = f'https://www.youtube.com/watch?v={video_response["results"][0]["key"]}'
     else:
         video_link = 'https://www.youtube.com/'
+        
     if len(response['genres']) > 0:
         genres = response['genres'][0]['id']
     else:
