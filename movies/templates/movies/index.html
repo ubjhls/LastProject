@@ -8,9 +8,12 @@
 
 <div class="container" style="text-align:center">
   <div class="btn-group" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-secondary">인기 영화</button>
-    <button type="button" class="btn btn-secondary">유저 추천 영화</button>
-    <button type="button" class="btn btn-secondary">평점순</button>
+    <button id="nowplaying" onclick="location.href=`{% url 'movies:index' 0%}`" type="button" class="btn btn-secondary">현재 상영작</button>
+    <button id="popular" onclick="location.href=`{% url 'movies:index' 1%}`" type="button" class="btn btn-secondary">인기 영화</button>
+    <button id="top_rated" onclick="location.href=`{% url 'movies:index' 2%}`" type="button" class="btn btn-secondary">평론가 평점순</button>
+    {% if user.is_authenticated %}
+    <button id="user_rated" onclick="location.href=`{% url 'movies:index' 3%}`" type="button" class="btn btn-secondary">유저 추천 영화</button>
+    {% endif %}
   </div>
   <hr>
 <h1>박스오피스 TOP 10 </h1>
@@ -19,7 +22,7 @@
 <div id="drag-container" style="z-index: 2;">
   <div id="spin-container">
     <!-- Add your images (or video) here -->
-    {% for movie in index_movies %}
+    {% for movie in movies %}
       <a href="{% url 'movies:detail' movie.pk %}"><img src="{{movie.poster_url}}" alt="sample84" />
     {% endfor %}
     <a href="#"></a>
@@ -29,6 +32,17 @@
 </div>
 
 {% block script %}
+{% comment %} <script>
+  const nowPlaying = document.querySelector('#nowplaying')
+  const movies = document.querySelector('#spin-container')
+  nowPlaying.addEventListener('click', function(event){
+    console.log(event.target)
+  })
+  movies.addEventListner('click', function(event){
+    console.log(event)
+  })
+  
+</script> {% endcomment %}
 <script src="{% static 'index/index.js' %}"></script>
 <script>src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"</script>
 {% endblock %}

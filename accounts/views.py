@@ -20,13 +20,13 @@ def index(request):
 
 def signup(request):
     if request.user.is_authenticated:
-        return redirect('movies:index')
+        return redirect('movies:index', 0)
     if request.method == 'POST': 
         form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             user = form.save()
             auth_login(request,user)
-            return redirect('movies:index')
+            return redirect('movies:index', 0)
     else:
         form = CustomUserCreationForm()
     context = {
@@ -55,7 +55,7 @@ def login(request):
 
             if user:
                 django_login(request, user)
-                return redirect('movies:index')
+                return redirect('movies:index', 0)
             login_form.add_error(None, '아이디 또는 비밀번호가 올바르지 않습니다')
     else:
         login_form = LoginForm()
@@ -68,7 +68,7 @@ def login(request):
 
 def logout(request):
     auth_logout(request)
-    return redirect('movies:index')
+    return redirect('movies:index', 0)
 
 @login_required
 def follow(request, account_pk):
