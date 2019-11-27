@@ -24,6 +24,7 @@ def signup(request):
     if request.method == 'POST':
         form = CustomUserCreationForm(request.POST)
         if form.is_valid():
+            user.image = request.FILES.get('image')
             user = form.save()
             auth_login(request, user)
             return redirect('movies:index',0)

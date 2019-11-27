@@ -94,11 +94,13 @@
     </div> <!-- end container -->
   </div> <!-- end movie-card -->
   <!-- 평점 작성 -->
-  <div id="reviewSection" class="bg-light">
+  <div class="row">
+    <div class="col-4"></div>
+  <div id="reviewSection" class="col-4" style="width: 1000px;">
     {% if movie.review_set.all %}
-    <p>작성된 리뷰 {{ movie.review_set.all.count }}개</p>
+    <p>작성된 한줄평 {{ movie.review_set.all.count }}개</p>
     {% else %}
-    <p>작성된 리뷰가 없습니다. 첫번째 리뷰의 주인공이 되어보세요.</p>
+    <p>한줄평을 작성해주세요.</p>
     {% endif %}
     <table class="review">
       <tr>
@@ -155,12 +157,14 @@
           </a>
         </td>
         <td>
-          <p><b>{{ review.score }}</b> "{{ review.content }}"</p>
+          <p>{{ review.content }} ({{ review.score }})점</p>
         </td>
       </tr>
       {% endfor %}
     </table>
   </div>
+  <div class="col-4"></div>
+</div>
 <!-- 
     <form action="{% url 'movies:review' movie.pk %}" method='POST'>
       {% csrf_token %}
@@ -195,7 +199,7 @@
 
 
 
-
+<hr style="color: brown;">
   <div id="mm" class="carousel slide" data-ride="carousel">
     <h2 style="text-align: center;">관련 추천 영화</h2>
     <!-- The slideshow -->

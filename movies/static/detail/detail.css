@@ -2,6 +2,7 @@ body{
   height: 250vh;
   display: flex;
   flex-direction: column;
+  background: rgb(43, 40, 29);
 }
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 
@@ -11,9 +12,7 @@ body{
   box-sizing: border-box;
 }
 
-body {
-  background: #43423E;
-}
+
 
 a {
   text-decoration: none;
@@ -27,7 +26,7 @@ a:hover {
 .movie-card {
   font: 14px/22px "Lato", Arial, sans-serif;
   color: #A9A8A3;
-  width: 100%;
+
 }
 
 .container {
