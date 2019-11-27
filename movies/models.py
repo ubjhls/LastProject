@@ -6,6 +6,10 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 class Genre(models.Model):
     name = models.CharField(max_length=30)
 
+class People(models.Model):
+    name = models.CharField(max_length=100)
+    profile_path = models.CharField(max_length=140)
+
 class Movie(models.Model):
     title = models.CharField(max_length=40)
     movie_type = models.TextField()
@@ -21,6 +25,11 @@ class Movie(models.Model):
         related_name='like_movies',
         blank=True
         )
+    cast = models.ManyToManyField(
+        People,
+        related_name='known_for',
+        blank=True
+    )
     # avgscore = models.FloatField(blank=True, default=0)
     # sum_likes = models.IntegerField(blank=True)
 

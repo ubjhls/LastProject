@@ -3,6 +3,7 @@
 {% block css %}
 <link rel="stylesheet" href="{% static 'index/index.css' %}">
 <link href="https://fonts.googleapis.com/css?family=Gugi&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap" rel="stylesheet">
 {% endblock %}
 {% block body %}
 
@@ -13,7 +14,7 @@
     <button id="top_rated" onclick="location.href=`{% url 'movies:index' 2%}`" type="button" class="btn btn-secondary">평론가 평점순</button>
   </div>
   <hr>
-<h1>현재 상영중 영화 </h1>
+<h1 style="font-family: 'Black Han Sans', sans-serif; color:#e0f088;">TOP 10 만 뽑았다!! </h1>
 </div>
 
 <div id="drag-container" style="z-index: 2;">

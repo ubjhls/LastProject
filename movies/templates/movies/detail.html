@@ -3,6 +3,7 @@
 {% block css %}
 <link rel="stylesheet" href="{% static 'detail/detail.css' %}">
 <link href="https://fonts.googleapis.com/css?family=Gugi&display=swap" rel="stylesheet">
+
 {% endblock %}
 {% block body %}
 <div class="movie-card">
@@ -19,14 +20,14 @@
       <!-- Modal -->
       <div class="modal fade" id="ale" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
+          <div class="modal-content" style="width: 500px;">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                   aria-hidden="true">&times;</span></button>
               <h4 class="modal-title" id="myModalLabel">{{movie.title}}</h4>
             </div>
             <div class="modal-body embed-responsive embed-responsive-16by9">
-              <iframe width="1280" height="720" src="https://www.youtube.com/embed/UTaPqA9UXaE" frameborder="0"
+              <iframe width="100%" height="720" src="https://www.youtube.com/embed?listType=search&list={{ movie.title }}+예고편" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
@@ -71,27 +72,17 @@
       <div class="description">
 
         <div class="column1">
-          <span class="tag">{{movie.genre.name}}</span>
+          <p>평론가 평점</p><span class="tag">{{movie.vote_average}}</span>
         </div> <!-- end column1 -->
 
         <div class="column2">
 
-          <p style="width: 700px;">{{ movie.description}}</p>
+          {{ movie.description}}
 
           <div class="avatars">
-            <a href="#" data-tooltip="Person 1" data-placement="top">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/hobbit_avatar1.png" alt="avatar1" />
-            </a>
-
-            <a href="#" data-tooltip="Person 2" data-placement="top">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/hobbit_avatar2.png" alt="avatar2" />
-            </a>
-
-
-            <a href="#" data-tooltip="Person 3" data-placement="top">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/hobbit_avatar3.png" alt="avatar3" />
-            </a>
-
+              {% for people in peoples %}
+            {{people}}
+            {% endfor %}
           </div> <!-- end avatars -->
 
 
@@ -102,151 +93,189 @@
 
     </div> <!-- end container -->
   </div> <!-- end movie-card -->
-  <!-- <div class="container" id="section" style="text-align:center; background-image: url({{movie.poster_url}}); background-repeat:no-repeat; background-size:cover; ">
-  <div class="row" style="margin-top:1rem">
-    <div class="col" style="text-align:center">
-    </div>
+  <!-- 평점 작성 -->
+  <div>
+    <h2 style="text-align: center;">평점을 작성해주세요</h2>
+    {% for review in movie.review_set.all %}
+    <p>
+      {{review.user}} ({{review.score}}점)<br>
+      <form action='reviews/{{review.pk}}/delete' method='POST'>
+        {{review.content}}
+        {% csrf_token %}
+        <input class="btn btn-outline-danger" type="submit" value="삭제" onclick="return confirm('삭제하려면 클릭해주세요')">
+      </form>
 
-    <div class="card col" style="width: 18rem;">
-      <div class="card-body">
-        <h1 class="card-title">{{movie.title}} ({{movie.genre.name}})</h1>
-        <h3 class="card-subtitle mb-2 text-muted">평론가 평점: {{movie.vote_average}}</h3>
-        <h3 class="card-subtitle mb-2 text-muted">인기도: {{movie.popularity}}</h3>
-        <h4 class="card-subtitle mb-2 text-muted">유저 평점: {{avg_score}}</h4><br>
-        <h3 class="card-subtitle mb-2">줄거리</h3>
-        <hr>
-        <p class="card-text">{{movie.description}}</p>
-        <hr>
-        {% if user.is_authenticated %}
-        <form action="{% url 'movies:like_movie' movie.pk %}" method="POST">
-          {% csrf_token %}
-          {% if user in movie.like_users.all %}
-          <i id="like-button" data-id="{{movie.id}}" class="fas fa-thumbs-up " style="color:red; width:40px"></i>
-          {% else %}
-          <i id="like-button" data-id="{{movie.id}}" class="far fa-thumbs-up " style="color:red"></i>
-          {% endif %}
-        </form>
-        {% endif %}
+    </p>
+    <hr>
+    {% endfor %}
+    <hr>
 
-
-        <p><span id="like-count">{{ movie.like_users.count }}</span>명이 이 글을 좋아합니다. </p>
-      </div>
-      ::after
-    </div>
+    <form action="{% url 'movies:review' movie.pk %}" method='POST'>
+      {% csrf_token %}
+      <input value="{{review.content}}" name="content" type="text">
+      <span class="score">
+        <span class="input">
+          <input type="radio" name="score" value="2" id="p1">
+          <label for="p1">1</label>
+          <input type="radio" name="score" value="1" id="p1_5">
+          <label for="p1_5">0.5</label>
+          <input type="radio" name="score" value="4" id="p2">
+          <label for="p2">2</label>
+          <input type="radio" name="score" value="3" id="p2_5">
+          <label for="p2_5">1.5</label>
+          <input type="radio" name="score" value="6" id="p3">
+          <label for="p3">3</label>
+          <input type="radio" name="score" value="5" id="p_3_5">
+          <label for="p3_5">2.5</label>
+          <input type="radio" name="score" value="8" id="p4">
+          <label for="p4">4</label>
+          <input type="radio" name="score" value="7" id="p4_5">
+          <label for="p4_5">3.5</label>
+          <input type="radio" name="score" value="10" id="p5">
+          <label for="p5">5</label>
+          <input type="radio" name="score" value="9" id="p5_5">
+          <label for="p5_5">4.5</label>
+        </span>
+      </span>
+      <input class="btn btn-outline-primary" type='submit' value='등록'>
+    </form>
   </div>
-  <hr>
-</div> -->
 
-<div class="row">
-{% for movie in new_movies %}
-<figure class="snip1273">
-    <img src="{{movie.poster_url}}" alt="sample84"></a>
-    <figcaption>
-        <h3>상세보기</h3>
-    </figcaption>
-    <a href="{% url 'movies:detail' movie.id %}"></a>
-    <p style="text-align: center;">{{movie.title}}</p>
-</figure>
-{% endfor %}
+
+
+
+  <div id="mm" class="carousel slide" data-ride="carousel">
+    <h2 style="text-align: center;">관련 추천 영화</h2>
+    <!-- The slideshow -->
+    <div class="carousel-inner no-padding mx-0">
+      <a class="carousel-control-prev" href="#mm" data-slide="prev"
+        style="background: linear-gradient(90deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%, rgba(255,255,255,0.2) 100%);">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-3">
+            <img src="https://image.tmdb.org/t/p/w500{{new_movies.1.poster_path}}" alt="sample84" class='my-image'
+              alt=""><br>
+            <h5 class="movieTitle">{{new_movies.1.title}}</h5>
+
+          </div>
+          <div class="col-3">
+            <img src="https://image.tmdb.org/t/p/w500{{new_movies.2.poster_path}}" alt="sample84" class='my-image'
+              alt=""><br>
+            <h5 class="movieTitle">{{new_movies.2.title}}</h5>
+
+          </div>
+          <div class="col-3">
+            <img src="https://image.tmdb.org/t/p/w500{{new_movies.3.poster_path}}" alt="sample84" class='my-image'
+              alt=""><br>
+            <h5 class="movieTitle">{{new_movies.3.title}}</h5>
+
+          </div>
+          <div class="col-3">
+            <img src="https://image.tmdb.org/t/p/w500{{new_movies.4.poster_path}}" alt="sample84" class='my-image'
+              alt=""><br>
+            <h5 class="movieTitle">{{new_movies.4.title}}</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-3">
+            <img src="https://image.tmdb.org/t/p/w500{{new_movies.5.poster_path}}" alt="sample84" class='my-image'
+              alt=""><br>
+            <h5 class="movieTitle">{{new_movies.5.title}}</h5>
+
+          </div>
+          <div class="col-3">
+            <img src="https://image.tmdb.org/t/p/w500{{new_movies.6.poster_path}}" alt="sample84" class='my-image'
+              alt=""><br>
+            <h5 class="movieTitle">{{new_movies.6.title}}</h5>
+
+          </div>
+          <div class="col-3">
+            <img src="https://image.tmdb.org/t/p/w500{{new_movies.7.poster_path}}" alt="sample84" class='my-image'
+              alt=""><br>
+            <h5 class="movieTitle">{{new_movies.7.title}}</h5>
+
+          </div>
+          <div class="col-3">
+            <img src="https://image.tmdb.org/t/p/w500{{new_movies.8.poster_path}}" alt="sample84" class='my-image'
+              alt=""><br>
+            <h5 class="movieTitle">{{new_movies.8.title}}</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="row carousel-item">
+        <div class="row">
+          <div class="col-3">
+            <img src="https://image.tmdb.org/t/p/w500{{new_movies.9.poster_path}}" alt="sample84" class='my-image'
+              alt=""><br>
+            <h5 class="movieTitle">{{new_movies.9.title}}</h5>
+
+          </div>
+          <div class="col-3">
+            <img src="https://image.tmdb.org/t/p/w500{{new_movies.10.poster_path}}" alt="sample84" class='my-image'
+              alt=""><br>
+            <h5 class="movieTitle">{{new_movies.10.title}}</h5>
+          </div>
+          <div class="col-3">
+            <img src="https://image.tmdb.org/t/p/w500{{new_movies.11.poster_path}}" alt="sample84" class='my-image'
+              alt=""><br>
+            <h5 class="movieTitle">{{new_movies.11.title}}</h5>
+
+          </div>
+          <div class="col-3">
+            <img src="https://image.tmdb.org/t/p/w500{{new_movies.12.poster_path}}" alt="sample84" class='my-image'
+              alt=""><br>
+            <h5 class="movieTitle">{{new_movies.12.title}}</h5>
+
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-next no-padding" href="#mm" data-slide="next"
+        style="background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 100%, rgba(255,255,255,0.2) 100%);">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <!-- Left and right controls -->
+  </div>
 </div>
 
-
-  <hr>
-
-  <h2 style="text-align: center;">평점을 작성해주세요</h2>
-  {% for review in movie.review_set.all %}
-  <p>
-    {{review.user}} ({{review.score}}점)<br>
-    <form action='reviews/{{review.pk}}/delete' method='POST'>
-      {{review.title}}
-      {% csrf_token %}
-      <input class="btn btn-outline-danger" type="submit" value="삭제" onclick="return confirm('삭제하려면 클릭해주세요')">
-    </form>
-
-  </p>
-  <hr>
-  {% endfor %}
-  
+<hr>
 
 
-  <hr>
 
-  <form action="{% url 'movies:review' movie.pk %}" method='POST'>
-    {% csrf_token %}
-    <input value="{{review.content}}" name="content" type="text">
-    <span class="score">
-      <span class="input">
-        <input type="radio" name="score" value="2" id="p1">
-        <label for="p1">1</label>
-        <input type="radio" name="score" value="1" id="p1_5">
-        <label for="p1_5">0.5</label>
-        <input type="radio" name="score" value="4" id="p2">
-        <label for="p2">2</label>
-        <input type="radio" name="score" value="3" id="p2_5">
-        <label for="p2_5">1.5</label>
-        <input type="radio" name="score" value="6" id="p3">
-        <label for="p3">3</label>
-        <input type="radio" name="score" value="5" id="p_3_5">
-        <label for="p3_5">2.5</label>
-        <input type="radio" name="score" value="8" id="p4">
-        <label for="p4">4</label>
-        <input type="radio" name="score" value="7" id="p4_5">
-        <label for="p4_5">3.5</label>
-        <input type="radio" name="score" value="10" id="p5">
-        <label for="p5">5</label>
-        <input type="radio" name="score" value="9" id="p5_5">
-        <label for="p5_5">4.5</label>
-      </span>
-    </span>
-    <!-- <div class="starRev">
-        <span class="starR1 on">별1_왼쪽</span>
-        <span class="starR2">별1_오른쪽</span>
-        <span class="starR1">별2_왼쪽</span>
-        <span class="starR2">별2_오른쪽</span>
-        <span class="starR1">별3_왼쪽</span>
-        <span class="starR2">별3_오른쪽</span>
-        <span class="starR1">별4_왼쪽</span>
-        <span class="starR2">별4_오른쪽</span>
-        <span class="starR1">별5_왼쪽</span>
-        <span class="starR2">별5_오른쪽</span>
-      </div> -->
-    <input class="btn btn-outline-primary" type='submit' value='등록'>
-  </form>
+<script>
+  const likeButton = document.querySelector('#like-button')
+  likeButton.addEventListener('click', function (event) {
+    console.log(event.target.dataset)
+    axios.defaults.xsrfCookieName = 'csrftoken'
+    axios.defaults.xsrfHeaderName = 'X-CSRFToken'
+    axios.defaults.headers.common['X-REQUESTED-WITH'] = 'XMLHttpRequest'
+    axios.post(`/movies/${event.target.dataset.id}/like/`)
+      .then(response => {
+        const likeCount = document.querySelector('#like-count')
+        console.log(response)
+        console.log(event.target)
+        if (response.data.is_liked) {
+          event.target.classList.remove('far')
+          event.target.classList.add('fas')
+        } else {
+          event.target.classList.remove('fas')
+          event.target.classList.add('far')
+        }
+        likeCount.innerText = response.data.like_count
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  })
+</script>
 
-  <script src="{% static 'detail/jquery.js' %}"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="{% static 'detail/deail.js' %}"></script>
-  {% block script %}
-  <script>
-    const likeButton = document.querySelector('#like-button')
-    likeButton.addEventListener('click', function (event) {
-      console.log(event.target.dataset)
-      axios.defaults.xsrfCookieName = 'csrftoken'
-      axios.defaults.xsrfHeaderName = 'X-CSRFToken'
-      axios.defaults.headers.common['X-REQUESTED-WITH'] = 'XMLHttpRequest'
-      axios.post(`/movies/${event.target.dataset.id}/like/`)
-        .then(response => {
-          const likeCount = document.querySelector('#like-count')
-          console.log(response)
-          console.log(event.target)
-          if (response.data.is_liked) {
-            event.target.classList.remove('far')
-            event.target.classList.add('fas')
-          } else {
-            event.target.classList.remove('fas')
-            event.target.classList.add('far')
-          }
-          likeCount.innerText = response.data.like_count
-        })
-        .catch(error => {
-          console.log(error)
-        })
-    })
-    $('.starRev span').click(function () {
-      $(this).parent().children('span').removeClass('on');
-      $(this).addClass('on').prevAll('span').addClass('on');
-      return false;
-    });
-  </script>
-  {% endblock %}
-  {% endblock %}
+{% endblock %}
+{% block script %}
+<script src="{% static 'detail/detail.js' %}"></script>
+{% endblock %}

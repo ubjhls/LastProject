@@ -41,13 +41,19 @@ for movie in movie_list:
         'fields': {
             'title': response['title'],
             'movie_type': 'top_rated',
-            'poster_url': f"https://image.tmdb.org/t/p/w500{response['poster_path']}",
+            'poster_url': response[f"https://image.tmdb.org/t/p/w500{response['poster_path']}"],
             'description': response['overview'],
             'genre_id': genres,
             'video_link': video_link,
             'popularity': response['popularity'],
             'vote_average': response['vote_average'],
-            'back_image': back_image
+            'back_image': back_image,
+            'release_date': response['release_date'],
+            'runtime': response['runtime'],
+            'tagline': response['tagline'],
+            'cast': response['case']
+
+
         }
     }
     movie_info.append(new_movie)

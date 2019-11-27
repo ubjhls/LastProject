@@ -12,6 +12,9 @@ from django.contrib.auth import get_user_model
 import json
 
 # Create your views here.
+def start(request):
+    return render(request,'movies/start.html')
+
 def index(request, page_type):
     movies = Movie.objects.all()
     index_movies = Movie.objects.filter(movie_type="now_playing").order_by('-popularity')[:10]    
@@ -67,11 +70,18 @@ def detail(request,movie_pk):
         avg_score = round(avg_score, 1)
     else:
         avg_score = 0
+    peoples = []
+    casts = movie.cast.all()
+    for cast in casts:
+        people = People.objects.filter(id=cast.id).first()
+        if people:
+            peoples.append(people)
     context = {
         'movie' : movie,
         'new_movies': new_movies,
         'form' : reviewform,
         'avg_score': avg_score,
+        'peoples': peoples
     }
     return render(request,'movies/detail.html', context)
 
