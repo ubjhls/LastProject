@@ -94,22 +94,74 @@
     </div> <!-- end container -->
   </div> <!-- end movie-card -->
   <!-- 평점 작성 -->
-  <div>
-    <h2 style="text-align: center;">평점을 작성해주세요</h2>
-    {% for review in movie.review_set.all %}
-    <p>
-      {{review.user}} ({{review.score}}점)<br>
-      <form action='reviews/{{review.pk}}/delete' method='POST'>
-        {{review.content}}
-        {% csrf_token %}
-        <input class="btn btn-outline-danger" type="submit" value="삭제" onclick="return confirm('삭제하려면 클릭해주세요')">
-      </form>
-
-    </p>
-    <hr>
-    {% endfor %}
-    <hr>
-
+  <div id="reviewSection" class="bg-light">
+    {% if movie.review_set.all %}
+    <p>작성된 리뷰 {{ movie.review_set.all.count }}개</p>
+    {% else %}
+    <p>작성된 리뷰가 없습니다. 첫번째 리뷰의 주인공이 되어보세요.</p>
+    {% endif %}
+    <table class="review">
+      <tr>
+        <td>
+          {% if user.image %}
+          <img src="{{ user.image.url }}" alt="{{ user.image.name }}">
+          {% else %}
+          <i class="fas fa-user-circle fa-2x"></i>
+          {% endif %}
+        </td>
+        <td>
+          <form action="{% url 'movies:review' movie.pk %}" method='POST'>
+            {% csrf_token %}
+            <input value="{{review.content}}" name="content" type="text">
+            <span class="score">
+              <span class="input">
+                <input type="radio" name="score" value="2" id="p1">
+                <label for="p1">1</label>
+                <input type="radio" name="score" value="1" id="p1_5">
+                <label for="p1_5">0.5</label>
+                <input type="radio" name="score" value="4" id="p2">
+                <label for="p2">2</label>
+                <input type="radio" name="score" value="3" id="p2_5">
+                <label for="p2_5">1.5</label>
+                <input type="radio" name="score" value="6" id="p3">
+                <label for="p3">3</label>
+                <input type="radio" name="score" value="5" id="p_3_5">
+                <label for="p3_5">2.5</label>
+                <input type="radio" name="score" value="8" id="p4">
+                <label for="p4">4</label>
+                <input type="radio" name="score" value="7" id="p4_5">
+                <label for="p4_5">3.5</label>
+                <input type="radio" name="score" value="10" id="p5">
+                <label for="p5">5</label>
+                <input type="radio" name="score" value="9" id="p5_5">
+                <label for="p5_5">4.5</label>
+              </span>
+            </span>
+            <input class="btn btn-outline-primary" type='submit' value='등록'>
+          </form>
+        </td>
+      </tr>
+      <hr>
+      <!-- for문 -->
+      {% for review in movie.review_set.all %}
+      <tr>
+        <td>
+          <a href="{% url 'accounts:detail' review.user_id %}">
+            {% if review.user.image %}
+            <img src="{{ review.user.image.url }}" alt="{{ review.user.image.name }}">
+            {% else %}
+            <i class="fas fa-user-circle fa-2x"></i>
+            {% endif %}
+          </a>
+        </td>
+        <td>
+          <p><b>{{ review.score }}</b> "{{ review.content }}"</p>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+<!-- 
     <form action="{% url 'movies:review' movie.pk %}" method='POST'>
       {% csrf_token %}
       <input value="{{review.content}}" name="content" type="text">
@@ -138,8 +190,8 @@
         </span>
       </span>
       <input class="btn btn-outline-primary" type='submit' value='등록'>
-    </form>
-  </div>
+    </form> -->
+  
 
 
 
