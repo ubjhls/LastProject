@@ -157,6 +157,7 @@ def search(request):
         description_movies = Movie.objects.filter(description__icontains=query)
         des_movies = description_movies.difference(title_movies)
         context = {
+            "search_title": query,
             "title_movies" : title_movies,
             "des_movies" : des_movies
         }
