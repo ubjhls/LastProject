@@ -162,9 +162,9 @@
                 </div>
               </td>
               <td>
+                {{review.content}} ({{ review.score }})점
                 {% if review.user == user %}
                   <form action='reviews/{{review.pk}}/delete' method='POST'>
-                    {{review.content}} ({{ review.score }})점
                     {% csrf_token %}
                     <input class="btn btn-outline-danger" type="submit" value="삭제"
                       onclick="return confirm('삭제하려면 클릭해주세요')">
