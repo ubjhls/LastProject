@@ -10,7 +10,7 @@
   box-sizing: border-box; }
 
 body {
-  background-image: url('/static/movie.jpg');
+  background: url('https://images.unsplash.com/photo-1507924538820-ede94a04019d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
   background-size : cover;
 }
 header {
@@ -240,10 +240,9 @@ header {
 	</div>
   
   {% endwith %}
-  <p>내가 팔로우한 유저 : </p>
-  {{ user_profile.followers }}
 
-<h4 style="color: wheat;">{{user_profile.username}}님이 작성한 평점 정보</h4>
+
+<h4 style="color: wheat;">{{user_profile.username}}님이 평점등록한 영화</h4>
 <div class="row">
     {% for review in user_profile.review_set.all %}
     <figure class="snip1273">
