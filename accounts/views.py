@@ -11,6 +11,7 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
+
 def index(request):
     users = User.objects.all()
     context = {
@@ -22,9 +23,8 @@ def signup(request):
     if request.user.is_authenticated:
         return redirect('movies:index',0)
     if request.method == 'POST':
-        form = CustomUserCreationForm(request.POST)
+        form = CustomUserCreationForm(request.POST, request.FILES)
         if form.is_valid():
-            user.image = request.FILES.get('image')
             user = form.save()
             auth_login(request, user)
             return redirect('movies:index',0)

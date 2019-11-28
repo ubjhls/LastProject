@@ -105,7 +105,7 @@
 
         </div>
         <div ng-app ng-init="checked = false">
-            <form class="form-signin" action="/accounts/signup/" method="post" name="form">
+            <form class="form-signin" action="/accounts/signup/" method="post" name="form" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{form}}
 

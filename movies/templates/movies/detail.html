@@ -3,6 +3,8 @@
 {% block css %}
 <link rel="stylesheet" href="{% static 'detail/detail.css' %}">
 <link href="https://fonts.googleapis.com/css?family=Gugi&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
 
 {% endblock %}
 {% block body %}
@@ -55,15 +57,16 @@
           <form action="{% url 'movies:like_movie' movie.pk %}" method="POST" style="width:200px">
             {% csrf_token %}
             {% if user in movie.like_users.all %}
-            <div id="like-button" data-id="{{movie.id}}" class="fas fa-thumbs-up " style="color:red; width: 200px">
+            <div id="like-button" data-id="{{movie.id}}" class="fas fa-thumbs-up " style="color:red; width: 200px; font-size: 40px">
+                <h4 style="color: black;"><span id="like-count">{{ movie.like_users.count }} </span> likes</h4>
             </div>
             {% else %}
-            <div id="like-button" data-id="{{movie.id}}" class="far fa-thumbs-up " style="color:red; width: 200px;">
+            <div id="like-button" data-id="{{movie.id}}" class="far fa-thumbs-up " style="color:red; width: 200px; font-size: 40px">
+                <h4 style="color: black;"><span id="like-count">{{ movie.like_users.count }} </span> likes</h4>
             </div>
             {% endif %}
           </form>
           {% endif %}
-          <h4><span id="like-count">{{ movie.like_users.count }} </span> likes</h4>
 
         </div> <!-- end details -->
 
@@ -98,21 +101,21 @@
     <div class="col-4"></div>
   <div id="reviewSection" class="col-4" style="width: 1000px;">
     {% if movie.review_set.all %}
-    <p>작성된 한줄평 {{ movie.review_set.all.count }}개</p>
+    <h3>작성된 한줄평 {{ movie.review_set.all.count }}개<h3>
     {% else %}
     <p>한줄평을 작성해주세요.</p>
     {% endif %}
     <table class="review">
-      <tr>
+      <tr style="width: 500px;">
         <td>
           {% if user.image %}
-          <img src="{{ user.image.url }}" alt="{{ user.image.name }}">
+          <img src="{{ user.image.url }}" alt="{{ user.image.name }}" style="height: 40px;">
           {% else %}
           <i class="fas fa-user-circle fa-2x"></i>
           {% endif %}
         </td>
         <td>
-          <form action="{% url 'movies:review' movie.pk %}" method='POST'>
+          <form action="{% url 'movies:review' movie.pk %}" method='POST' style="width: 1000px;">
             {% csrf_token %}
             <input value="{{review.content}}" name="content" type="text">
             <span class="score">
@@ -148,13 +151,15 @@
       {% for review in movie.review_set.all %}
       <tr>
         <td>
+            <div class="avatarcontainer">
           <a href="{% url 'accounts:detail' review.user_id %}">
             {% if review.user.image %}
-            <img src="{{ review.user.image.url }}" alt="{{ review.user.image.name }}">
+            <img class="fas fa-user-circle fa-2x" src="{{ review.user.image.url }}" alt="{{ review.user.image.name }}" style="height: 40px;">
             {% else %}
             <i class="fas fa-user-circle fa-2x"></i>
             {% endif %}
           </a>
+          </div>
         </td>
         <td>
           <p>{{ review.content }} ({{ review.score }})점</p>
