@@ -26,7 +26,7 @@ def index(request, page_type):
             'movies': top_rated_movies,
         }
     elif page_type == 2:
-        popul_movies = Movie.objects.filter(movie_type="now_playing").order_by('-popularity')[:10]
+        popul_movies = Movie.objects.filter(movie_type="popular").order_by('-popularity')[:10]
         context = {
             'movies': popul_movies,
         }
