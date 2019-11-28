@@ -122,6 +122,7 @@ def review_update(request, movie_pk, review_pk):
     review.save()
     return redirect('movies:detail',movie_pk)
 
+
 @login_required
 def like(request, movie_pk):
     if request.is_ajax():
