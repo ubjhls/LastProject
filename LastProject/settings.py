@@ -146,3 +146,7 @@ AUTHENTICATION_BACKENDS = (
 )
 SITE_ID = 1 # 'django.contrib.sites -> SITE_ID 부여
 LOGIN_REDIRECT_URL = '/movies/'
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'accounts')
