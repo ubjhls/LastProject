@@ -20,6 +20,9 @@ class Movie(models.Model):
     popularity = models.FloatField()
     vote_average = models.FloatField()
     back_image = models.TextField()
+    release_date = models.TextField()
+    runtime = models.TextField()
+    tagline = models.TextField()
     like_users = models.ManyToManyField(
         settings.AUTH_USER_MODEL,
         related_name='like_movies',
@@ -30,8 +33,7 @@ class Movie(models.Model):
         related_name='known_for',
         blank=True
     )
-    # avgscore = models.FloatField(blank=True, default=0)
-    # sum_likes = models.IntegerField(blank=True)
+    
 
 class Review(models.Model):
     content = models.CharField(max_length=100, verbose_name='한줄평')
