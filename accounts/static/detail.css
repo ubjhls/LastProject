@@ -137,8 +137,7 @@ p {
   right: 0;
   left: 0;
   margin: auto;
-  width: 70px;
-  height: 70px;
+  size: 30px;
   display: block; }
   .avatarcontainer:hover > .hover {
     opacity: 1; }
