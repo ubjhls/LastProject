@@ -10,6 +10,7 @@ import pprint
 from django.db.models import Avg, Max, Min, Sum
 from django.contrib.auth import get_user_model
 import json
+from django.contrib import messages
 
 # Create your views here.
 def start(request):
@@ -104,10 +105,15 @@ def review(request, movie_pk):
     }
     return render(request,'movies/detail.html', context)
     
-def review_delete(request,movie_pk, review_pk):
-    review = get_object_or_404(Review,pk=review_pk)
-    review.delete()
-    return redirect('movies:detail',movie_pk)
+@require_POST
+def review_delete(request, movie_pk, review_pk):
+    review = Review.objects.get(pk=review_pk)
+    if request.user == review.user:
+        review.delete()
+        messages.success(request, '댓글이 삭제되었습니다.')
+        return redirect('movies:detail', movie_pk)
+    else:
+        return HttpResponseForbidden
 
 def review_update(request, movie_pk, review_pk):
     review = get_object_or_404(Review, pk=review_pk)

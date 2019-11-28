@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
-{% load bootstrap4 % }
+
 {% block css %}
 <link rel="stylesheet" href="{% static 'detail.css' %}">
 <style>
@@ -200,16 +200,13 @@ header {
 				</div>
 			</div>
 			
-			<div class="avatarcontainer">
-        {% if user_profile.img %}
-        <img src="https://i.pinimg.com/474x/af/7d/01/af7d017895eee4152af628507818cf64.jpg" alt="프사등록" class="avatar" style="height: 70px;">
-        {% else %}
-        <img src="{{ user_profile.image.url}}" alt="프사등록" class="avatar">
-				<!-- <div class="hover">
-						<div class="icon-twitter"></div>
-        </div> -->
-        {% endif %}
-			</div>
+      {% if user_profile.image %}
+        <div class="avatarcontainer">
+          <img src="{{ user_profile.image.url}}" alt="프사등록" class="avatar">
+        </div>
+          {% else %}
+          <img src="https://i.pinimg.com/474x/af/7d/01/af7d017895eee4152af628507818cf64.jpg" alt="프사등록" class="avatar" style="width: 70px; height: 70px;">
+          {% endif %}
 
 
 		</header>
@@ -238,10 +235,13 @@ header {
       {% endif %}
     </a>
 		</div>
-
+    <div>
+    </div>
 	</div>
-
-{% endwith %}
+  
+  {% endwith %}
+  <p>내가 팔로우한 유저 : </p>
+  {{ user_profile.followers }}
 
 <h4 style="color: wheat;">{{user_profile.username}}님이 작성한 평점 정보</h4>
 <div class="row">
@@ -266,9 +266,10 @@ header {
     <figure class="snip1273">
         <img src="{{like.poster_url}}" alt="img" style="width: 200px;">
         <figcaption>
-            <p>영화 : {{like.title}} <br> 평가 : {{like.content}} <br> 평점 : {{ like.score }}</p>
+            <p>영화 : {{like.title}} <br> <p>좋아요갯수 : {{ like.like_users.count}} 개</p>
+
         </figcaption>
-        <a href="{% url 'movies:detail' like.id %}"></a>
+        <a href="{% url 'movies:detail' like.id %}"></a>  
         <p style="text-align: center;">{{like.title}}</p>
     </figure>
     
