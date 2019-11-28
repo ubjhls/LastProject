@@ -472,7 +472,7 @@ with open('movies/fixtures/top_rated2.json', 'w', encoding='utf-8') as f:
 
 ## 5. 배포 서버 URL
 
-[훈택SCREEN](http://52.79.221.76/movies/)
+[훈택SCREEN](http://52.79.221.76/movies/) http://52.79.221.76/movies/
 
 
 
