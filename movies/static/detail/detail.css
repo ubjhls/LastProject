@@ -79,22 +79,44 @@ a:hover {
   
 }
 .title1 {
-  color: white;
+  font-family: 'Alatsi', sans-serif;
+  color: black;
   font-size: 44px;
   margin-bottom: 13px;
   position: relative;
-  
-
-  }
+  text-shadow: 0 0 20px #fefcc9,
+    10px -10px 30px #feec85,
+    -20px -20px 40px #ffae34,
+    20px -40px 50px #ec760c,
+    -20px -60px 60px #cd4606,
+    0 -80px 70px #973716,
+    10px -90px 80px #451b0e;
+}
 
   .title2 {    
+    font-family: 'Alatsi', sans-serif;
     position: relative;
-    color: #C7C1BA;
+    color: black;
     font-size: 23px;    
     font-weight: 300;
     margin-bottom: 15px;
+    text-shadow: 0 0 20px #fefcc9,
+    10px -10px 30px #feec85,
+    -20px -20px 40px #ffae34,
+    20px -40px 50px #ec760c,
+    -20px -60px 60px #cd4606,
+    0 -80px 70px #973716,
+    10px -90px 80px #451b0e;
   }
-  
+  h4{
+    text-shadow: 0 0 20px #fefcc9,
+    10px -10px 30px #feec85,
+    -20px -20px 40px #ffae34,
+    20px -40px 50px #ec760c,
+    -20px -60px 60px #cd4606,
+    0 -80px 70px #973716,
+    10px -90px 80px #451b0e;
+  }
   
   .likes {
     margin-left: 24px;
@@ -111,16 +133,17 @@ a:hover {
 
 
 .description {
-  
+  font-family: 'Yeon Sung', cursive;
   bottom: 0px;
   height: 200px;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 26px;
   color: #B1B0AC;
   
 }
 
 .column1 {
+  color: black;
   padding-left: 50px;
   padding-top: 120px;
   width: 220px;
@@ -143,6 +166,7 @@ a:hover {
 }
 
 .column2 {
+  color: black;
   padding-left: 20px;
   padding-top: 30px;
   margin-left: 20px;
@@ -291,6 +315,7 @@ a[data-tooltip][data-placement="top"]::after {
 
 #mm {
   position: absolute;
+  width: 100%;
 }
 
 

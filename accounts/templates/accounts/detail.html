@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load bootstrap4 % }
 {% block css %}
 <link rel="stylesheet" href="{% static 'detail.css' %}">
 <style>
@@ -200,10 +201,14 @@ header {
 			</div>
 			
 			<div class="avatarcontainer">
-				{{ user_profile.img.path }}
-				<div class="hover">
+        {% if user_profile.img %}
+        <img src="https://i.pinimg.com/474x/af/7d/01/af7d017895eee4152af628507818cf64.jpg" alt="프사등록" class="avatar" style="height: 70px;">
+        {% else %}
+        <img src="{{ user_profile.image.url}}" alt="프사등록" class="avatar">
+				<!-- <div class="hover">
 						<div class="icon-twitter"></div>
-				</div>
+        </div> -->
+        {% endif %}
 			</div>
 
 
@@ -238,7 +243,7 @@ header {
 
 {% endwith %}
 
-<h4>내가 작성한 평점 정보</h4>
+<h4 style="color: wheat;">{{user_profile.username}}님이 작성한 평점 정보</h4>
 <div class="row">
     {% for review in user_profile.review_set.all %}
     <figure class="snip1273">
@@ -255,7 +260,7 @@ header {
     </div>
 
 <hr>
-<p>내가 좋아하는 영화 </p>
+<h4 style="color: wheat;">{{user_profile.username}}님이 좋아하는 영화 </h4>
 <div class="row">
     {% for like in user_profile.like_movies.all %}
     <figure class="snip1273">
