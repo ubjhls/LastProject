@@ -4,14 +4,14 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 # Create your models here.
 
 class Genre(models.Model):
-    name = models.CharField(max_length=30)
+    name = models.TextField()
 
 class People(models.Model):
-    name = models.CharField(max_length=100)
-    profile_path = models.CharField(max_length=140)
+    name = models.TextField()
+    profile_path = models.TextField()
 
 class Movie(models.Model):
-    title = models.CharField(max_length=40)
+    title = models.TextField()
     movie_type = models.TextField()
     poster_url = models.TextField()
     description =  models.TextField()
