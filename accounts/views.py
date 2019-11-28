@@ -20,19 +20,21 @@ def index(request):
 
 def signup(request):
     if request.user.is_authenticated:
-        return redirect('movies:index', 0)
-    if request.method == 'POST': 
+        return redirect('movies:index',0)
+    if request.method == 'POST':
         form = CustomUserCreationForm(request.POST)
         if form.is_valid():
+            user.image = request.FILES.get('image')
             user = form.save()
-            auth_login(request,user)
-            return redirect('movies:index', 0)
+            auth_login(request, user)
+            return redirect('movies:index',0)
     else:
         form = CustomUserCreationForm()
     context = {
-        'form' : form
+        'form': form
     }
     return render(request, 'accounts/signup.html', context)
+        
 
 def detail(request, user_pk):
     User = get_user_model()

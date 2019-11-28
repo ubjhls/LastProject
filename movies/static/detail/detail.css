@@ -2,6 +2,7 @@ body{
   height: 250vh;
   display: flex;
   flex-direction: column;
+  background: rgb(43, 40, 29);
 }
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 
@@ -11,9 +12,7 @@ body{
   box-sizing: border-box;
 }
 
-body {
-  background: #43423E;
-}
+
 
 a {
   text-decoration: none;
@@ -27,13 +26,13 @@ a:hover {
 .movie-card {
   font: 14px/22px "Lato", Arial, sans-serif;
   color: #A9A8A3;
-  width: 100%;
+
 }
 
 .container {
   margin: 0 auto;
   width: 100%;
-  height: 1000px;
+  height: 900px;
   background: #F0F0ED;
   border-radius: 5px;
   position: relative;
@@ -89,6 +88,7 @@ a:hover {
   }
 
   .title2 {    
+    position: relative;
     color: #C7C1BA;
     font-size: 23px;    
     font-weight: 300;
@@ -130,11 +130,11 @@ a:hover {
 
 .tag {
   background: white;
-  border-radius: 10px;
+  border-radius: 30px;
   padding: 3px 8px;
-  font-size: 14px;
+  font-size: 18px;
   margin-right: 4px;
-  line-height: 35px;
+  line-height: 10px;
   cursor: pointer;
 }
 
@@ -143,10 +143,10 @@ a:hover {
 }
 
 .column2 {
-  padding-left: 41px;
+  padding-left: 20px;
   padding-top: 30px;
   margin-left: 20px;
-  width: 480px;
+  width: 800px;
   float: left;
 }
 
@@ -263,10 +263,6 @@ a[data-tooltip][data-placement="top"]::after {
 }
 
 
-/* .container .card col{
-background : -webkit-gradient(linear, left top, right top, from(#171717), color-stop(20%, rgba(23, 23, 23, 0.98)), color-stop(25%, rgba(23, 23, 23, 0.97)), color-stop(35%, rgba(23, 23, 23, 0.95)), color-stop(40%, rgba(23, 23, 23, 0.94)), color-stop(45%, rgba(23, 23, 23, 0.92)), color-stop(50%, rgba(23, 23, 23, 0.9)), color-stop(55%, rgba(23, 23, 23, 0.87)), color-stop(60%, rgba(23, 23, 23, 0.82)), color-stop(65%, rgba(23, 23, 23, 0.75)), color-stop(70%, rgba(23, 23, 23, 0.63)), color-stop(75%, rgba(23, 23, 23, 0.45)), color-stop(80%, rgba(23, 23, 23, 0.27)), color-stop(85%, rgba(23, 23, 23, 0.15)), color-stop(90%, rgba(23, 23, 23, 0.08)), color-stop(95%, rgba(23, 23, 23, 0.03)), to(rgba(23, 23, 23, 0)))
-} */
-
 .score>.input,
 .score>.input>label:hover,
 .score>.input>input:focus+label,
@@ -293,3 +289,36 @@ background : -webkit-gradient(linear, left top, right top, from(#171717), color-
 .score>output{display:inline-block;width:60px; font-size:18px;text-align:right; vertical-align:middle;}
 
 
+#mm {
+  position: absolute;
+}
+
+
+h2 {
+  color: white;
+}
+
+.carousel-item {
+  width: 100%;
+}
+
+.movieTitle {
+  font-size: 1.2vw;
+  color: white;
+}
+
+.carousel-control-prev {
+  position: absolute;
+  width: 80px;
+}
+
+.carousel-control-next {
+  position: absolute;
+  width: 80px;
+}
+
+.col-3 img {
+  padding: 0;
+  width: 100%;
+  height: 500px;
+}

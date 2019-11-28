@@ -8,10 +8,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Single+Day&display=swap" rel="stylesheet">
   {% block css %}{% endblock %}
 </head>
 <style>
@@ -26,7 +29,7 @@
 </style>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 2;">
     <a class="navbar-brand" href="{% url 'movies:index' 0 %}">
     <img src="{% static 'movies/logo.png' %}" alt="로고" width='50px'>
     </a>
@@ -35,7 +38,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-family: 'Single Day', cursive; ">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" href="{% url 'movies:index' 0 %}">HOME <span class="sr-only">(current)</span></a>
@@ -46,7 +49,7 @@
           <a class="nav-link" href="{% url 'accounts:logout' %}">로그아웃</a>
         </li>
         <li class="nav-item">
-          <a href="{% url 'accounts:detail' user.pk %}" class="nav-link" tabindex="-1" aria-disabled="true">{{ user }} 님
+          <a href="{% url 'accounts:detail' user.pk %}" class="nav-link" tabindex="-1" aria-disabled="true">{{ user.username }} 님
             환영 ^^* 방가방가 ㅎㅎ</a>
         </li>
         {% else %}

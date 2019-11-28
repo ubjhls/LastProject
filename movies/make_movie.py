@@ -5,7 +5,7 @@ import pprint
 movie_list = []
 movie_info = []
 
-for page in range(1, 11):
+for page in range(1, 2):
     # now_playing
     # url = f'https://api.themoviedb.org/3/movie/now_playing?api_key=1dfd52c8a24a0f38f40efe41c86be13b&language=ko-KR&page={page}'
     # popular
@@ -35,19 +35,26 @@ for movie in movie_list:
     else:
         back_image = response['backdrop_path']
     print(response['id'])
+    pprint.pprint(response)
     new_movie = {
         'pk': response['id'],
         'model': "movies.Movie",
         'fields': {
             'title': response['title'],
             'movie_type': 'top_rated',
-            'poster_url': f"https://image.tmdb.org/t/p/w500{response['poster_path']}",
+            'poster_url': response[f"https://image.tmdb.org/t/p/w500{response['poster_path']}"],
             'description': response['overview'],
             'genre_id': genres,
             'video_link': video_link,
             'popularity': response['popularity'],
             'vote_average': response['vote_average'],
-            'back_image': back_image
+            'back_image': back_image,
+            'release_date': response['release_date'],
+            'runtime': response['runtime'],
+            'tagline': response['tagline'],
+            'cast': response['case']
+
+
         }
     }
     movie_info.append(new_movie)

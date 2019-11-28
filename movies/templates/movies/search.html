@@ -18,9 +18,9 @@
     <a href="{% url 'movies:detail' movie.id %}"></a>
     <p style="text-align: center;">{{movie.title}}</p>
 </figure>
-<hr>
 
 {% endfor %}
+<hr>
 </div>
 
 <h1>내용으로 검색</h1>
@@ -29,7 +29,7 @@
 <figure class="snip1273">
     <img src="{{movie.poster_url}}" alt="sample84"></a>
     <figcaption>
-        <h3>상세보기</h3>
+        <h2>상세보기</h2>
     </figcaption>
     <a href="{% url 'movies:detail' movie.id %}"></a>
     <p style="text-align: center;">{{movie.title}}</p>
