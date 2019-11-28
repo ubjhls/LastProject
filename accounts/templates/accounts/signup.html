@@ -73,6 +73,10 @@
         content: "\f00c";
     }
 
+    .message {
+        position: fixed;
+    }
+
     @keyframes rotating {
         from {
             transform: rotate(0deg);
@@ -112,9 +116,7 @@
             <form class="form-signin" action="/accounts/signup/" method="post" name="form" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{form}}
-
-                <input type="checkbox" id="checkbox" />
-                <label for="checkbox"><span class="ui" style="position:static"></span>Keep me signed in</label>
+                
                 <div class="containers">
                     <button type="submit" id="button">회원가입</button>
                 </div>
