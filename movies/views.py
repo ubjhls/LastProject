@@ -143,9 +143,9 @@ def like(request, movie_pk):
 
 
 def recommand(request):
-    movie = Review.objects.all()
+    movie = Movie.objects.all()
     context = {
-        'max_movie' : movie
+        'movies' : movies
     }
     return render(request,'movies/recommand.html',context)
     

@@ -103,13 +103,11 @@
   <div class="row">
     <div class="col-4"></div>
     <div id="reviewSection" class="col-4" style="width: 1000px;">
-      {% if movie.review_set.all %}
+
       <h3>현재 작성된 한줄평 :  {{ movie.review_set.all.count }}개<h3>
-          {% else %}
-          <p>한줄평을 작성해주세요.</p>
-          {% endif %}
+
           <table class="review">
-            <tr style="width: 500px;">
+            <tr style="width: 300px;">
               <td>
                 {% if user.image %}
                 <img src="{{ user.image.url }}" alt="{{ user.image.name }}" style="height: 30px;">
@@ -118,7 +116,7 @@
                 {% endif %}
               </td>
               <td>
-                <form action="{% url 'movies:review' movie.pk %}" method='POST' style="width: 1000px;">
+                <form action="{% url 'movies:review' movie.pk %}" method='POST' style="width: 1000px; z-index:-1000">
                   {% csrf_token %}
                   <input value="{{review.content}}" name="content" type="text">
                   <span class="score">
@@ -145,7 +143,7 @@
                       <label for="p5_5">4.5</label>
                     </span>
                   </span>
-                  <input class="btn btn-outline-primary" type='submit' value='등록'>
+                  <input class="btn btn-outline-primary" type='submit' value='등록' style="z-index: -1001;">
                 </form>
               </td>
             </tr>
