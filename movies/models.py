@@ -20,9 +20,6 @@ class Movie(models.Model):
     popularity = models.FloatField()
     vote_average = models.FloatField()
     back_image = models.TextField()
-    # release_date = models.TextField()
-    # runtime = models.TextField()
-    # tagline = models.TextField()
     like_users = models.ManyToManyField(
         settings.AUTH_USER_MODEL,
         related_name='like_movies',

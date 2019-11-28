@@ -18,8 +18,7 @@ def start(request):
 
 def index(request, page_type):
     movies = Movie.objects.all()
-    index_movies = Movie.objects.filter(movie_type="now_playing").order_by('-popularity')[:10]    
-    # user_rated_movies = Movie.objects.order_by("-avgscore")[:10]
+    index_movies = Movie.objects.filter(movie_type="now_playing").order_by('-popularity')[:10]
     print(index_movies)
     if page_type == 1:
         top_rated_movies = Movie.objects.filter(movie_type="top_rated").order_by('-popularity')[:10]
@@ -31,21 +30,6 @@ def index(request, page_type):
         context = {
             'movies': popul_movies,
         }
-    # elif page_type == 3:
-    #     if request.user.is_authenticated:
-    #         for movie in request.user.like_movies.all():
-    #             url = f'https://api.themoviedb.org/3/movie/{movie.id}/recommendations?api_key=1dfd52c8a24a0f38f40efe41c86be13b&language=ko-KR&page=1'
-    #             response = requests.get(url).json()
-    #             pprint.pprint(response["results"])
-    #             movies = response["results"]
-    #             pprint.pprint(movies)
-    #         context = {
-    #             'movies': movies
-    #         }
-    #     else:
-    #         context = {
-    #             'movies': index_movies
-    #         }
     else:
         context = {
             'movies': index_movies
@@ -62,8 +46,6 @@ def detail(request,movie_pk):
     response = requests.get(url).json()
     pprint.pprint(response["results"])
     new_movies = response["results"]
-    # print(reviews.avgscore)
-    # print(reviews.filter(movie_id=movie_pk).aggregate(Avg('score')))
     for review in reviews:
         avg_score += review.score
     if reviews.count() > 0:
@@ -95,8 +77,6 @@ def review(request, movie_pk):
         review = reviewForm.save(commit=False)
         review.movie_id = movie_pk
         review.user = request.user
-        # movie.avgscore = reviews.aggregate(Avg('score'))
-        # print(movie.avgscore)
         review.save()
         return redirect('movies:detail', movie_pk)
     context = {
