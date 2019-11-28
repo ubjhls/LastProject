@@ -291,6 +291,7 @@ a[data-tooltip][data-placement="top"]::after {
 
 #mm {
   position: absolute;
+  width: 100%;
 }
 
 
