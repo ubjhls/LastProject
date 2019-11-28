@@ -5,7 +5,7 @@ import pprint
 movie_list = []
 movie_info = []
 
-for page in range(1, 11):
+for page in range(1, 2):
     # now_playing
     # url = f'https://api.themoviedb.org/3/movie/now_playing?api_key=1dfd52c8a24a0f38f40efe41c86be13b&language=ko-KR&page={page}'
     # popular
@@ -35,6 +35,7 @@ for movie in movie_list:
     else:
         back_image = response['backdrop_path']
     print(response['id'])
+    pprint.pprint(response)
     new_movie = {
         'pk': response['id'],
         'model': "movies.Movie",

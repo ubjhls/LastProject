@@ -13,7 +13,7 @@ class People(models.Model):
 class Movie(models.Model):
     title = models.CharField(max_length=40)
     movie_type = models.TextField()
-    poster_url = models.CharField(max_length=100)
+    poster_url = models.TextField()
     description =  models.TextField()
     genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
     video_link = models.TextField()

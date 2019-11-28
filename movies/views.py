@@ -11,10 +11,10 @@ from django.db.models import Avg, Max, Min, Sum
 from django.contrib.auth import get_user_model
 import json
 
+# Create your views here.
 def start(request):
     return render(request,'movies/start.html')
 
-# Create your views here.
 def index(request, page_type):
     movies = Movie.objects.all()
     index_movies = Movie.objects.filter(movie_type="now_playing").order_by('-popularity')[:10]    
@@ -26,7 +26,7 @@ def index(request, page_type):
             'movies': top_rated_movies,
         }
     elif page_type == 2:
-        popul_movies = Movie.objects.filter(movie_type="now_playing").order_by('-popularity')[:10]
+        popul_movies = Movie.objects.filter(movie_type="popular").order_by('-popularity')[:10]
         context = {
             'movies': popul_movies,
         }
@@ -70,11 +70,18 @@ def detail(request,movie_pk):
         avg_score = round(avg_score, 1)
     else:
         avg_score = 0
+    peoples = []
+    casts = movie.cast.all()
+    for cast in casts:
+        people = People.objects.filter(id=cast.id).first()
+        if people:
+            peoples.append(people)
     context = {
         'movie' : movie,
         'new_movies': new_movies,
         'form' : reviewform,
         'avg_score': avg_score,
+        'peoples': peoples
     }
     return render(request,'movies/detail.html', context)
 
@@ -96,16 +103,18 @@ def review(request, movie_pk):
         'form' : reviewForm
     }
     return render(request,'movies/detail.html', context)
-
-def reviewDelete(request, movie_pk,review_pk):
-    reviews = Review.objects.filter(movie_id=movie_pk)
+    
+def review_delete(request,movie_pk, review_pk):
     review = get_object_or_404(Review,pk=review_pk)
-    movie = get_object_or_404(Movie, pk=movie_pk)
-    if request.user == review.user:
-        review.delete()
-        # movie.avgscore = reviews.aggregate(Avg('score'))
-        # print(movie.avgscore)
-    return redirect('movies:detail', movie_pk)
+    review.delete()
+    return redirect('movies:detail',movie_pk)
+
+def review_update(request, movie_pk, review_pk):
+    review = get_object_or_404(Review, pk=review_pk)
+    review.content = request.POST.get('content') or review.content or ''
+    review.score = request.POST.get('score') or review.score
+    review.save()
+    return redirect('movies:detail',movie_pk)
 
 @login_required
 def like(request, movie_pk):

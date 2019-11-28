@@ -208,7 +208,7 @@
  
 </style>
 <body>
-  <h1 style="z-index: 0;">영화정보 사이트 고고</h1>
+  <h1 style="z-index: -123;">영화정보 사이트 고고</h1>
     <div class="main">
         <div class="top half">
           <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/avengers2.jpg" />
@@ -237,7 +237,7 @@
     $(".main, .half, .overlay, .button-line, .super-button, .content").addClass("active");
     setTimeout(function() {
       $(".main *").css("z-index", "1");
-      location.href = "http://127.0.0.1:8000/movies/index/0"
+      location.href = "https://taekhun.herokuapp.com/movies/index/0"
     }, 3000);
   });
 });
