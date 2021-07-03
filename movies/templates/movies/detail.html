@@ -78,7 +78,8 @@
       <div class="description">
 
         <div class="column1">
-          <p>평론가 평점</p><span class="tag">{{movie.vote_average}}</span>
+          <p>평론가 평점</p><span class="tag">{{movie.vote_average}}</span><br>
+          <p>유저 평점</p><span class="tag">{{avg_score}}</span>
         </div> <!-- end column1 -->
 
         <div class="column2">
@@ -102,10 +103,8 @@
   <!-- 평점 작성 -->
   <div class="row">
     <div class="col-4"></div>
-    <div id="reviewSection" class="col-4" style="width: 1000px;">
-
-      <h3>현재 작성된 한줄평 :  {{ movie.review_set.all.count }}개<h3>
-
+    <div id="reviewSection" class="col-8" style="width: 1000px;">
+      <h3>현재 작성된 한줄평 : {{ movie.review_set.all.count }}개<h3>
           <table class="review">
             <tr style="width: 300px;">
               <td>
@@ -143,7 +142,7 @@
                       <label for="p5_5">4.5</label>
                     </span>
                   </span>
-                  <input class="btn btn-outline-primary" type='submit' value='등록' style="z-index: -1001;">
+                  <input class="btn btn-outline-primary" type='submit' value='등록' style="z-index: 1001;">
                 </form>
               </td>
             </tr>
@@ -164,20 +163,19 @@
                 </div>
               </td>
               <td>
-                <p style="size: 30px;">{{ review.content }} ({{ review.score }})점</p>
+                {{review.content}} ({{ review.score }})점
                 {% if review.user == user %}
-                <form action="{% url 'movies:review_delete' movie.pk review.pk %}" method="POST"
-                  onclick="return confirm('진짜 지우겠습니까?')">
-                  {% csrf_token %}
-                  <input type="submit" value="삭제">
-                </form>
-                {% endif %}
+                  <form action='reviews/{{review.pk}}/delete' method='POST'>
+                    {% csrf_token %}
+                    <input class="btn btn-outline-danger" type="submit" value="삭제"
+                      onclick="return confirm('삭제하려면 클릭해주세요')">
+                  </form>
+                  {% endif %}
               </td>
             </tr>
             {% endfor %}
           </table>
     </div>
-    <div class="col-4"></div>
   </div>
 
 

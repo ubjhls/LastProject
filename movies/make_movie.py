@@ -5,7 +5,7 @@ import pprint
 movie_list = []
 movie_info = []
 
-for page in range(1, 2):
+for page in range(1, 11):
     # now_playing
     # url = f'https://api.themoviedb.org/3/movie/now_playing?api_key=1dfd52c8a24a0f38f40efe41c86be13b&language=ko-KR&page={page}'
     # popular
@@ -30,19 +30,20 @@ for movie in movie_list:
         genres = response['genres'][0]['id']
     else:
         genres = 18
-    if response['backdrop_path'] == "null":
-        back_image = 'https://image.flaticon.com/icons/svg/20/20773.svg'
-    else:
+    back_image = 'https://image.flaticon.com/icons/svg/20/20773.svg'
+    if response['backdrop_path']:
         back_image = response['backdrop_path']
+    runtime = 120
+    if response['runtime']:
+        runtime = response['runtime']
     print(response['id'])
-    pprint.pprint(response)
     new_movie = {
         'pk': response['id'],
         'model': "movies.Movie",
         'fields': {
             'title': response['title'],
             'movie_type': 'top_rated',
-            'poster_url': response[f"https://image.tmdb.org/t/p/w500{response['poster_path']}"],
+            'poster_url': f"https://image.tmdb.org/t/p/w500{response['poster_path']}",
             'description': response['overview'],
             'genre_id': genres,
             'video_link': video_link,
@@ -50,15 +51,12 @@ for movie in movie_list:
             'vote_average': response['vote_average'],
             'back_image': back_image,
             'release_date': response['release_date'],
-            'runtime': response['runtime'],
+            'runtime': runtime,
             'tagline': response['tagline'],
-            'cast': response['case']
-
-
         }
     }
     movie_info.append(new_movie)
 
-pprint.pprint(movie_info)
-with open('movies/fixtures/top_rated.json', 'w', encoding='utf-8') as f:
+# pprint.pprint(movie_info)
+with open('movies/fixtures/top_rated2.json', 'w', encoding='utf-8') as f:
     json.dump(movie_info, f, ensure_ascii=False, indent="\t")
